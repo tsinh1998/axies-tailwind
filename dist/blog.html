@@ -16,10 +16,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/ntfs.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    <!-- Reponsive -->
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="assets/icon/Favicon.png">
@@ -27,7 +32,7 @@
 
 </head>
 
-<body class="body header-fixed is_dark">
+<body class="body header-fixed">
 
     <!-- preloade -->
     <div class="preload preload-container">
@@ -37,25 +42,25 @@
 
     <div id="wrapper">
         <div id="page" class="clearfix">
-            <header id="header_main" class="header_1 js-header">
+            <header id="header_main" class="absolute z-[100] h-[80px] w-full border-b-[1px] border-solid border-b-[rgba(235,235,235,0.2)] transition-[all] duration-[0.5s] ease-in">
                 <div class="themesflat-container">
                     <div class="row">
                         <div class="col-md-12">                              
                             <div id="site-header-inner"> 
                                 <div class="wrap-box flex">
-                                    <div id="site-logo" class="clearfix">
-                                        <div id="site-logo-inner">
+                                    <div id="site-logo" class="h-[80px]">
+                                        <div id="site-logo-inner" class="absolute top-1/2 -translate-y-1/2">
                                             <a href="index.html" rel="home" class="main-logo">
-                                                <img id="logo_header" src="assets/images/logo/logo_dark.png" alt="nft-gaming" width="133" height="56"
-                                                    data-retina="assets/images/logo/logo_dark@2x.png" data-width="133"
-                                                    data-height="56">
+                                                <img id="logo_header" src="assets/images/logo/logo.png" alt="nft-gaming" width="133" height="56"
+                                                data-retina="assets/images/logo/logo_dark@2x.png" data-width="133"
+                                                data-height="56">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="mobile-button"><span></span></div><!-- /.mobile-button -->
-                                    <nav id="main-nav" class="main-nav">
+                                    <nav id="main-nav" class="main-nav absolute left-[26%] top-1/2 z-0 -translate-y-1/2 ">
                                         <ul id="menu-primary-menu" class="menu">
-                                            <li class="menu-item menu-item-has-children">
+                                            <li class="menu-item current-menu-item menu-item-has-children">
                                                 <a href="#">Home</a>
                                                 <ul class="sub-menu">
                                                     <li class="menu-item"><a href="index.html">Home 1</a></li>
@@ -66,7 +71,7 @@
                                                     <li class="menu-item"><a href="home6.html">Home 6</a></li>
                                                                                                         <li class="menu-item"><a href="home7.html">Home 7</a></li>
                                                     <li class="menu-item"><a href="home8.html">Home 8 ( Special )</a></li>
-                                                                                                        <li class="menu-item menu-item-has-children">
+                                                    <li class="menu-item menu-item-has-children">
                                                         <a href="#">Slider Styles</a>
                                                         <ul class="sub-menu">
                                                             <li class="menu-item"><a href="slider-typer-text.html">Text Type</a></li>
@@ -95,7 +100,7 @@
                                                     <li class="menu-item"><a href="activity2.html">Activity 2</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="menu-item menu-item-has-children current-menu-item">
+                                            <li class="menu-item menu-item-has-children">
                                                 <a href="#">Community</a>
                                                 <ul class="sub-menu">
                                                     <li class="menu-item current-item"><a href="blog.html">Blog</a></li>
@@ -119,7 +124,7 @@
                                                     <li class="menu-item"><a href="faq.html">FAQ</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="menu-item  menu-item-has-children">
+                                            <li class="menu-item menu-item-has-children">
                                                 <a href="#">Contact</a>
                                                 <ul class="sub-menu">
                                                     <li class="menu-item"><a href="contact1.html">Contact 1</a></li>
@@ -127,9 +132,9 @@
                                                 </ul>
                                             </li>
                                         </ul>
-                                    </nav><!-- /#main-nav -->   
-                                    <div class="flat-search-btn flex">
-                                        <div class="header-search flat-show-search" id="s1">
+                                    </nav> 
+                                    <div class="flat-search-btn flex p-[16px_0] absolute right-[15px] top-0 items-center justify-end">
+                                        <div class="relative mr-[36px] p-[14px_0] flat-show-search" id="s1">
                                             <a href="#" class="show-search header-search-trigger">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <mask id="mask0_334_638" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="1" width="18" height="17">
@@ -146,23 +151,29 @@
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7166 18.3333C17.5596 18.3333 17.4016 18.2746 17.2807 18.1572L14.3823 15.3308C14.1413 15.0952 14.1405 14.7131 14.3815 14.4774C14.6217 14.2402 15.0123 14.2418 15.2541 14.4758L18.1526 17.303C18.3935 17.5387 18.3944 17.9199 18.1534 18.1556C18.0333 18.2746 17.8746 18.3333 17.7166 18.3333Z" fill="white"/>
                                                     <path d="M17.7166 18.3333C17.5595 18.3333 17.4016 18.2746 17.2807 18.1572L14.3823 15.3308C14.1413 15.0952 14.1405 14.7131 14.3815 14.4774C14.6217 14.2402 15.0123 14.2418 15.2541 14.4758L18.1526 17.303C18.3935 17.5387 18.3944 17.9199 18.1534 18.1556C18.0333 18.2746 17.8746 18.3333 17.7166 18.3333" stroke="white"/>
                                                     </g>
-                                                    </svg>
+                                                </svg>
                                             </a>
-                                            <div class="top-search">
-                                                <form action="#" method="get" role="search" class="search-form">
-                                                    <input type="search" id="s" class="search-field" placeholder="Search..." value="" name="s" title="Search for" required="">
-                                                    <button class="search search-submit" type="submit" title="Search">
+                                            <div class="top-search absolute right-[-16px] top-[130%] w-[250px] opacity-0 invisible">
+                                                <form action="#" method="get" role="search" class="search-form relative">
+                                                    <input type="search" id="s" placeholder="Search..." value="" name="s" title="Search for" required=""
+                                                     class="search-field !bg-[#F8F8F8] !text-[#14141F] !w-full !border-[1px] !border-solid !border-white !rounded-[30px] !eading-[23px] !p-[13px_50px_13px_15px]">
+                                                    <button class="search search-submit absolute top-0 right-0 text-[20px] text-[#14141F] duration-[0.3s] border-none rounded-[30px] leading-[20px] p-[15px] bg-transparent hover:border-0 hover:text-white"
+                                                     type="submit" title="Search">
                                                         <i class="icon-fl-search-filled"></i>
                                                     </button>
                                                 </form>
                                             </div>
                                         </div>
-                                        <div class="sc-btn-top mg-r-12" id="site-header">
-                                            <a  href="connect-wallet.html" id="connectbtn" class="sc-button header-slider style style-1 wallet fl-button pri-1"><span>Wallet connect
-                                            </span></a>
+                                        <div class="sc-btn-top mr-[12px]" id="site-header">
+                                            <!-- <a href="connect-wallet.html" id="connectbtn" class="sc-button header-slider style style-1 wallet fl-button pri-1">
+                                                <span >Wallet connect</span>
+                                            </a> -->
+                                            <a href="connect-wallet.html" id="connectbtn" class="group p-[12px_35px_12px_32px] border-[2px] border-solid border-white text-white bg-[transparen_none_repeat_scroll_0_0] relative inline-block rounded-[30px] hover:bg-white">
+                                                <span class="pl-[28px] text-[15px] z-[1] font-[700] leading-[22px] relative duration-[0.3s] group-hover:text-[var(--primary-color3)]
+                                                before:content-['\e917'] before:absolute before:font-['nfts'] before:text-[20px] before:left-0 before:font-[100] before:top-[-4px] before:z-[1]">Wallet connect</span>
+                                            </a>
                                         </div>
-
-                                        <div class="admin_active" id="header_admin">
+                                        <div class="admin_active hidden" id="header_admin">
                                             <div class="header_avatar">
                                                 <div class="popup-notification">
                                                     <div class="notification">
@@ -395,7 +406,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mode_switcher">
+                <!-- <div class="mode_switcher">
                     <h6>Dark mode <strong>Available</strong></h6>
                     <a href="#" class="light d-flex align-items-center">
                         <img src="assets/images/icon/sun.png" alt="">
@@ -403,23 +414,29 @@
                     <a href="#" class="dark d-flex align-items-center is_active">
                         <img id="moon_dark" src="assets/images/icon/moon-2.png" alt="">
                     </a>
-                </div>
+                </div> -->
             </header>
                 
             <!-- title page -->
-            <section class="flat-title-page inner">
-                <div class="overlay"></div>
+            <section class="flat-title-page pt-[139px] pb-[59px] relative bg-[url('../images/backgroup-secsion/img_bg_page_title_inner.jpg')] bg-cover bg-center bg-no-repeat">
+                <div class="overlay absolute top-0 left-0 w-full h-full bg-[#3434444d] duration-[0.3s] transition-all ease-in-out"></div>
                 <div class="themesflat-container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="page-title-heading mg-bt-12">
-                                <h1 class="heading text-center">Blog</h1>
+                            <div class="mb-[12px]">
+                                <h1 class="text-center leading-[58px] text-white">Blog</h1>
                             </div>
-                            <div class="breadcrumbs">
+                            <div class="flex w-full justify-center">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="#">Community</a></li>
-                                    <li>Blog</li>
+                                    <li class="text-[18px] leading-[28px] inline-block text-white py-0 pr-[8px] pl-[6px]">
+                                        <a class="relative text-[#8A8AA0] pr-[15px] after:content-[''] after:absolute after:bg-[#8A8AA0] after:w-[1px] after:h-[14px] after:bottom-[4px] after:right-0 after:rotate-[13deg] hover:text-white" 
+                                        href="index.html">Home</a>
+                                    </li>
+                                    <li class="text-[18px] leading-[28px] inline-block text-white py-0 pr-[8px] pl-[6px]">
+                                        <a class="relative text-[#8A8AA0] pr-[15px] after:content-[''] after:absolute after:bg-[#8A8AA0] after:w-[1px] after:h-[14px] after:bottom-[4px] after:right-0 after:rotate-[13deg] hover:text-white" 
+                                        href="#">Community</a>
+                                    </li>
+                                    <li class="text-[18px] leading-[28px] inline-block text-white py-0 pr-[8px] pl-[6px]">Blog</li>
                                 </ul>
                             </div>
                         </div>
@@ -427,29 +444,29 @@
                 </div>                    
             </section>
 
-            <div class="tf-section sc-card-blog dark-style2">
+            <div class="tf-section p-[80px_0] bg-[var(--bg-section)] duration-[0.3s] ease-in-out transition-all">
                 <div class="themesflat-container">
                     <div class="row">
                         <div class="fl-blog fl-item2 col-lg-4 col-md-6">
-                            <article class="sc-card-article">
-                                <div class="card-media">
-                                    <a href="blog-details.html"><img src="assets/images/blog/thumb-1.jpg" alt=""></a>
+                            <article class="bg-[var(--primary-color)] shadow-[0px_3px_16px_rgba(47,83,109,0.12)] p-[24px] rounded-[12px] mb-[30px] transition-all duration-[0.3s] ease-[cubic-bezier(0.4,0,0.2,1)] hover:translate-y-[-5px] hover:shadow-[1px_-3px_16px_rgb(47_83_109/12%)]">
+                                <div class="rounded-[12px] overflow-hidden mb-[20px]">
+                                    <a href="blog-details.html"><img class="w-full object-cover" src="assets/images/blog/thumb-1.jpg" alt=""></a>
                                 </div>
-                                <div class="meta-info">
-                                    <div class="author">
-                                        <div class="avatar">
+                                <div class="flex items-center justify-between ">
+                                    <div class="flex items-center justify-between">
+                                        <div class="w-[44px] h-[44px] rounded-[15px] overflow-hidden mr-[12px] flex-shrink-0">
                                             <img src="assets/images/avatar/avt-2.jpg" alt="">
                                         </div>
                                         <div class="info">
-                                            <span>Post owner</span>
-                                            <h6> <a href="author02.html">SalvadorDali</a> </h6>
+                                            <span class="text-[var(--primary-color4)] text-[13px] leading-[21px]">Post owner</span>
+                                            <h6 class="leading-[22px]"> <a href="author02.html">SalvadorDali</a> </h6>
                                         </div>
                                     </div>
-                                    <div class="date">Feb 19, 2021</div>
+                                    <div class="text-[18px] leading-[28px]">Feb 19, 2021</div>
                                 </div>
-                                <div class="text-article">
-                                    <h3><a href="blog-details.html">The next big trend in crypto</a></h3>
-                                    <p>Dolore officia sint incididunt non excepteur ea mollit commodo ut
+                                <div class="mt-[19px] mb-[23px]">
+                                    <h3 class="mb-[16px] capitalize"><a href="blog-details.html">The next big trend in crypto</a></h3>
+                                    <p class="text-[14px] leading-[22px]">Dolore officia sint incididunt non excepteur ea mollit commodo ut
                                         enim reprehenderit cupidatat labore ad laborum consectetur
                                         consequat...</p>
                                 </div>
@@ -457,25 +474,25 @@
                             </article>
                         </div>
                         <div class="fl-blog fl-item2 col-lg-4 col-md-6">
-                            <article class="sc-card-article">
-                                <div class="card-media">
-                                    <a href="blog-details.html"><img src="assets/images/blog/thumg-3-1.jpg" alt=""></a>
+                            <article class="bg-[var(--primary-color)] shadow-[0px_3px_16px_rgba(47,83,109,0.12)] p-[24px] rounded-[12px] mb-[30px] transition-all duration-[0.3s] ease-[cubic-bezier(0.4,0,0.2,1)] hover:translate-y-[-5px] hover:shadow-[1px_-3px_16px_rgb(47_83_109/12%)]">
+                                <div class="rounded-[12px] overflow-hidden mb-[20px]">
+                                    <a href="blog-details.html"><img class="w-full object-cover" src="assets/images/blog/thumg-3-1.jpg" alt=""></a>
                                 </div>
-                                <div class="meta-info">
-                                    <div class="author">
-                                        <div class="avatar">
+                                <div class="flex items-center justify-between ">
+                                    <div class="flex items-center justify-between">
+                                        <div class="w-[44px] h-[44px] rounded-[15px] overflow-hidden mr-[12px] flex-shrink-0">
                                             <img src="assets/images/avatar/avt-3.jpg" alt="">
                                         </div>
                                         <div class="info">
-                                            <span>Post owner</span>
-                                            <h6> <a href="author02.html">Tyler Covington</a> </h6>
+                                            <span class="text-[var(--primary-color4)] text-[13px] leading-[21px]">Post owner</span>
+                                            <h6 class="leading-[22px]"> <a href="author02.html">Tyler Covington</a> </h6>
                                         </div>
                                     </div>
-                                    <div class="date">Feb 19, 2021</div>
+                                    <div class="text-[18px] leading-[28px]">Feb 19, 2021</div>
                                 </div>
-                                <div class="text-article">
-                                    <h3><a href="blog-details.html">The next big trend in crypto</a></h3>
-                                    <p>Dolore officia sint incididunt non excepteur ea mollit commodo ut
+                                <div class="mt-[19px] mb-[23px]">
+                                    <h3 class="mb-[16px] capitalize"><a href="blog-details.html">The next big trend in crypto</a></h3>
+                                    <p class="text-[14px] leading-[22px]">Dolore officia sint incididunt non excepteur ea mollit commodo ut
                                         enim reprehenderit cupidatat labore ad laborum consectetur
                                         consequat...</p>
                                 </div>
@@ -483,25 +500,25 @@
                             </article>
                         </div>
                         <div class="fl-blog fl-item2 col-lg-4 col-md-6">
-                            <article class="sc-card-article">
-                                <div class="card-media">
-                                    <a href="blog-details.html"><img src="assets/images/blog/thumb-4.jpg" alt=""></a>
+                            <article class="bg-[var(--primary-color)] shadow-[0px_3px_16px_rgba(47,83,109,0.12)] p-[24px] rounded-[12px] mb-[30px] transition-all duration-[0.3s] ease-[cubic-bezier(0.4,0,0.2,1)] hover:translate-y-[-5px] hover:shadow-[1px_-3px_16px_rgb(47_83_109/12%)]">
+                                <div class="rounded-[12px] overflow-hidden mb-[20px]">
+                                    <a href="blog-details.html"><img class="w-full object-cover" src="assets/images/blog/thumb-4.jpg" alt=""></a>
                                 </div>
-                                <div class="meta-info">
-                                    <div class="author">
-                                        <div class="avatar">
+                                <div class="flex items-center justify-between ">
+                                    <div class="flex items-center justify-between">
+                                        <div class="w-[44px] h-[44px] rounded-[15px] overflow-hidden mr-[12px] flex-shrink-0">
                                             <img src="assets/images/avatar/avt-6.jpg" alt="">
                                         </div>
                                         <div class="info">
-                                            <span>Post owner</span>
-                                            <h6> <a href="author02.html">Freddie Carpenter</a> </h6>
+                                            <span class="text-[var(--primary-color4)] text-[13px] leading-[21px]">Post owner</span>
+                                            <h6 class="leading-[22px]"> <a href="author02.html">Freddie Carpenter</a> </h6>
                                         </div>
                                     </div>
-                                    <div class="date">Feb 19, 2021</div>
+                                    <div class="text-[18px] leading-[28px]">Feb 19, 2021</div>
                                 </div>
-                                <div class="text-article">
-                                    <h3><a href="blog-details.html">The next big trend in crypto</a></h3>
-                                    <p>Dolore officia sint incididunt non excepteur ea mollit commodo ut
+                                <div class="mt-[19px] mb-[23px]">
+                                    <h3 class="mb-[16px] capitalize"><a href="blog-details.html">The next big trend in crypto</a></h3>
+                                    <p class="text-[14px] leading-[22px]">Dolore officia sint incididunt non excepteur ea mollit commodo ut
                                         enim reprehenderit cupidatat labore ad laborum consectetur
                                         consequat...</p>
                                 </div>
@@ -509,25 +526,25 @@
                             </article>
                         </div>
                         <div class="fl-blog fl-item2 col-lg-4 col-md-6">
-                            <article class="sc-card-article">
-                                <div class="card-media">
-                                    <a href="blog-details.html"><img src="assets/images/blog/thumb-2.jpg" alt=""></a>
+                            <article class="bg-[var(--primary-color)] shadow-[0px_3px_16px_rgba(47,83,109,0.12)] p-[24px] rounded-[12px] mb-[30px] transition-all duration-[0.3s] ease-[cubic-bezier(0.4,0,0.2,1)] hover:translate-y-[-5px] hover:shadow-[1px_-3px_16px_rgb(47_83_109/12%)]">
+                                <div class="rounded-[12px] overflow-hidden mb-[20px]">
+                                    <a href="blog-details.html"><img class="w-full object-cover" src="assets/images/blog/thumb-2.jpg" alt=""></a>
                                 </div>
-                                <div class="meta-info">
-                                    <div class="author">
-                                        <div class="avatar">
+                                <div class="flex items-center justify-between ">
+                                    <div class="flex items-center justify-between">
+                                        <div class="w-[44px] h-[44px] rounded-[15px] overflow-hidden mr-[12px] flex-shrink-0">
                                             <img src="assets/images/avatar/avt-4.jpg" alt="">
                                         </div>
                                         <div class="info">
-                                            <span>Post owner</span>
-                                            <h6> <a href="author02.html">SalvadorDali</a> </h6>
+                                            <span class="text-[var(--primary-color4)] text-[13px] leading-[21px]">Post owner</span>
+                                            <h6 class="leading-[22px]"> <a href="author02.html">SalvadorDali</a> </h6>
                                         </div>
                                     </div>
-                                    <div class="date">Feb 19, 2021</div>
+                                    <div class="text-[18px] leading-[28px]">Feb 19, 2021</div>
                                 </div>
-                                <div class="text-article">
-                                    <h3><a href="blog-details.html">The next big trend in crypto</a></h3>
-                                    <p>Dolore officia sint incididunt non excepteur ea mollit commodo ut
+                                <div class="mt-[19px] mb-[23px]">
+                                    <h3 class="mb-[16px] capitalize"><a href="blog-details.html">The next big trend in crypto</a></h3>
+                                    <p class="text-[14px] leading-[22px]">Dolore officia sint incididunt non excepteur ea mollit commodo ut
                                         enim reprehenderit cupidatat labore ad laborum consectetur
                                         consequat...</p>
                                 </div>
@@ -535,25 +552,25 @@
                             </article>
                         </div>
                         <div class="fl-blog fl-item2 col-lg-4 col-md-6">
-                            <article class="sc-card-article">
-                                <div class="card-media">
-                                    <a href="blog-details.html"><img src="assets/images/blog/thumb-5.jpg" alt=""></a>
+                            <article class="bg-[var(--primary-color)] shadow-[0px_3px_16px_rgba(47,83,109,0.12)] p-[24px] rounded-[12px] mb-[30px] transition-all duration-[0.3s] ease-[cubic-bezier(0.4,0,0.2,1)] hover:translate-y-[-5px] hover:shadow-[1px_-3px_16px_rgb(47_83_109/12%)]">
+                                <div class="rounded-[12px] overflow-hidden mb-[20px]">
+                                    <a href="blog-details.html"><img class="w-full object-cover" src="assets/images/blog/thumb-5.jpg" alt=""></a>
                                 </div>
-                                <div class="meta-info">
-                                    <div class="author">
-                                        <div class="avatar">
+                                <div class="flex items-center justify-between ">
+                                    <div class="flex items-center justify-between">
+                                        <div class="w-[44px] h-[44px] rounded-[15px] overflow-hidden mr-[12px] flex-shrink-0">
                                             <img src="assets/images/avatar/avt-8.jpg" alt="">
                                         </div>
                                         <div class="info">
-                                            <span>Post owner</span>
-                                            <h6> <a href="author02.html">Tyler Covington</a> </h6>
+                                            <span class="text-[var(--primary-color4)] text-[13px] leading-[21px]">Post owner</span>
+                                            <h6 class="leading-[22px]"> <a href="author02.html">Tyler Covington</a> </h6>
                                         </div>
                                     </div>
-                                    <div class="date">Feb 19, 2021</div>
+                                    <div class="text-[18px] leading-[28px]">Feb 19, 2021</div>
                                 </div>
-                                <div class="text-article">
-                                    <h3><a href="blog-details.html">The next big trend in crypto</a></h3>
-                                    <p>Dolore officia sint incididunt non excepteur ea mollit commodo ut
+                                <div class="mt-[19px] mb-[23px]">
+                                    <h3 class="mb-[16px] capitalize"><a href="blog-details.html">The next big trend in crypto</a></h3>
+                                    <p class="text-[14px] leading-[22px]">Dolore officia sint incididunt non excepteur ea mollit commodo ut
                                         enim reprehenderit cupidatat labore ad laborum consectetur
                                         consequat...</p>
                                 </div>
@@ -561,25 +578,25 @@
                             </article>
                         </div>
                         <div class="fl-blog fl-item2 col-lg-4 col-md-6">
-                            <article class="sc-card-article">
-                                <div class="card-media">
-                                    <a href="blog-details.html"><img src="assets/images/blog/thumb-6-1.jpg" alt=""></a>
+                            <article class="bg-[var(--primary-color)] shadow-[0px_3px_16px_rgba(47,83,109,0.12)] p-[24px] rounded-[12px] mb-[30px] transition-all duration-[0.3s] ease-[cubic-bezier(0.4,0,0.2,1)] hover:translate-y-[-5px] hover:shadow-[1px_-3px_16px_rgb(47_83_109/12%)]">
+                                <div class="rounded-[12px] overflow-hidden mb-[20px]">
+                                    <a href="blog-details.html"><img class="w-full object-cover" src="assets/images/blog/thumb-6-1.jpg" alt=""></a>
                                 </div>
-                                <div class="meta-info">
-                                    <div class="author">
-                                        <div class="avatar">
+                                <div class="flex items-center justify-between ">
+                                    <div class="flex items-center justify-between">
+                                        <div class="w-[44px] h-[44px] rounded-[15px] overflow-hidden mr-[12px] flex-shrink-0">
                                             <img src="assets/images/avatar/avt-6.jpg" alt="">
                                         </div>
                                         <div class="info">
-                                            <span>Post owner</span>
-                                            <h6> <a href="author02.html">Freddie Carpenter</a> </h6>
+                                            <span class="text-[var(--primary-color4)] text-[13px] leading-[21px]">Post owner</span>
+                                            <h6 class="leading-[22px]"> <a href="author02.html">Freddie Carpenter</a> </h6>
                                         </div>
                                     </div>
-                                    <div class="date">Feb 19, 2021</div>
+                                    <div class="text-[18px] leading-[28px]">Feb 19, 2021</div>
                                 </div>
-                                <div class="text-article">
-                                    <h3><a href="blog-details.html">The next big trend in crypto</a></h3>
-                                    <p>Dolore officia sint incididunt non excepteur ea mollit commodo ut
+                                <div class="mt-[19px] mb-[23px]">
+                                    <h3 class="mb-[16px] capitalize"><a href="blog-details.html">The next big trend in crypto</a></h3>
+                                    <p class="text-[14px] leading-[22px]">Dolore officia sint incididunt non excepteur ea mollit commodo ut
                                         enim reprehenderit cupidatat labore ad laborum consectetur
                                         consequat...</p>
                                 </div>
@@ -587,25 +604,25 @@
                             </article>
                         </div>
                         <div class="fl-blog fl-item2 col-lg-4 col-md-6">
-                            <article class="sc-card-article">
-                                <div class="card-media">
-                                    <a href="blog-details.html"><img src="assets/images/blog/thumb-1.jpg" alt=""></a>
+                            <article class="bg-[var(--primary-color)] shadow-[0px_3px_16px_rgba(47,83,109,0.12)] p-[24px] rounded-[12px] mb-[30px] transition-all duration-[0.3s] ease-[cubic-bezier(0.4,0,0.2,1)] hover:translate-y-[-5px] hover:shadow-[1px_-3px_16px_rgb(47_83_109/12%)]">
+                                <div class="rounded-[12px] overflow-hidden mb-[20px]">
+                                    <a href="blog-details.html"><img class="w-full object-cover" src="assets/images/blog/thumb-1.jpg" alt=""></a>
                                 </div>
-                                <div class="meta-info">
-                                    <div class="author">
-                                        <div class="avatar">
+                                <div class="flex items-center justify-between ">
+                                    <div class="flex items-center justify-between">
+                                        <div class="w-[44px] h-[44px] rounded-[15px] overflow-hidden mr-[12px] flex-shrink-0">
                                             <img src="assets/images/avatar/avt-2.jpg" alt="">
                                         </div>
                                         <div class="info">
-                                            <span>Post owner</span>
-                                            <h6> <a href="author02.html">SalvadorDali</a> </h6>
+                                            <span class="text-[var(--primary-color4)] text-[13px] leading-[21px]">Post owner</span>
+                                            <h6 class="leading-[22px]"> <a href="author02.html">SalvadorDali</a> </h6>
                                         </div>
                                     </div>
-                                    <div class="date">Feb 19, 2021</div>
+                                    <div class="text-[18px] leading-[28px]">Feb 19, 2021</div>
                                 </div>
-                                <div class="text-article">
-                                    <h3><a href="blog-details.html">The next big trend in crypto</a></h3>
-                                    <p>Dolore officia sint incididunt non excepteur ea mollit commodo ut
+                                <div class="mt-[19px] mb-[23px]">
+                                    <h3 class="mb-[16px] capitalize"><a href="blog-details.html">The next big trend in crypto</a></h3>
+                                    <p class="text-[14px] leading-[22px]">Dolore officia sint incididunt non excepteur ea mollit commodo ut
                                         enim reprehenderit cupidatat labore ad laborum consectetur
                                         consequat...</p>
                                 </div>
@@ -613,25 +630,25 @@
                             </article>
                         </div>
                         <div class="fl-blog fl-item2 col-lg-4 col-md-6">
-                            <article class="sc-card-article">
-                                <div class="card-media">
-                                    <a href="blog-details.html"><img src="assets/images/blog/thumb-4.jpg" alt=""></a>
+                            <article class="bg-[var(--primary-color)] shadow-[0px_3px_16px_rgba(47,83,109,0.12)] p-[24px] rounded-[12px] mb-[30px] transition-all duration-[0.3s] ease-[cubic-bezier(0.4,0,0.2,1)] hover:translate-y-[-5px] hover:shadow-[1px_-3px_16px_rgb(47_83_109/12%)]">
+                                <div class="rounded-[12px] overflow-hidden mb-[20px]">
+                                    <a href="blog-details.html"><img class="w-full object-cover" src="assets/images/blog/thumb-4.jpg" alt=""></a>
                                 </div>
-                                <div class="meta-info">
-                                    <div class="author">
-                                        <div class="avatar">
+                                <div class="flex items-center justify-between ">
+                                    <div class="flex items-center justify-between">
+                                        <div class="w-[44px] h-[44px] rounded-[15px] overflow-hidden mr-[12px] flex-shrink-0">
                                             <img src="assets/images/avatar/avt-6.jpg" alt="">
                                         </div>
                                         <div class="info">
-                                            <span>Post owner</span>
-                                            <h6> <a href="author02.html">Freddie Carpenter</a> </h6>
+                                            <span class="text-[var(--primary-color4)] text-[13px] leading-[21px]">Post owner</span>
+                                            <h6 class="leading-[22px]"> <a href="author02.html">Freddie Carpenter</a> </h6>
                                         </div>
                                     </div>
-                                    <div class="date">Feb 19, 2021</div>
+                                    <div class="text-[18px] leading-[28px]">Feb 19, 2021</div>
                                 </div>
-                                <div class="text-article">
-                                    <h3><a href="blog-details.html">The next big trend in crypto</a></h3>
-                                    <p>Dolore officia sint incididunt non excepteur ea mollit commodo ut
+                                <div class="mt-[19px] mb-[23px]">
+                                    <h3 class="mb-[16px] capitalize"><a href="blog-details.html">The next big trend in crypto</a></h3>
+                                    <p class="text-[14px] leading-[22px]">Dolore officia sint incididunt non excepteur ea mollit commodo ut
                                         enim reprehenderit cupidatat labore ad laborum consectetur
                                         consequat...</p>
                                 </div>
@@ -639,25 +656,25 @@
                             </article>
                         </div>
                         <div class="fl-blog fl-item2 col-lg-4 col-md-6">
-                            <article class="sc-card-article">
-                                <div class="card-media">
-                                    <a href="blog-details.html"><img src="assets/images/blog/thumb-5.jpg" alt=""></a>
+                            <article class="bg-[var(--primary-color)] shadow-[0px_3px_16px_rgba(47,83,109,0.12)] p-[24px] rounded-[12px] mb-[30px] transition-all duration-[0.3s] ease-[cubic-bezier(0.4,0,0.2,1)] hover:translate-y-[-5px] hover:shadow-[1px_-3px_16px_rgb(47_83_109/12%)]">
+                                <div class="rounded-[12px] overflow-hidden mb-[20px]">
+                                    <a href="blog-details.html"><img class="w-full object-cover" src="assets/images/blog/thumb-5.jpg" alt=""></a>
                                 </div>
-                                <div class="meta-info">
-                                    <div class="author">
-                                        <div class="avatar">
+                                <div class="flex items-center justify-between ">
+                                    <div class="flex items-center justify-between">
+                                        <div class="w-[44px] h-[44px] rounded-[15px] overflow-hidden mr-[12px] flex-shrink-0">
                                             <img src="assets/images/avatar/avt-8.jpg" alt="">
                                         </div>
                                         <div class="info">
-                                            <span>Post owner</span>
-                                            <h6> <a href="author02.html">Tyler Covington</a> </h6>
+                                            <span class="text-[var(--primary-color4)] text-[13px] leading-[21px]">Post owner</span>
+                                            <h6 class="leading-[22px]"> <a href="author02.html">Tyler Covington</a> </h6>
                                         </div>
                                     </div>
-                                    <div class="date">Feb 19, 2021</div>
+                                    <div class="text-[18px] leading-[28px]">Feb 19, 2021</div>
                                 </div>
-                                <div class="text-article">
-                                    <h3><a href="blog-details.html">The next big trend in crypto</a></h3>
-                                    <p>Dolore officia sint incididunt non excepteur ea mollit commodo ut
+                                <div class="mt-[19px] mb-[23px]">
+                                    <h3 class="mb-[16px] capitalize"><a href="blog-details.html">The next big trend in crypto</a></h3>
+                                    <p class="text-[14px] leading-[22px]">Dolore officia sint incididunt non excepteur ea mollit commodo ut
                                         enim reprehenderit cupidatat labore ad laborum consectetur
                                         consequat...</p>
                                 </div>
@@ -672,72 +689,97 @@
             </div>
 
            <!-- Footer -->
-           <footer id="footer" class="clearfix">
+           <footer id="footer" class="py-[80px] bg-white">
             <div class="themesflat-container">
                 <div class="row">
                     <div class="col-lg-3 col-md-12 col-12">
                         <div class="widget widget-logo">
-                            <div class="logo-footer" id="logo-footer">
+                            <div class="logo-footer mb-[13px]" id="logo-footer">
                                 <a href="index.html">
-                                    <img id="logo_footer" src="assets/images/logo/logo_dark.png" alt="nft-gaming" width="135" height="56"
+                                    <img id="logo_footer" src="assets/images/logo/logo2.png" alt="nft-gaming" width="135" height="56"
                                     data-retina="assets/images/logo/logo_dark@2x.png" data-width="135"
                                     data-height="56">
                                 </a>
                             </div>
-                            <p class="sub-widget-logo">Lorem ipsum dolor sit amet,consectetur adipisicing elit. Quis non, fugit totam vel laboriosam vitae.</p>
+                            <p class="sub-widget-logo text-[14px] leading-[22px] pr-[35px] mb-[26px] text-[var(--primary-color2)]">Lorem ipsum dolor sit amet,consectetur adipisicing elit. Quis non, fugit totam vel laboriosam vitae.</p>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4 col-sm-5 col-5">
-                        <div class="widget widget-menu style-1">
-                            <h5 class="title-widget">My Account</h5>
+                        <div class="pt-[18px] pl-[30px]">
+                            <h5 class="leading-[26px] mb-[24px] text-[var(--primary-color2)]">My Account</h5>
                             <ul>
-                                <li><a href="author01.html">Authors</a></li>
-                                <li><a href="connect-wallet.html">Collection</a></li>
-                                <li><a href="profile.html">Author Profile</a></li>
-                                <li><a href="create-item.html">Create Item</a></li>
+                                <li class="mb-[14px]">
+                                    <a class="text-[14px] leading-[22px] relative after:content-[''] after:w-0 after:h-[1px] after:absolute after:bg-[var(--primary-color3)] after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:invisible after:opacity-0 after:transition-all after:duration-[0.3s] after:ease-in-out hover:after:w-full hover:after:visible hover:after:opacity-100 " href="author01.html">Authors</a>
+                                </li>
+                                <li class="mb-[14px]">
+                                    <a class="text-[14px] leading-[22px] relative after:content-[''] after:w-0 after:h-[1px] after:absolute after:bg-[var(--primary-color3)] after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:invisible after:opacity-0 after:transition-all after:duration-[0.3s] after:ease-in-out hover:after:w-full hover:after:visible hover:after:opacity-100 " href="connect-wallet.html">Collection</a>
+                                </li>
+                                <li class="mb-[14px]">
+                                    <a class="text-[14px] leading-[22px] relative after:content-[''] after:w-0 after:h-[1px] after:absolute after:bg-[var(--primary-color3)] after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:invisible after:opacity-0 after:transition-all after:duration-[0.3s] after:ease-in-out hover:after:w-full hover:after:visible hover:after:opacity-100 " href="profile.html">Author Profile</a>
+                                </li>
+                                <li class="mb-0">
+                                    <a class="text-[14px] leading-[22px] relative after:content-[''] after:w-0 after:h-[1px] after:absolute after:bg-[var(--primary-color3)] after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:invisible after:opacity-0 after:transition-all after:duration-[0.3s] after:ease-in-out hover:after:w-full hover:after:visible hover:after:opacity-100 " href="create-item.html">Create Item</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4 col-sm-7 col-7">
-                        <div class="widget widget-menu style-2">
-                            <h5 class="title-widget">Resources</h5>
+                        <div class="pt-[18px] pl-[38px]">
+                            <h5 class="leading-[26px] mb-[24px] text-[var(--primary-color2)]">Resources</h5>
                             <ul>
-                                <li><a href="help-center.html">Help & Support</a></li>
-                                <li><a href="auctions.html">Live Auctions</a></li>
-                                <li><a href="item-details.html">Item Details</a></li>
-                                <li><a href="activity1.html">Activity</a></li>
+                                <li class="mb-[14px]">
+                                    <a class="text-[14px] leading-[22px] relative after:content-[''] after:w-0 after:h-[1px] after:absolute after:bg-[var(--primary-color3)] after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:invisible after:opacity-0 after:transition-all after:duration-[0.3s] after:ease-in-out hover:after:w-full hover:after:visible hover:after:opacity-100 " href="help-center.html">Help & Support</a>
+                                </li>
+                                <li class="mb-[14px]">
+                                    <a class="text-[14px] leading-[22px] relative after:content-[''] after:w-0 after:h-[1px] after:absolute after:bg-[var(--primary-color3)] after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:invisible after:opacity-0 after:transition-all after:duration-[0.3s] after:ease-in-out hover:after:w-full hover:after:visible hover:after:opacity-100 " href="auctions.html">Live Auctions</a>
+                                </li>
+                                <li class="mb-[14px]">
+                                    <a class="text-[14px] leading-[22px] relative after:content-[''] after:w-0 after:h-[1px] after:absolute after:bg-[var(--primary-color3)] after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:invisible after:opacity-0 after:transition-all after:duration-[0.3s] after:ease-in-out hover:after:w-full hover:after:visible hover:after:opacity-100 " href="item-details.html">Item Details</a>
+                                </li>
+                                <li class="mb-0">
+                                    <a class="text-[14px] leading-[22px] relative after:content-[''] after:w-0 after:h-[1px] after:absolute after:bg-[var(--primary-color3)] after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:invisible after:opacity-0 after:transition-all after:duration-[0.3s] after:ease-in-out hover:after:w-full hover:after:visible hover:after:opacity-100 " href="activity1.html">Activity</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4 col-sm-5 col-5">
-                        <div class="widget widget-menu fl-st-3">
-                            <h5 class="title-widget">Company</h5>
+                        <div class="pt-[18px] pl-[33px]">
+                            <h5 class="leading-[26px] mb-[24px] text-[var(--primary-color2)]">Company</h5>
                             <ul>
-                                <li><a href="explore-1.html">Explore</a></li>
-                                <li><a href="contact1.html">Contact Us</a></li>
-                                <li><a href="blog.html">Our Blog</a></li>
-                                <li><a href="faq.html">FAQ</a></li>
+                                <li class="mb-[14px]">
+                                    <a class="text-[14px] leading-[22px] relative after:content-[''] after:w-0 after:h-[1px] after:absolute after:bg-[var(--primary-color3)] after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:invisible after:opacity-0 after:transition-all after:duration-[0.3s] after:ease-in-out hover:after:w-full hover:after:visible hover:after:opacity-100 " href="explore-1.html">Explore</a>
+                                </li>
+                                <li class="mb-[14px]">
+                                    <a class="text-[14px] leading-[22px] relative after:content-[''] after:w-0 after:h-[1px] after:absolute after:bg-[var(--primary-color3)] after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:invisible after:opacity-0 after:transition-all after:duration-[0.3s] after:ease-in-out hover:after:w-full hover:after:visible hover:after:opacity-100 " href="contact1.html">Contact Us</a>
+                                </li>
+                                <li class="mb-[14px]">
+                                    <a class="text-[14px] leading-[22px] relative after:content-[''] after:w-0 after:h-[1px] after:absolute after:bg-[var(--primary-color3)] after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:invisible after:opacity-0 after:transition-all after:duration-[0.3s] after:ease-in-out hover:after:w-full hover:after:visible hover:after:opacity-100 " href="blog.html">Our Blog</a>
+                                </li>
+                                <li class="mb-0">
+                                    <a class="text-[14px] leading-[22px] relative after:content-[''] after:w-0 after:h-[1px] after:absolute after:bg-[var(--primary-color3)] after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:invisible after:opacity-0 after:transition-all after:duration-[0.3s] after:ease-in-out hover:after:w-full hover:after:visible hover:after:opacity-100 " href="faq.html">FAQ</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-7 col-12">
-                        <div class="widget widget-subcribe">
-                            <h5 class="title-widget">Subscribe Us</h5>
+                        <div class="pt-[17px] pl-[20px]">
+                            <h5 class="leading-[26px] mb-[25px] text-[var(--primary-color2)]">Subscribe Us</h5>
                             <div class="form-subcribe">
-                                <form id="subscribe-form" action="#" method="GET" accept-charset="utf-8" class="form-submit">
-                                    <input name="email" value="" class="email" type="email" placeholder="info@yourgmail.com" required>
-                                    <button id="submit" name="submit" type="submit"><i class="icon-fl-send"></i></button>
+                                <form id="subscribe-form" action="#" method="GET" accept-charset="utf-8" class="form-submit relative">
+                                    <input name="email" value="" type="email" placeholder="info@yourgmail.com" required 
+                                    class="!border-[1px] !border-[#8a8aa04d] !rounded-[10px] !bg-[#F8F8F8] !w-full !p-[13px_50px_12px_22px] !text-[14px] focus:!border-[#5142FC]" >
+                                    <button id="submit" name="submit" type="submit"
+                                    class="!absolute !top-0 !right-0 !bg-[var(--primary-color3)] !text-[21px] !p-[15px_18px_14px_19px] !text-[var(--primary-color)] rounded-tr-[10px] rounded-br-[10px] rounded-tl-none rounded-bl-none hover:opacity-90"><i class="icon-fl-send"></i></button>
                                 </form>
                             </div>
-                            <div class="widget-social style-1 mg-t32">
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                    
-                                    <li class="style-2"><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                                    <li class="mgr-none"><a href="#"><i class="icon-fl-tik-tok-2"></i></a></li>
-                                    <li class="mgr-none"><a href="#"><i class="icon-fl-vt"></i></a></li>
+                            <div class="widget-social style-1 mt-[32px]">
+                                <ul class="flex">
+                                    <li class="mr-[12px]"><a href="#" class="w-[40px] h-[40px] rounded-[5px] text-center justify-center items-center flex text-[21px] bg-[#EBEBEB] text-[#7A798A] hover:text-[var(--primary-color)] hover:bg-[var(--primary-color3)]"><i class="fab fa-twitter"></i></a></li>
+                                    <li class="mr-[12px]"><a href="#" class="w-[40px] h-[40px] rounded-[5px] text-center justify-center items-center flex text-[21px] bg-[#EBEBEB] text-[#7A798A] hover:text-[var(--primary-color)] hover:bg-[var(--primary-color3)]"><i class="fab fa-facebook"></i></a></li>
+                                    <li class="mr-[12px]"><a href="#" class="w-[40px] h-[40px] rounded-[5px] text-center justify-center items-center flex text-[22px] bg-[#EBEBEB] text-[#7A798A] hover:text-[var(--primary-color)] hover:bg-[var(--primary-color3)]"><i class="fab fa-telegram-plane"></i></a></li>
+                                    <li class="mr-[12px]"><a href="#" class="w-[40px] h-[40px] rounded-[5px] text-center justify-center items-center flex text-[21px] bg-[#EBEBEB] text-[#7A798A] hover:text-[var(--primary-color)] hover:bg-[var(--primary-color3)]"><i class="fab fa-youtube"></i></a></li>
+                                    <li class="mr-[12px]"><a href="#" class="w-[40px] h-[40px] rounded-[5px] text-center justify-center items-center flex text-[21px] bg-[#EBEBEB] text-[#7A798A] hover:text-[var(--primary-color)] hover:bg-[var(--primary-color3)]"><i class="icon-fl-tik-tok-2"></i></a></li>
+                                    <li class=""><a href="#" class="w-[40px] h-[40px] rounded-[5px] text-center justify-center items-center flex text-[21px] bg-[#EBEBEB] text-[#7A798A] hover:text-[var(--primary-color)] hover:bg-[var(--primary-color3)]"><i class="icon-fl-vt"></i></a></li>
                                 </ul>
                             </div>
                         </div>

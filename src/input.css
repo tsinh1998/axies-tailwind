@@ -253,7 +253,261 @@ a {
 }
 a:hover,
 a:focus {
-    @apply no-underline text-[var(--primary-color2)] outline-0 duration-[0.3s] transition-[all] ease-in-out;
+    @apply no-underline text-[var(--primary-color3)] outline-0 duration-[0.3s] transition-[all] ease-in-out;
+}
+
+.sc-button {
+    display      : inline-block;
+    border       : 2px solid var(--primary-color3);
+    color        : var(--primary-color3);
+    box-sizing   : border-box;
+    padding      : 11px 35px;
+    border-radius: 30px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition   : all 0.3s ease;
+    -ms-transition    : all 0.3s ease;
+    -o-transition     : all 0.3s ease;
+    transition        : all 0.3s ease;
+}
+.is_dark .sc-button {
+    color: #fff;
+}
+.sc-button span {
+    font-weight       : 700;
+    font-size         : 14px;
+    line-height       : 22px;
+    position          : relative;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition   : all 0.3s ease;
+    -ms-transition    : all 0.3s ease;
+    -o-transition     : all 0.3s ease;
+    transition        : all 0.3s ease;
+
+}
+
+.sc-button:hover,
+.sc-button.active {
+    border-color: transparent;
+    outline: 0 none;
+}
+
+.is_dark .sc-button.style-1:hover,
+.sc-button.fl-button:hover{
+    border: 2px solid #fff;
+    background-color: #fff;
+}
+
+.sc-button.fl-button:hover span,
+.sc-button.fl-button.active span {
+    color:#ffffff;
+}
+
+/* button style icon */
+
+.sc-button.style span {
+    padding-left: 26px;
+}
+
+.sc-button.style span::before {
+    position          : absolute;
+    font-family       : 'nfts';
+    font-size         : 20px;
+    left              : 0;
+    font-weight       : 100;
+    top               : -4px;
+}
+
+/* button style */
+/* style-1 */
+.sc-button.style-1 {
+    border    : 2px solid #fff;
+    color     : #fff;
+    background: transparent none repeat scroll 0 0;
+}
+
+.is_dark .sc-button.style-1 {
+    border    : 2px solid #5142FC;
+    color     : #fff;
+    background: transparent none repeat scroll 0 0;
+}
+
+.sc-button.style-1:hover span,
+.sc-button.style-1:hover span::before{
+    color: var(--primary-color3);
+}
+
+.sc-button.style-1:hover span {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition   : all 0.4s ease;
+    -ms-transition    : all 0.4s ease;
+    -o-transition     : all 0.4s ease;
+    transition        : all 0.4s ease;
+}
+
+/* / style-2 / */
+.sc-button.style-2 {
+    width: 100%;
+    padding: 0 0;
+    display: -webkit-box;  
+    display: -moz-box;      
+    display: -ms-flexbox;   
+    display: -webkit-flex; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border       : 2px solid var(--primary-color3);
+}
+
+
+.sc-button.style-2 span {
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: 700px;
+    color: var(--primary-color2);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition   : all 0.3s ease-in-out;
+    -ms-transition    : all 0.3s ease-in-out;
+    -o-transition     : all 0.3s ease-in-out;
+    transition        : all 0.3s ease-in-out;
+}
+
+.sc-button.style-2 i {
+    font-size: 18px;
+    color: var(--primary-color3);
+    margin-right: 8px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition   : all 0.3s ease-in-out;
+    -ms-transition    : all 0.3s ease-in-out;
+    -o-transition     : all 0.3s ease-in-out;
+    transition        : all 0.3s ease-in-out;
+}
+.is_dark .sc-button.style-2 i {
+    color: #fff;
+}
+
+.sc-button.style-2:hover span,
+.sc-button.style-2:hover i {
+    color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition   : all 0.3s ease-in-out;
+    -ms-transition    : all 0.3s ease-in-out;
+    -o-transition     : all 0.3s ease-in-out;
+    transition        : all 0.3s ease-in-out;
+}
+
+/* style loadmore */
+.sc-button.loadmore {
+    background-color: #eeecff;
+    border          : 2px solid #eeecff;
+    padding         : 14px 40px;
+}
+
+.sc-button.loadmore:hover {
+    border-color: transparent;
+    outline: 0 none;
+    background: transparent none repeat scroll 0 0;
+}
+
+.is_dark .sc-button.loadmore{
+    background: transparent none repeat scroll 0 0;
+    border-color: #fff;
+}
+
+.is_dark .sc-button.loadmore:hover:after{
+    background-color: #fff;
+}
+
+.sc-button.loadmore span {
+    font-size: 15px;
+}
+
+.is_dark .sc-button.loadmore:hover {
+    border-color: transparent;
+    outline: 0 none;
+}
+
+
+/* icon button extraclasses */
+.sc-button.style.rocket span::before {
+    content: "\e91d";
+}
+
+.sc-button.style.note span::before {
+    content  : "\e91b";
+    font-size: 20px;
+}
+
+.sc-button.style.wallet span::before {
+    content: "\e917";
+}
+
+.sc-button.style.bag span::before {
+    content: "\e901";
+    -webkit-transition: all 0.05s ease;
+    -moz-transition   : all 0.05s ease;
+    -ms-transition    : all 0.05s ease;
+    -o-transition     : all 0.05s ease;
+    transition        : all 0.05s ease;
+}
+
+.sc-button.style.bag:hover span::before {
+    -webkit-transition: all 0.1s ease;
+    -moz-transition   : all 0.1s ease;
+    -ms-transition    : all 0.1s ease;
+    -o-transition     : all 0.1s ease;
+    transition        : all 0.1s ease;
+}
+
+/*hover button */
+.fl-button {
+    position: relative;
+}
+
+.fl-button i,
+.fl-button span,
+.fl-button span::after,
+.fl-button span::before {
+    z-index: 1;
+}
+
+.fl-button:hover span::before{
+    -webkit-transition: all 0.3s ease;
+    -moz-transition   : all 0.3s ease;
+    -ms-transition    : all 0.3s ease;
+    -o-transition     : all 0.3s ease;
+    transition        : all 0.3s ease;
+}
+
+.is_dark .dark-style2 .sc-button.fl-button.pri-3 {
+    border-color: #fff;
+}
+
+.is_dark .dark-style2 .sc-button.fl-button.pri-3 span {
+    color: #fff;
+}
+
+.sc-button.fl-button.pri-3:hover span{
+    color: #fff;
+}
+
+.is_dark .sc-button.fl-button.pri-3:hover span{
+    color: #14141F;
+}
+
+.sc-button.fl-button.pri-3:hover,
+.sc-button.style-place-bid.fl-button.pri-3:hover{
+    border-color: #5142FC;
+    background: #5142FC;
+}
+
+.is_dark .sc-button.style-place-bid.fl-button.pri-3:hover{
+    border-color: #5142FC;
+    background: #5142FC;
+}
+
+.is_dark .sc-button.fl-button.pri-3:hover{
+    background-color: #fff;
+    border-color: #fff;
 }
 
 :root {
@@ -291,102 +545,81 @@ a:focus {
     @apply float-left p-[26px_25px_26px_13px] ;
 }
 #main-nav>ul>li>a {
-    @apply relative text-[18px] leading-[26px] font-[700] block text-white pr-[15.5px] ;
+    @apply relative text-[18px] leading-[26px] font-[700] block text-white pr-[15.5px] hover:text-white ;
 }
 #main-nav>.menu>li.menu-item-has-children>a::after {
     @apply content-['\f107'] font-['Font_Awesome_5_Pro'] font-[300] absolute right-0 top-1/2 -translate-y-1/2 ;
 }
 #main-nav .sub-menu {
-    @apply absolute top-full left-0 w-[250px] bg-white rounded-[2px] z-[9999] opacity-0 invisible duration-[0.3s] translate-y-[15px] ;
+    @apply absolute top-full left-0 w-[250px] bg-white rounded-[2px] z-[9999] opacity-0 invisible duration-[0.3s] translate-y-[15px]
+    before:content-[''] before:absolute before:top-[-5px] before:left-[25px] before:h-[15px] before:w-[15px] before:rotate-[45deg] before:bg-white ;
 }
-
-#main-nav .sub-menu::before {
-    @apply content-[''] absolute top-[-5px] left-[25px] h-[15px] w-[15px] rotate-[45deg] bg-white ;
-}
-
 #main-nav .right-sub-menu {
     @apply left-auto right-0 ;
 }
-
 #main-nav .sub-menu li a {
     @apply block text-[18px] text-[#14141F] p-[20px] font-[700] ;
 }
-
 #main-nav .sub-menu li:not(:last-child) a {
     @apply border-b-[1px] border-solid border-b-[#e1e1e18e] ;
 }
-
 #main-nav li:hover .sub-menu {
     @apply opacity-100 visible translate-y-0 ;
 }
-
 #main-nav .sub-menu li.current-item a,
 #main-nav .sub-menu li a:hover {
     @apply text-[var(--primary-color3)];
 }
-
 #main-nav .sub-menu .sub-menu {
-    @apply left-[99%] top-0 translate-x-[-5px] !opacity-0 !invisible ;
-    
+    @apply left-[99%] top-0 translate-x-[-5px] !opacity-0 !invisible before:hidden ;
 }
 #main-nav .sub-menu .menu-item:hover .sub-menu {
     @apply !opacity-100 !visible ;
-
 }
-#main-nav .sub-menu .sub-menu::before {
-    @apply hidden ;
-}
-#main-nav>ul>li>a:hover {
-    @apply text-white
-}
-
 #main-nav>ul>li .sub-menu li {
     @apply relative;
 }
 #main-nav>ul>li .sub-menu li.menu-item-has-children:after {
-    
-    right: 20px;
-    font-size: 14px;
-    line-height: normal;
-    font-weight: normal;
-    content: '\f105';
-    font-family: 'Font Awesome 5 Pro';
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    transform: translateY(-50%);
-    color: #14141F;
+    @apply right-[20px] text-[14px] leading-normal font-normal content-['\f105'] font-['Font_Awesome_5_Pro'] absolute top-1/2 -translate-y-1/2 text-[#14141F] ;
 }
 #main-nav>ul>li .sub-menu li a {
-    transition: all 0.15s linear;
-    -webkit-transition: all 0.15s linear;
-    -moz-transition: all 0.15s linear;
-    -o-transition: all 0.15s linear;
+    @apply transition-all duration-[0.15s] ease-linear 
+    after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[var(--primary-color3)] after:left-[15px] after:top-[28px] after:transition-all after:duration-[0.3s] after:ease-in ;
 }
 #main-nav>ul>li .sub-menu li a:hover,
 #main-nav>ul>li .sub-menu li.current-item a {
-    padding-left: 35px;
+    @apply pl-[35px];
 }
 #main-nav>ul>li .sub-menu li a:hover::after,
 #main-nav>ul>li .sub-menu li.current-item a:after {
-    width: 12px;
-}
-#main-nav>ul>li .sub-menu li a::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background: var(--primary-color3);
-    left: 15px;
-    top: 28px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition   : all 0.3s ease;
-    -ms-transition    : all 0.3s ease;
-    -o-transition     : all 0.3s ease;
-    transition        : all 0.3s ease;
+    @apply w-[12px] ;
 }
 
 .top-search.show {
     @apply !visible !opacity-100 ;
 }
+
+.fl-item,
+.fl-item2,
+.fl-item3 {
+    @apply hidden;
+}
+
+#scroll-top {
+    @apply fixed block w-[50px] h-[50px] leading-[50px] rounded-[50%] text-center z-[1] right-[14px] bottom-[23px] opacity-0 invisible cursor-pointer overflow-hidden
+    after:absolute after:top-0 after:left-0 after:w-full after:h-full after:transition-all after:duration-[0.3s] after:ease-in
+    after:content-['\f077'] after:font-['Font_Awesome_5_Pro'] after:text-[18px] after:text-white after:font-[600]
+    before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:transition-all before:duration-[0.3s] before:ease-in 
+    before:z-[-1] before:bg-[var(--primary-color3)] 
+    hover:translate-y-[-7%];
+}
+#scroll-top.show {
+    @apply right-[15px] opacity-100 visible ;
+}
+/* .is_dark #scroll-top:before {
+    z-index         : -1;
+    background-color: #fff;
+}
+.is_dark #scroll-top:after {
+    color      : #5142FC;
+} */
