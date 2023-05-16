@@ -257,258 +257,126 @@ a:focus {
 }
 
 .sc-button {
-    display      : inline-block;
-    border       : 2px solid var(--primary-color3);
-    color        : var(--primary-color3);
-    box-sizing   : border-box;
-    padding      : 11px 35px;
-    border-radius: 30px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition   : all 0.3s ease;
-    -ms-transition    : all 0.3s ease;
-    -o-transition     : all 0.3s ease;
-    transition        : all 0.3s ease;
+    @apply inline-block border-[2px] border-solid border-[var(--primary-color3)] text-[var(--primary-color3)] p-[11px_35px] rounded-[30px] duration-[0.3s]
+    hover:border-transparent hover:outline-0 active:border-transparent active:outline-0 ; 
 }
-.is_dark .sc-button {
+/* .is_dark .sc-button {
     color: #fff;
-}
+} */
 .sc-button span {
-    font-weight       : 700;
-    font-size         : 14px;
-    line-height       : 22px;
-    position          : relative;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition   : all 0.3s ease;
-    -ms-transition    : all 0.3s ease;
-    -o-transition     : all 0.3s ease;
-    transition        : all 0.3s ease;
-
+    @apply font-[700] text-[14px] leading-[22px] relative duration-[0.3s] ;
 }
-
-.sc-button:hover,
-.sc-button.active {
-    border-color: transparent;
-    outline: 0 none;
-}
-
-.is_dark .sc-button.style-1:hover,
+/* .is_dark .sc-button.style-1:hover, */
 .sc-button.fl-button:hover{
-    border: 2px solid #fff;
-    background-color: #fff;
+    @apply border-[2px] border-solid border-white bg-white ;
 }
-
 .sc-button.fl-button:hover span,
 .sc-button.fl-button.active span {
-    color:#ffffff;
+    @apply text-white
 }
-
-/* button style icon */
-
 .sc-button.style span {
-    padding-left: 26px;
+    @apply pl-[26px] before:absolute before:font-['nfts'] before:text-[20px] before:left-0 before:font-[100] before:top-[-4px]; ;
 }
-
-.sc-button.style span::before {
-    position          : absolute;
-    font-family       : 'nfts';
-    font-size         : 20px;
-    left              : 0;
-    font-weight       : 100;
-    top               : -4px;
-}
-
-/* button style */
-/* style-1 */
 .sc-button.style-1 {
-    border    : 2px solid #fff;
-    color     : #fff;
-    background: transparent none repeat scroll 0 0;
+    @apply border-[2px] border-solid border-white bg-white bg-[transparent_none_repeat_scroll_0_0] ;
 }
-
-.is_dark .sc-button.style-1 {
+/* .is_dark .sc-button.style-1 {
     border    : 2px solid #5142FC;
     color     : #fff;
     background: transparent none repeat scroll 0 0;
-}
-
+} */
 .sc-button.style-1:hover span,
 .sc-button.style-1:hover span::before{
-    color: var(--primary-color3);
+    @apply text-[var(--primary-color3)];
 }
-
 .sc-button.style-1:hover span {
-    -webkit-transition: all 0.4s ease;
-    -moz-transition   : all 0.4s ease;
-    -ms-transition    : all 0.4s ease;
-    -o-transition     : all 0.4s ease;
-    transition        : all 0.4s ease;
+    @apply duration-[0.4s] ;
 }
-
-/* / style-2 / */
 .sc-button.style-2 {
-    width: 100%;
-    padding: 0 0;
-    display: -webkit-box;  
-    display: -moz-box;      
-    display: -ms-flexbox;   
-    display: -webkit-flex; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border       : 2px solid var(--primary-color3);
+    @apply w-full p-0 flex justify-center items-center border-[2px] border-solid border-[var(--primary-color3)] ;
 }
-
-
 .sc-button.style-2 span {
-    line-height: 50px;
-    font-size: 15px;
-    font-weight: 700px;
-    color: var(--primary-color2);
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition   : all 0.3s ease-in-out;
-    -ms-transition    : all 0.3s ease-in-out;
-    -o-transition     : all 0.3s ease-in-out;
-    transition        : all 0.3s ease-in-out;
+    @apply leading-[50px] text-[15px] font-[700] text-[var(--primary-color2)] duration-[0.3s] ease-in-out ;
 }
-
 .sc-button.style-2 i {
-    font-size: 18px;
-    color: var(--primary-color3);
-    margin-right: 8px;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition   : all 0.3s ease-in-out;
-    -ms-transition    : all 0.3s ease-in-out;
-    -o-transition     : all 0.3s ease-in-out;
-    transition        : all 0.3s ease-in-out;
+    @apply text-[18px] text-[var(--primary-color3)] mr-[8px] duration-[0.3s] ease-in-out ;
 }
-.is_dark .sc-button.style-2 i {
+/* .is_dark .sc-button.style-2 i {
     color: #fff;
-}
-
+} */
 .sc-button.style-2:hover span,
 .sc-button.style-2:hover i {
-    color: #fff;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition   : all 0.3s ease-in-out;
-    -ms-transition    : all 0.3s ease-in-out;
-    -o-transition     : all 0.3s ease-in-out;
-    transition        : all 0.3s ease-in-out;
+    @apply text-white duration-[0.3s] ease-in-out ;
 }
-
-/* style loadmore */
 .sc-button.loadmore {
-    background-color: #eeecff;
-    border          : 2px solid #eeecff;
-    padding         : 14px 40px;
+    @apply bg-[#eeecff] border-[2px] border-solid border-[#eeecff] p-[14px_40px]
+    hover:border-transparent hover:outline-0 hover:bg-[transparent_none_repeat_scroll_0_0] ;
 }
-
-.sc-button.loadmore:hover {
-    border-color: transparent;
-    outline: 0 none;
-    background: transparent none repeat scroll 0 0;
-}
-
-.is_dark .sc-button.loadmore{
+/* .is_dark .sc-button.loadmore{
     background: transparent none repeat scroll 0 0;
     border-color: #fff;
-}
-
+} 
 .is_dark .sc-button.loadmore:hover:after{
     background-color: #fff;
-}
-
+}*/
 .sc-button.loadmore span {
-    font-size: 15px;
+    @apply text-[15px] ;
 }
-
-.is_dark .sc-button.loadmore:hover {
+/* .is_dark .sc-button.loadmore:hover {
     border-color: transparent;
     outline: 0 none;
-}
-
-
-/* icon button extraclasses */
+} */
 .sc-button.style.rocket span::before {
-    content: "\e91d";
+    @apply content-["\e91d"];
 }
-
 .sc-button.style.note span::before {
-    content  : "\e91b";
-    font-size: 20px;
+    @apply content-["\e91b"] text-[20px];
 }
-
 .sc-button.style.wallet span::before {
-    content: "\e917";
+    @apply content-["\e917"];
 }
-
 .sc-button.style.bag span::before {
-    content: "\e901";
-    -webkit-transition: all 0.05s ease;
-    -moz-transition   : all 0.05s ease;
-    -ms-transition    : all 0.05s ease;
-    -o-transition     : all 0.05s ease;
-    transition        : all 0.05s ease;
+    @apply content-['e901'] duration-[0.05s] ;
 }
-
 .sc-button.style.bag:hover span::before {
-    -webkit-transition: all 0.1s ease;
-    -moz-transition   : all 0.1s ease;
-    -ms-transition    : all 0.1s ease;
-    -o-transition     : all 0.1s ease;
-    transition        : all 0.1s ease;
+    @apply duration-[0.1s] ;
 }
-
-/*hover button */
 .fl-button {
-    position: relative;
+    @apply relative ;
 }
-
 .fl-button i,
 .fl-button span,
 .fl-button span::after,
 .fl-button span::before {
-    z-index: 1;
+    @apply z-[1] ;
 }
-
 .fl-button:hover span::before{
-    -webkit-transition: all 0.3s ease;
-    -moz-transition   : all 0.3s ease;
-    -ms-transition    : all 0.3s ease;
-    -o-transition     : all 0.3s ease;
-    transition        : all 0.3s ease;
+    @apply duration-[0.3s] ;
 }
-
-.is_dark .dark-style2 .sc-button.fl-button.pri-3 {
+/* .is_dark .dark-style2 .sc-button.fl-button.pri-3 {
     border-color: #fff;
 }
-
 .is_dark .dark-style2 .sc-button.fl-button.pri-3 span {
     color: #fff;
-}
-
+} */
 .sc-button.fl-button.pri-3:hover span{
-    color: #fff;
+    @apply text-white ;
 }
-
-.is_dark .sc-button.fl-button.pri-3:hover span{
+/* .is_dark .sc-button.fl-button.pri-3:hover span{
     color: #14141F;
-}
-
+} */
 .sc-button.fl-button.pri-3:hover,
 .sc-button.style-place-bid.fl-button.pri-3:hover{
+    @apply border-[#5142FC] bg-[#5142FC] ;
+}
+/* .is_dark .sc-button.style-place-bid.fl-button.pri-3:hover{
     border-color: #5142FC;
     background: #5142FC;
-}
-
-.is_dark .sc-button.style-place-bid.fl-button.pri-3:hover{
-    border-color: #5142FC;
-    background: #5142FC;
-}
-
+} 
 .is_dark .sc-button.fl-button.pri-3:hover{
     background-color: #fff;
     border-color: #fff;
-}
+}*/
 
 :root {
     --primary-color : #fff;
@@ -623,3 +491,12 @@ a:focus {
 .is_dark #scroll-top:after {
     color      : #5142FC;
 } */
+
+.tf-section {
+    @apply p-[80px_0] bg-[var(--bg-section)] duration-[0.3s] ease-in-out transition-all ;
+}
+
+.swiper-button-prev, 
+.swiper-button-next {
+    @apply opacity-0 duration-[0.3s] ;
+}
