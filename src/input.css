@@ -258,15 +258,11 @@ a:focus {
 
 .sc-button {
     @apply inline-block border-[2px] border-solid border-[var(--primary-color3)] text-[var(--primary-color3)] p-[11px_35px] rounded-[30px] duration-[0.3s]
-    hover:border-transparent hover:outline-0 active:border-transparent active:outline-0 ; 
+    hover:border-transparent hover:outline-0 active:border-transparent active:outline-0 dark:text-white ; 
 }
-/* .is_dark .sc-button {
-    color: #fff;
-} */
 .sc-button span {
     @apply font-[700] text-[14px] leading-[22px] relative duration-[0.3s] ;
 }
-/* .is_dark .sc-button.style-1:hover, */
 .sc-button.fl-button:hover{
     @apply border-[2px] border-solid border-white bg-white ;
 }
@@ -278,13 +274,10 @@ a:focus {
     @apply pl-[26px] before:absolute before:font-['nfts'] before:text-[20px] before:left-0 before:font-[100] before:top-[-4px]; ;
 }
 .sc-button.style-1 {
-    @apply border-[2px] border-solid border-white bg-white bg-[transparent_none_repeat_scroll_0_0] ;
+    @apply border-[2px] border-solid border-white text-white bg-none bg-transparent bg-repeat bg-scroll bg-[0_0]
+    dark:border-[2px] dark:border-[#5142FC] dark:text-white dark:bg-[transparent_none_repeat_scroll_0_0] 
+    dark:hover:border-[2px] dark:hover:border-white dark:hover:bg-white;
 }
-/* .is_dark .sc-button.style-1 {
-    border    : 2px solid #5142FC;
-    color     : #fff;
-    background: transparent none repeat scroll 0 0;
-} */
 .sc-button.style-1:hover span,
 .sc-button.style-1:hover span::before{
     @apply text-[var(--primary-color3)];
@@ -299,33 +292,24 @@ a:focus {
     @apply leading-[50px] text-[15px] font-[700] text-[var(--primary-color2)] duration-[0.3s] ease-in-out ;
 }
 .sc-button.style-2 i {
-    @apply text-[18px] text-[var(--primary-color3)] mr-[8px] duration-[0.3s] ease-in-out ;
+    @apply text-[18px] text-[var(--primary-color3)] mr-[8px] duration-[0.3s] ease-in-out dark:text-white ;
 }
-/* .is_dark .sc-button.style-2 i {
-    color: #fff;
-} */
 .sc-button.style-2:hover span,
 .sc-button.style-2:hover i {
     @apply text-white duration-[0.3s] ease-in-out ;
 }
 .sc-button.loadmore {
     @apply bg-[#eeecff] border-[2px] border-solid border-[#eeecff] p-[14px_40px]
-    hover:border-transparent hover:outline-0 hover:bg-[transparent_none_repeat_scroll_0_0] ;
+    hover:border-transparent hover:outline-0 hover:bg-[transparent_none_repeat_scroll_0_0]
+    dark:bg-[transparent_none_repeat_scroll_0_0] dark:text-white
+    dark:hover:after:bg-white dark:hover:bg-transparent dark:hover:outline-0 ;
 }
-/* .is_dark .sc-button.loadmore{
-    background: transparent none repeat scroll 0 0;
-    border-color: #fff;
-} 
 .is_dark .sc-button.loadmore:hover:after{
     background-color: #fff;
-}*/
+}
 .sc-button.loadmore span {
     @apply text-[15px] ;
 }
-/* .is_dark .sc-button.loadmore:hover {
-    border-color: transparent;
-    outline: 0 none;
-} */
 .sc-button.style.rocket span::before {
     @apply content-["\e91d"];
 }
@@ -360,11 +344,8 @@ a:focus {
     color: #fff;
 } */
 .sc-button.fl-button.pri-3:hover span{
-    @apply text-white ;
+    @apply text-white dark:text-[#14141F] ;
 }
-/* .is_dark .sc-button.fl-button.pri-3:hover span{
-    color: #14141F;
-} */
 .sc-button.fl-button.pri-3:hover,
 .sc-button.style-place-bid.fl-button.pri-3:hover{
     @apply border-[#5142FC] bg-[#5142FC] ;
@@ -403,7 +384,7 @@ a:focus {
 }
 
 .themesflat-container {
-    @apply relative mx-auto px-[15px] w-[1440px] max-w-full ;
+    @apply relative mx-auto px-[15px] w-[1440px] max-w-full max-[1199px]:w-[1200px] max-[991px]:w-[970px] max-[767px]:w-[750px] max-[549px]:w-[750px] ;
 }
 
 #main-nav ul li {
@@ -498,5 +479,28 @@ a:focus {
 
 .swiper-button-prev, 
 .swiper-button-next {
-    @apply opacity-0 duration-[0.3s] ;
+    @apply opacity-0 duration-[0.3s] max-[1366px]:!hidden ;
+}
+.swiper-slide-active .flat-slider .flat-bt-slider {
+    @apply !translate-y-0 !opacity-100 duration-[0.7s] delay-[1.1s]  ;
+}
+.swiper-slide-active .flat-slider p {
+    @apply !translate-y-0 !opacity-100 duration-[0.7s] delay-[0.9s]  ;
+}
+.swiper-slide-active .flat-slider h2,
+.swiper-slide-active .flat-slider h1 {
+    @apply !translate-y-0 !opacity-100 duration-[0.7s] delay-[0.7s]  ;
+}
+.swiper-slide-active .flat-slider .image {
+    @apply !translate-x-0 !opacity-100 duration-[0.7s] delay-[0.7s]  ;
+}
+.flat-slider .bg-heading {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-fill-color: rgb(0 0 0/0%);
+    @apply dark:text-[#14141f] dark:bg-[linear-gradient(-45deg,#E250E5,#4B50E6,#E250E5,#4B50E6)] dark:bg-[length:100%_100%] dark:bg-clip-text;
+}
+.dark .flat-slider .bg-heading {
+    -webkit-text-stroke: 3px transparent;
+    -webkit-text-fill-color: unset;
 }

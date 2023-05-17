@@ -40,126 +40,143 @@
     </div>
     <!-- /preload -->
 
+    <!-- Dark and light button start -->
+    <div class="mode_switcher absolute top-[21px] right-[11px] flex items-center justify-center max-[1818px]:!right-[15px] max-[991px]:!top-[105px] z-[10000000000000] ">
+        <h6 class="leading-[1.2] w-[85px] text-center text-white max-[1565px]:hidden">Dark mode <strong class="text-[18px]">Available</strong></h6>
+        <div class="flex cursor-pointer max-[991px]:block" id="dark-mode">
+            <a class="dark--mode__icon ionicon bg-[linear-gradient(216.56deg,#E250E5_5.32%,#4B50E6_94.32%)] dark:bg-none dark:bg-[#343444] max-[991px]:mb-[5px] rounded-[10px] w-[40px] h-[40px] min-w-[40px] text-[16px] ml-[10px] flex justify-center items-center">
+                <img src="assets/images/icon/sun.png" alt="" >
+            </a>
+            <a class="light--mode__icon ionicon bg-[#343444] rounded-[10px] w-[40px] h-[40px] min-w-[40px] text-[16px] ml-[10px] flex justify-center items-center">
+                <img src="assets/images/icon/moon-2.png" alt="" class="hidden dark:block">
+                <img src="assets/images/icon/moon.png" alt="" class="block dark:hidden">
+            </a>
+        </div>
+    </div>
+
     <div id="wrapper">
         <div id="page" class="clearfix">
-                         
-            <section class="flat-title-page relative overflow-hidden bg-none p-[89px_0_17px] group">
-                <img class="hidden z-0 absolute top-0 left-0 w-[528px] h-[327px] " src="assets/images/backgroup-secsion/bg-gradient1.png" alt="">
-                <img class="hidden z-[99] absolute top-[72%] left-[73%] w-[315px] h-[195%] " src="assets/images/backgroup-secsion/bg-gradient2.png" alt="">
-                <img class="hidden z-[99] absolute top-0 right-0 w-[178px] h-[110px]" src="assets/images/backgroup-secsion/bg-gradient3.png" alt="">
-                <div class="bg-[linear-gradient(216.56deg,#E250E5_5.32%,#4B50E6_94.32%)] rounded-[50%] z-[1] absolute top-[29.8%] right-[37%] w-[16px] h-[16px] animate-[move3_10s_infinite_linear]"></div>
-                <div class="bg-[linear-gradient(216.56deg,#E250E5_5.32%,#4B50E6_94.32%)] rounded-[50%] z-[1] absolute top-[73.3%] right-[35.6%] w-[22px] h-[22px] animate-[move4_10s_infinite_linear]"></div>
-                <div class="bg-[linear-gradient(216.56deg,#E250E5_5.32%,#4B50E6_94.32%)] rounded-[50%] z-[1] absolute top-[67.8%] right-[19.1%] w-[32px] h-[32px] animate-[move3_10s_infinite_linear]"></div>
-                <div class="bg-[linear-gradient(216.56deg,#E250E5_5.32%,#4B50E6_94.32%)] rounded-[50%] z-[1] absolute top-[64.8%] right-[39.7%] w-[48px] h-[48px] animate-[move4_10s_infinite_linear]"></div>
-                <div class="bg-[linear-gradient(216.56deg,#E250E5_5.32%,#4B50E6_94.32%)] rounded-[50%] z-[1] absolute top-[17.4%] right-[16.8%] w-[51px] h-[51px] animate-[move3_10s_infinite_linear]"></div>
-                <div class="bg-[linear-gradient(216.56deg,#E250E5_5.32%,#4B50E6_94.32%)] rounded-[50%] z-[1] absolute top-[33.8%] right-[53.8%] w-[51px] h-[51px] animate-[move3_10s_infinite_linear]"></div>
-                <div class="bg-[linear-gradient(216.56deg,#E250E5_5.32%,#4B50E6_94.32%)] rounded-[50%] z-[1] absolute top-[33.9%] right-[13.8%] w-[68px] h-[68px] animate-[move4_10s_infinite_linear]"></div>
-                <div class="bg-[linear-gradient(227.3deg,#8A208C_0%,#181B81_100.84%)] z-0 absolute top-0 left-0 w-full h-full transition-all duration-[0.3s] ease-in-out"></div>
+
+            <section class="flat-title-page relative overflow-hidden bg-none p-[89px_0_17px] group dark:max-[991px]:border-b-[1px] max-[991px]:border-b-[#343444] max-[767px]:!py-[60px]">
+                <img class="hidden dark:block z-0 absolute top-0 left-0 w-[528px] h-[327px] " src="assets/images/backgroup-secsion/bg-gradient1.png" alt="">
+                <img class="hidden dark:block z-[99] absolute top-[72%] left-[73%] w-[315px] h-[195%] " src="assets/images/backgroup-secsion/bg-gradient2.png" alt="">
+                <img class="hidden dark:block z-[99] absolute top-0 right-0 w-[178px] h-[110px]" src="assets/images/backgroup-secsion/bg-gradient3.png" alt="">
+                <div class="max-[767px]:hidden bg-[linear-gradient(216.56deg,#E250E5_5.32%,#4B50E6_94.32%)] rounded-[50%] z-[1] absolute top-[29.8%] right-[37%] w-[16px] h-[16px] animate-[move3_10s_infinite_linear]"></div>
+                <div class="max-[991px]:hidden bg-[linear-gradient(216.56deg,#E250E5_5.32%,#4B50E6_94.32%)] rounded-[50%] z-[1] absolute top-[73.3%] left-[35.6%] w-[22px] h-[22px] animate-[move4_10s_infinite_linear]"></div>
+                <div class="max-[767px]:hidden bg-[linear-gradient(216.56deg,#E250E5_5.32%,#4B50E6_94.32%)] rounded-[50%] z-[1] absolute top-[67.8%] right-[19.1%] w-[32px] h-[32px] animate-[move3_10s_infinite_linear]"></div>
+                <div class="max-[767px]:hidden bg-[linear-gradient(216.56deg,#E250E5_5.32%,#4B50E6_94.32%)] rounded-[50%] z-[1] absolute top-[64.8%] right-[39.7%] w-[48px] h-[48px] animate-[move4_10s_infinite_linear]"></div>
+                <div class="max-[767px]:hidden bg-[linear-gradient(216.56deg,#E250E5_5.32%,#4B50E6_94.32%)] rounded-[50%] z-[1] absolute top-[17.4%] right-[16.8%] w-[51px] h-[51px] animate-[move3_10s_infinite_linear] 
+                            dark:before:content-[''] dark:before:w-[47px] dark:before:h-[47px] dark:before:bg-[#14141F] dark:before:rounded-[50%] dark:before:absolute dark:before:top-[2px] dark:before:left-[2px]"></div>
+                <div class="max-[767px]:hidden bg-[linear-gradient(216.56deg,#E250E5_5.32%,#4B50E6_94.32%)] rounded-[50%] z-[1] absolute top-[33.8%] right-[53.8%] w-[51px] h-[51px] animate-[move3_10s_infinite_linear] 
+                            dark:before:content-[''] dark:before:w-[47px] dark:before:h-[47px] dark:before:bg-[#14141F] dark:before:rounded-[50%] dark:before:absolute dark:before:top-[2px] dark:before:left-[2px]"></div>
+                <div class="max-[767px]:hidden bg-[linear-gradient(216.56deg,#E250E5_5.32%,#4B50E6_94.32%)] rounded-[50%] z-[1] absolute top-[33.9%] right-[13.8%] w-[68px] h-[68px] animate-[move4_10s_infinite_linear]"></div>
+                <div class="bg-[linear-gradient(227.3deg,#8A208C_0%,#181B81_100.84%)] z-0 absolute top-0 left-0 w-full h-full transition-all duration-[0.3s] ease-in-out dark:bg-[#14141F] dark:bg-none"></div>
                 <div class="swiper-container mainslider home auctions">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="slider-item">	
                                 <div class="themesflat-container ">
-                                    <div class="p-0 flex">
-                                        <div class="w-1/2 pt-[125px] ">
-                                            <h2 class="text-[56px] leading-[68px] font-bold text-white opacity-0 translate-y-[400px]">Discover, find,
+                                    <div class="flat-slider p-0 flex max-[991px]:p-[90px_0_50px] max-[767px]:flex-col">
+                                        <div class="w-1/2 pt-[125px] max-[767px]:w-full ">
+                                            <h2 class="text-[56px] leading-[68px] font-bold text-white opacity-0 translate-y-[400px] max-[767px]:text-[54px] max-[767px]:leading-[56px]">Discover, find,
                                             </h2>	
-                                            <h1 class="text-[56px] leading-[68px] font-bold text-white opacity-0 translate-y-[400px] mb-style"><span class="tf-text s1">Sell extraordinary</span>                                          
+                                            <h1 class="text-[56px] leading-[68px] font-bold text-white opacity-0 translate-y-[400px] max-[767px]:text-[54px] max-[767px]:leading-[56px] mb-style"><span class="bg-heading max-[549px]:text-[50px] ">Sell extraordinary</span>     
                                             </h1>
-                                            <h1 class="text-[56px] leading-[68px] font-bold text-white opacity-0 translate-y-[400px]">Monster NFTs</h1>
-                                            <p class="text-[56px] leading-[68px] font-bold text-white opacity-0 translate-y-[400px] mt-[29px] mb-[44px]">Marketplace for monster character cllections non fungible token NFTs
+                                            <h1 class="text-[56px] leading-[68px] font-bold text-white opacity-0 translate-y-[400px] max-[767px]:text-[54px] max-[767px]:leading-[56px]">Monster NFTs</h1>
+                                            <p class="text-[20px] leading-[30px] font-normal text-[#EBEBEB] capitalize opacity-0 translate-y-[400px] mt-[29px] mb-[44px]">Marketplace for monster character cllections non fungible token NFTs
                                             </p>
-                                            <div class="flat-bt-slider flex style2">
-                                                <a href="explore-1.html" class="sc-button header-slider style style-1 rocket fl-button pri-1"><span>Explore
+                                            <div class="flat-bt-slider flex justify-items-start opacity-0 translate-y-[400px] ">
+                                                <a href="explore-1.html" class="sc-button header-slider style style-1 rocket fl-button pri-1 !p-[15px_35px] !mr-[16px] !ml-0 dark:border-[#5142FC] dark:hover:border-white"><span class="!text-[15px] !pl-[31px] before:!top-[-2px] before:!text-[26px]">Explore
                                                 </span></a>
-                                                <a href="create-item.html" class="sc-button header-slider style style-1 note fl-button pri-1"><span>Create
+                                                <a href="create-item.html" class="sc-button header-slider style style-1 note fl-button pri-1 !p-[15px_35px] !mr-[16px] !ml-0 dark:border-[#5142FC] dark:hover:border-white max-[767px]:!mr-0"><span class="!text-[15px] !pl-[31px] before:!top-[-2px] before:!text-[20px]">Create
                                                 </span></a>
                                             </div>
                                         </div>
-                                        <div class="image">
-                                            <img class="img-bg" src="assets/images/backgroup-secsion/img-bg-sliderhome2.png" alt="Image">
-                                            <img src="assets/images/box-item/imgslider2.png" alt="Image">
+                                        <div class="image translate-x-[400px] opacity-0 relative w-1/2 pt-[30px] pr-[132px] text-right max-[991px]:!mt-[50px] max-[991px]:!pr-0 max-[767px]:!hidden">
+                                            <img class="max-[1565px]:right-[15px] max-[991px]:top-1/4 max-[767px]:hidden img-bg absolute z-[-1] right-0 top-[14%] max-w-full animate-[move5_10s_infinite_linear]" src="assets/images/backgroup-secsion/img-bg-sliderhome2.png" alt="Image">
+                                            <img src="assets/images/box-item/imgslider2.png" alt="Image" class="animate-[move5_10s_infinite_linear] ml-auto">
                                         </div>
                                     </div>
-                                    
                                 </div>					                           
-                            </div><!-- item-->
+                            </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="slider-item">	
                                 <div class="themesflat-container ">
-                                    <div class="p-0 flex">
-                                        <div class="w-1/2 pt-[125px] ">
-                                            <h2 class="text-[56px] leading-[68px] font-bold text-white opacity-0 translate-y-[400px]">Discover, find,
+                                    <div class="flat-slider p-0 flex max-[991px]:p-[90px_0_50px] max-[767px]:flex-col">
+                                        <div class="w-1/2 pt-[125px] max-[767px]:w-full ">
+                                            <h2 class="text-[56px] leading-[68px] font-bold text-white opacity-0 translate-y-[400px] max-[767px]:text-[54px] max-[767px]:leading-[56px]">Discover, find,
                                             </h2>	
-                                            <h1 class="text-[56px] leading-[68px] font-bold text-white opacity-0 translate-y-[400px]"><span class="tf-text s1">Sell extraordinary</span>                                          
+                                            <h1 class="text-[56px] leading-[68px] font-bold text-white opacity-0 translate-y-[400px] max-[767px]:text-[54px] max-[767px]:leading-[56px] mb-style"><span class="bg-heading max-[549px]:text-[50px] ">Sell extraordinary</span>     
                                             </h1>
-                                            <h1 class="text-[56px] leading-[68px] font-bold text-white opacity-0 translate-y-[400px]">Monster NFTs</h1>
-                                            <p class="text-[56px] leading-[68px] font-bold text-white opacity-0 translate-y-[400px] mt-[29px] mb-[44px]">Marketplace for monster character cllections non fungible token NFTs
+                                            <h1 class="text-[56px] leading-[68px] font-bold text-white opacity-0 translate-y-[400px] max-[767px]:text-[54px] max-[767px]:leading-[56px]">Monster NFTs</h1>
+                                            <p class="text-[20px] leading-[30px] font-normal text-[#EBEBEB] capitalize opacity-0 translate-y-[400px] mt-[29px] mb-[44px]">Marketplace for monster character cllections non fungible token NFTs
                                             </p>
-                                            <div class="flat-bt-slider flex style2">
-                                                <a href="explore-1.html" class="sc-button header-slider style style-1 rocket fl-button pri-1"><span>Explore
+                                            <div class="flat-bt-slider flex justify-items-start opacity-0 translate-y-[400px] ">
+                                                <a href="explore-1.html" class="sc-button header-slider style style-1 rocket fl-button pri-1 !p-[15px_35px] !mr-[16px] !ml-0 dark:border-[#5142FC] dark:hover:border-white"><span class="!text-[15px] !pl-[31px] before:!top-[-2px] before:!text-[26px]">Explore
                                                 </span></a>
-                                                <a href="create-item.html" class="sc-button header-slider style style-1 note fl-button pri-1"><span>Create
+                                                <a href="create-item.html" class="sc-button header-slider style style-1 note fl-button pri-1 !p-[15px_35px] !mr-[16px] !ml-0 dark:border-[#5142FC] dark:hover:border-white max-[767px]:!mr-0"><span class="!text-[15px] !pl-[31px] before:!top-[-2px] before:!text-[20px]">Create
                                                 </span></a>
                                             </div>
                                         </div>
-                                        <div class="image">
-                                            <img class="img-bg" src="assets/images/backgroup-secsion/img-bg-sliderhome2.png" alt="Image">
-                                            <img src="assets/images/box-item/imgslider2.png" alt="Image">
+                                        <div class="image translate-x-[400px] opacity-0 relative w-1/2 pt-[30px] pr-[132px] text-right max-[991px]:!mt-[50px] max-[991px]:!pr-0 max-[767px]:!hidden">
+                                            <img class="max-[1565px]:right-[15px] max-[991px]:top-1/4 max-[767px]:hidden img-bg absolute z-[-1] right-0 top-[14%] max-w-full animate-[move5_10s_infinite_linear]" src="assets/images/backgroup-secsion/img-bg-sliderhome2.png" alt="Image">
+                                            <img src="assets/images/box-item/imgslider2.png" alt="Image" class="animate-[move5_10s_infinite_linear] ml-auto">
                                         </div>
                                     </div>
-                                    
                                 </div>					                           
-                            </div><!-- item-->
+                            </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="slider-item">	
                                 <div class="themesflat-container ">
-                                    <div class="p-0 flex">
-                                        <div class="w-1/2 pt-[125px] ">
-                                            <h2 class="text-[56px] leading-[68px] font-bold text-white opacity-0 translate-y-[400px]">Discover, find,
+                                    <div class="flat-slider p-0 flex max-[991px]:p-[90px_0_50px] max-[767px]:flex-col">
+                                        <div class="w-1/2 pt-[125px] max-[767px]:w-full ">
+                                            <h2 class="text-[56px] leading-[68px] font-bold text-white opacity-0 translate-y-[400px] max-[767px]:text-[54px] max-[767px]:leading-[56px]">Discover, find,
                                             </h2>	
-                                            <h1 class="text-[56px] leading-[68px] font-bold text-white opacity-0 translate-y-[400px]"><span class="tf-text s1">Sell extraordinary</span>                                          
+                                            <h1 class="text-[56px] leading-[68px] font-bold text-white opacity-0 translate-y-[400px] max-[767px]:text-[54px] max-[767px]:leading-[56px] mb-style"><span class="bg-heading max-[549px]:text-[50px] ">Sell extraordinary</span>     
                                             </h1>
-                                            <h1 class="text-[56px] leading-[68px] font-bold text-white opacity-0 translate-y-[400px]">Monster NFTs</h1>
-                                            <p class="text-[56px] leading-[68px] font-bold text-white opacity-0 translate-y-[400px] mt-[29px] mb-[44px]">Marketplace for monster character cllections non fungible token NFTs
+                                            <h1 class="text-[56px] leading-[68px] font-bold text-white opacity-0 translate-y-[400px] max-[767px]:text-[54px] max-[767px]:leading-[56px]">Monster NFTs</h1>
+                                            <p class="text-[20px] leading-[30px] font-normal text-[#EBEBEB] capitalize opacity-0 translate-y-[400px] mt-[29px] mb-[44px]">Marketplace for monster character cllections non fungible token NFTs
                                             </p>
-                                            <div class="flat-bt-slider flex style2">
-                                                <a href="explore-1.html" class="sc-button header-slider style style-1 rocket fl-button pri-1"><span>Explore
+                                            <div class="flat-bt-slider flex justify-items-start opacity-0 translate-y-[400px] ">
+                                                <a href="explore-1.html" class="sc-button header-slider style style-1 rocket fl-button pri-1 !p-[15px_35px] !mr-[16px] !ml-0 dark:border-[#5142FC] dark:hover:border-white"><span class="!text-[15px] !pl-[31px] before:!top-[-2px] before:!text-[26px]">Explore
                                                 </span></a>
-                                                <a href="create-item.html" class="sc-button header-slider style style-1 note fl-button pri-1"><span>Create
+                                                <a href="create-item.html" class="sc-button header-slider style style-1 note fl-button pri-1 !p-[15px_35px] !mr-[16px] !ml-0 dark:border-[#5142FC] dark:hover:border-white max-[767px]:!mr-0"><span class="!text-[15px] !pl-[31px] before:!top-[-2px] before:!text-[20px]">Create
                                                 </span></a>
                                             </div>
                                         </div>
-                                        <div class="image">
-                                            <img class="img-bg" src="assets/images/backgroup-secsion/img-bg-sliderhome2.png" alt="Image">
-                                            <img src="assets/images/box-item/imgslider2.png" alt="Image">
+                                        <div class="image translate-x-[400px] opacity-0 relative w-1/2 pt-[30px] pr-[132px] text-right max-[991px]:!mt-[50px] max-[991px]:!pr-0 max-[767px]:!hidden">
+                                            <img class="max-[1565px]:right-[15px] max-[991px]:top-1/4 max-[767px]:hidden img-bg absolute z-[-1] right-0 top-[14%] max-w-full animate-[move5_10s_infinite_linear]" src="assets/images/backgroup-secsion/img-bg-sliderhome2.png" alt="Image">
+                                            <img src="assets/images/box-item/imgslider2.png" alt="Image" class="animate-[move5_10s_infinite_linear] ml-auto">
                                         </div>
                                     </div>
-                                    
                                 </div>					                           
-                            </div><!-- item-->
+                            </div>
                         </div>
                     </div>     
                     <div class="swiper-pagination"></div>               
                 </div>    
-                <div class="swiper-button-next bg-white w-[64px] h-[64px] rounded-[50%] group-hover:opacity-100 after:text-[#5142FC] after:text-[23px] after:duration-[0.3s] after:font-['Font_Awesome_5_Pro'] after:content-['\f054'] hover:bg-[#5142FC] hover:after:text-white active"></div>
-                <div class="swiper-button-prev bg-white w-[64px] h-[64px] rounded-[50%] group-hover:opacity-100 after:text-[#5142FC] after:text-[23px] after:duration-[0.3s] after:font-['Font_Awesome_5_Pro'] after:content-['\f053'] hover:bg-[#5142FC] hover:after:text-white"></div>                   
+                <div class="swiper-button-next dark:bg-[#343444] dark:after:text-white dark:hover:bg-white dark:hover:after:text-[#5142FC] bg-white w-[64px] h-[64px] rounded-[50%] group-hover:opacity-100 after:text-[#5142FC] after:text-[23px] after:duration-[0.3s] after:font-['Font_Awesome_5_Pro'] after:content-['\f054'] hover:bg-[#5142FC] hover:after:text-white active"></div>
+                <div class="swiper-button-prev dark:bg-[#343444] dark:after:text-white dark:hover:bg-white dark:hover:after:text-[#5142FC] bg-white w-[64px] h-[64px] rounded-[50%] group-hover:opacity-100 after:text-[#5142FC] after:text-[23px] after:duration-[0.3s] after:font-['Font_Awesome_5_Pro'] after:content-['\f053'] hover:bg-[#5142FC] hover:after:text-white"></div>                   
             </section>
 
-            <section class="tf-section live-auctions style1 pad-b-54 mobie-style">
+            <section class="tf-section live-auctions !pb-[54px] !pt-[91px]">
                 <div class="themesflat-container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="heading-live-auctions">
-                                <h2 class="tf-title pb-18">
+                            <div class="flex items-center justify-between">
+                                <h2 class="relative leading-[44px] text-[var(--primary-color2)] text-center pb-[18px]">
                                     Live Auctions</h2>
-                                <a href="explore-3.html" class="exp style2">EXPLORE MORE</a>
+                                <a href="explore-3.html" class="relative font-bold text-[14px] leading-[20px] tracking-[0.1em] mt-[-20px] bg-gradient-to-r from-[#E250E5] via-[#4B50E6] to-[#E250E5] bg-clip-text bg-[length:200%_200%] 
+                                                                animate-[rainbow_2s_ease-in-out_infinite] text-[var(--primary-color2)] duration-[0.2s] ease-in-out transition-[color] hover:!text-[rgba(0,0,0,0)]
+                                                                before:content-[''] before:absolute before:left-0 before:bottom-[-4px] before:w-full before:h-[1px] before:bg-[linear-gradient(216.56deg,#E250E5_5.32%,#4B50E6_94.32%)]">
+                                    EXPLORE MORE
+                                </a>
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div class="swiper-container show-shadow carousel pad-t-17 auctions">
+                            <div class="swiper-container carousel pt-[17px] !px-[15px] !mx-[-15px] auctions">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="slider-item">										
@@ -426,7 +443,7 @@
                 </div>
             </section>
 
-            <section class="tf-section live-auctions style2 no-pt-mb tl-pb-0">
+            <section class="tf-section live-auctions no-pt-mb tl-pb-0">
                 <div class="themesflat-container">
                     <div class="row">
                         <div class="col-md-12">
@@ -615,7 +632,7 @@
                 </div>
             </section>
 
-            <section class="tf-section live-auctions style3 pad-b-54 no-pt-mb mobie-pb-70">
+            <section class="tf-section live-auctions style3 pb-[54px] no-pt-mb mobie-pb-70">
                 <div class="themesflat-container">
                     <div class="row">
                         <div class="col-md-12">

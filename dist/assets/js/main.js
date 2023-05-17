@@ -14,6 +14,40 @@
 ; (function ($) {
     "use strict";
 
+    // Dark to light
+    if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.documentElement.classList.add("dark");
+        document.getElementById("dark-mode")?.classList.add("dark--version");
+      } 
+      if (localStorage.getItem("theme-color") === "light") {
+        document.documentElement.classList.remove("dark");
+        document.getElementById("dark-mode")?.classList.remove("dark--version");
+      } 
+      const lightToDarkButton = document.getElementById("dark-mode");
+      lightToDarkButton?.addEventListener("click", function () {
+          if (localStorage.getItem("theme-color")) {
+            if (localStorage.getItem("theme-color") === "light") {
+              document.documentElement.classList.add("dark");
+              localStorage.setItem("theme-color", "dark");
+              lightToDarkButton?.classList.add("dark--version");
+            } else {
+              document.documentElement.classList.remove("dark");
+              localStorage.setItem("theme-color", "light");
+              lightToDarkButton?.classList?.remove("dark--version");
+            }
+          } else {
+            if (document.documentElement.classList.contains("dark")) {
+              document.documentElement.classList.remove("dark");
+              lightToDarkButton?.classList?.remove("dark--version");
+              localStorage.setItem("theme-color", "light");
+            } else {
+              document.documentElement.classList.add("dark");
+              localStorage.setItem("theme-color", "dark");
+              lightToDarkButton?.classList.add("dark--version");
+            }
+          }
+      });
+
     var themesflatTheme = {
 
         // Main init function
@@ -122,33 +156,6 @@
             });
         }); // each contactform
     };
-
-    // Dark Light Mode
-    $(".dark").on('click', function (e) {
-        e.preventDefault();
-        $(".body").addClass("is_dark")
-        $(".light").removeClass("is_active")
-        $(".dark").addClass("is_active")
-
-        $(".tf-text").removeClass("style")
-        $(".tf-text").addClass("s1")
-        document.getElementById("logo_header").src = "assets/images/logo/logo_dark.png";
-        document.getElementById("logo_footer").src = "assets/images/logo/logo_dark.png";
-        document.getElementById("moon_dark").src = "assets/images/icon/moon-2.png";
-    });
-
-    $(".light").on('click', function (e) {
-        e.preventDefault();
-        $(".body").removeClass("is_dark")
-        $(".light").addClass("is_active")
-        $(".dark").removeClass("is_active")
-
-        $(".tf-text").addClass("style")
-        $(".tf-text").removeClass("s1")
-        document.getElementById("logo_header").src = "assets/images/logo/logo.png";
-        document.getElementById("logo_footer").src = "assets/images/logo/logo2.png";
-        document.getElementById("moon_dark").src = "assets/images/icon/moon.png";
-    });
 
     // Header Connect
 
