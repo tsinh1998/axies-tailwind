@@ -166,7 +166,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="flex items-center justify-between">
-                                <h2 class="relative leading-[44px] text-[var(--primary-color2)] text-center pb-[18px]">
+                                <h2 class="relative leading-[44px] text-[var(--primary-color2)] text-center pb-[18px] max-[549px]:text-[24px]">
                                     Live Auctions</h2>
                                 <a href="explore-3.html" class="relative font-bold text-[14px] leading-[20px] tracking-[0.1em] mt-[-20px] bg-gradient-to-r from-[#E250E5] via-[#4B50E6] to-[#E250E5] bg-clip-text bg-[length:200%_200%] 
                                                                 animate-[rainbow_2s_ease-in-out_infinite] text-[var(--primary-color2)] duration-[0.2s] ease-in-out transition-[color] hover:!text-[rgba(0,0,0,0)]
@@ -180,36 +180,40 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="slider-item">										
-                                            <div class="sc-card-product">
-                                                <div class="card-media">
-                                                    <a href="item-details.html"><img src="assets/images/box-item/card-item8.jpg" alt="Image"></a>
-                                                    <button class="wishlist-button heart"><span class="number-like"> 100</span></button>
-                                                    <div class="featured-countdown">
-                                                        <span class="slogan"></span>
+                                            <div class="sc-card-product group hover:translate-y-[-10px] hover:duration-[0.4s] p-[20px] bg-[var(--primary-color)] shadow-[0px_3px_16px_#2f536d1f] rounded-[20px] mb-[40px] overflow-hidden duration-[0.3s] ease-in-out">
+                                                <div class="card-media relative mb-[21px] rounded-[20px] overflow-hidden">
+                                                    <a href="item-details.html"><img src="assets/images/box-item/card-item8.jpg" alt="Image" class="w-full duration-[0.4s] group-hover:object-cover group-hover:scale-[1.05]"></a>
+                                                    <button class="wishlist-button heart absolute top-[13px] right-[11px] font-bold text-[14px] leading-[24px] text-white p-[2px_11px] rounded-[8px] bg-[#14141F] cursor-pointer border-none hover:border-none
+                                                                    before:content-['\f004'] before:font-['Font_Awesome_5_Pro'] before:font-[300] before:mr-[2px]">
+                                                        <span class="w-[22px] inline-block number-like"> 100</span>
+                                                    </button>
+                                                    <div class="featured-countdown absolute bottom-[8px] left-1/2 -translate-x-1/2 flex items-center justify-center font-bold text-[14px] leading-[23px] uppercase p-0 rounded-[13px] bg-[var(--primary-color)] w-[151px] h-[36px]">
+                                                        <span class="slogan mr-[10px] before:content-['\e900'] before:font-['nfts'] before:text-[var(--primary-color3)] before:text-[20px]"></span>
                                                         <span class="js-countdown" data-timer="516400" data-labels=" :  ,  : , : , "></span>
                                                     </div>
-                                                    <div class="button-place-bid">
-                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button style-place-bid style bag fl-button pri-3"><span>Place Bid</span></a>
+                                                    <div class="button-place-bid absolute top-[60%] -translate-y-1/2 left-0 right-0 text-center opacity-0 duration-[0.4s] group-hover:top-1/2 group-hover:opacity-100 group-hover:delay-100">
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="group/bt !p-[12px_27px] border-[2px] !border-white bg-white hover:!border-[#5142FC] hover:!bg-[#5142FC] sc-button style-place-bid style bag fl-button pri-3">
+                                                            <span class="!pl-[28px] !text-[15px] !text-[#343444] before:!text-[var(--primary-color3)] before:!content-['\e901'] before:!duration-[0.05s] group-hover/bt:!text-white group-hover/bt:before:!text-white">Place Bid</span>
+                                                        </a>
                                                     </div>
                                                 </div>
-                                                <div class="card-title">
-                                                    <h5><a href="item-details.html">"Hamlet Contemplates Contemplates "</a></h5>
-                                                    <div class="tags">bsc</div>
+                                                <div class="card-title flex items-center justify-between mb-[16px]">
+                                                    <h5 class="whitespace-nowrap overflow-hidden text-ellipsis max-w-[70%] capitalize leading-[26px]"><a href="item-details.html">"Hamlet Contemplates Contemplates "</a></h5>
+                                                    <div class="tags w-[49px] h-[24px] leading-[24px] text-center font-bold text-[12px] text-white bg-[var(--primary-color3)] rounded-[10px] tracking-[0.1em] uppercase">bsc</div>
                                                 </div>
-                                                <div class="meta-info">
-                                                    <div class="author">
-                                                        <div class="avatar">
+                                                <div class="meta-info flex items-center justify-between mb-[4px]">
+                                                    <div class="author flex items-center justify-between">
+                                                        <div class="avatar w-[44px] h-[44px] rounded-[15px] overflow-hidden mr-[12px] flex-shrink-0">
                                                             <img src="assets/images/avatar/avt-11.jpg" alt="Image">
                                                         </div>
                                                         <div class="info">
-                                                            <span>Creator</span>
-                                                            <h6> <a href="author02.html">SalvadorDali
-                                                            </a> </h6>
+                                                            <span class="text-[var(--primary-color4)] text-[13px] leading-[21px]">Creator</span>
+                                                            <h6 class="leading-[22px]"> <a href="author02.html">SalvadorDali </a> </h6>
                                                         </div>
                                                     </div>
-                                                    <div class="price">
-                                                        <span>Current Bid</span>
-                                                        <h5> 4.89 ETH</h5>
+                                                    <div class="price text-right">
+                                                        <span class="text-[var(--primary-color4)] text-[13px] leading-[21px]">Current Bid</span>
+                                                        <h5 class="mt-[6px] leading-[18px]"> 4.89 ETH</h5>
                                                     </div>
                                                 </div>
                                             </div>    	
@@ -217,35 +221,40 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-item">										
-                                            <div class="sc-card-product">
-                                                <div class="card-media active">
-                                                    <a href="item-details.html"><img src="assets/images/box-item/image-box-10.jpg" alt="Image"></a>
-                                                    <button class="wishlist-button heart"><span class="number-like"> 220</span></button>
-                                                    <div class="featured-countdown">
-                                                        <span class="slogan"></span>
+                                            <div class="sc-card-product group hover:translate-y-[-10px] hover:duration-[0.4s] p-[20px] bg-[var(--primary-color)] shadow-[0px_3px_16px_#2f536d1f] rounded-[20px] mb-[40px] overflow-hidden duration-[0.3s] ease-in-out">
+                                                <div class="card-media relative mb-[21px] rounded-[20px] overflow-hidden">
+                                                    <a href="item-details.html"><img src="assets/images/box-item/image-box-10.jpg" alt="Image" class="w-full duration-[0.4s] group-hover:object-cover group-hover:scale-[1.05]"></a>
+                                                    <button class="wishlist-button heart absolute top-[13px] right-[11px] font-bold text-[14px] leading-[24px] text-white p-[2px_11px] rounded-[8px] bg-[#14141F] cursor-pointer border-none hover:border-none
+                                                                    before:content-['\f004'] before:font-['Font_Awesome_5_Pro'] before:font-[300] before:mr-[2px]">
+                                                        <span class="w-[22px] inline-block number-like"> 220</span>
+                                                    </button>
+                                                    <div class="featured-countdown absolute bottom-[8px] left-1/2 -translate-x-1/2 flex items-center justify-center font-bold text-[14px] leading-[23px] uppercase p-0 rounded-[13px] bg-[var(--primary-color)] w-[151px] h-[36px]">
+                                                        <span class="slogan mr-[10px] before:content-['\e900'] before:font-['nfts'] before:text-[var(--primary-color3)] before:text-[20px]"></span>
                                                         <span class="js-countdown" data-timer="81640" data-labels=" :  ,  : , : , "></span>
                                                     </div>
-                                                    <div class="button-place-bid">
-                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button style-place-bid style bag fl-button pri-3"><span>Place Bid</span></a>
+                                                    <div class="button-place-bid absolute -translate-y-1/2 left-0 right-0 text-center duration-[0.4s] top-1/2 opacity-100">
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="group/bt !p-[12px_27px] border-[2px] !border-white bg-white hover:!border-[#5142FC] hover:!bg-[#5142FC] sc-button style-place-bid style bag fl-button pri-3">
+                                                            <span class="!pl-[28px] !text-[15px] !text-[#343444] before:!text-[var(--primary-color3)] before:!content-['\e901'] before:!duration-[0.05s] group-hover/bt:!text-white group-hover/bt:before:!text-white">Place Bid</span>
+                                                        </a>
                                                     </div>
                                                 </div>
-                                                <div class="card-title">
-                                                    <h5 class="style2"><a href="item-details.html">"Triumphant Awakening Contemplates "</a></h5>
-                                                    <div class="tags">bsc</div>
+                                                <div class="card-title flex items-center justify-between mb-[16px]">
+                                                    <h5 class="whitespace-nowrap overflow-hidden text-ellipsis max-w-[70%] capitalize leading-[26px]" class="style2"><a href="item-details.html">"Triumphant Awakening Contemplates "</a></h5>
+                                                    <div class="tags w-[49px] h-[24px] leading-[24px] text-center font-bold text-[12px] text-white bg-[var(--primary-color3)] rounded-[10px] tracking-[0.1em] uppercase">bsc</div>
                                                 </div>
-                                                <div class="meta-info">
-                                                    <div class="author">
-                                                        <div class="avatar">
+                                                <div class="meta-info flex items-center justify-between mb-[4px]">
+                                                    <div class="author flex items-center justify-between">
+                                                        <div class="avatar w-[44px] h-[44px] rounded-[15px] overflow-hidden mr-[12px] flex-shrink-0">
                                                             <img src="assets/images/avatar/avt-12.jpg" alt="Image">
                                                         </div>
                                                         <div class="info">
-                                                            <span>Creator</span>
-                                                            <h6> <a href="author02.html">Trista Francis</a> </h6>
+                                                            <span class="text-[var(--primary-color4)] text-[13px] leading-[21px]">Creator</span>
+                                                            <h6 class="leading-[22px]"> <a href="author02.html">Trista Francis</a> </h6>
                                                         </div>
                                                     </div>
-                                                    <div class="price">
-                                                        <span>Current Bid</span>
-                                                        <h5> 4.89 ETH</h5>
+                                                    <div class="price text-right">
+                                                        <span class="text-[var(--primary-color4)] text-[13px] leading-[21px]">Current Bid</span>
+                                                        <h5 class="mt-[6px] leading-[18px]"> 4.89 ETH</h5>
                                                     </div>
                                                 </div>
                                             </div>    	
@@ -253,35 +262,40 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-item">										
-                                            <div class="sc-card-product">
-                                                <div class="card-media">
-                                                    <a href="item-details.html"><img src="assets/images/box-item/image-box-11.jpg" alt="Image"></a>
-                                                    <button class="wishlist-button heart"><span class="number-like"> 90</span></button>
-                                                    <div class="featured-countdown">
-                                                        <span class="slogan"></span>
+                                            <div class="sc-card-product group hover:translate-y-[-10px] hover:duration-[0.4s] p-[20px] bg-[var(--primary-color)] shadow-[0px_3px_16px_#2f536d1f] rounded-[20px] mb-[40px] overflow-hidden duration-[0.3s] ease-in-out">
+                                                <div class="card-media relative mb-[21px] rounded-[20px] overflow-hidden">
+                                                    <a href="item-details.html"><img src="assets/images/box-item/image-box-11.jpg" alt="Image" class="w-full duration-[0.4s] group-hover:object-cover group-hover:scale-[1.05]"></a>
+                                                    <button class="wishlist-button heart absolute top-[13px] right-[11px] font-bold text-[14px] leading-[24px] text-white p-[2px_11px] rounded-[8px] bg-[#14141F] cursor-pointer border-none hover:border-none
+                                                                    before:content-['\f004'] before:font-['Font_Awesome_5_Pro'] before:font-[300] before:mr-[2px]">
+                                                        <span class="w-[22px] inline-block number-like"> 90</span>
+                                                    </button>
+                                                    <div class="featured-countdown absolute bottom-[8px] left-1/2 -translate-x-1/2 flex items-center justify-center font-bold text-[14px] leading-[23px] uppercase p-0 rounded-[13px] bg-[var(--primary-color)] w-[151px] h-[36px]">
+                                                        <span class="slogan mr-[10px] before:content-['\e900'] before:font-['nfts'] before:text-[var(--primary-color3)] before:text-[20px]"></span>
                                                         <span class="js-countdown" data-timer="316400" data-labels=" :  ,  : , : , "></span>
                                                     </div>
-                                                    <div class="button-place-bid">
-                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button style-place-bid style bag fl-button pri-3"><span>Place Bid</span></a>
+                                                    <div class="button-place-bid absolute top-[60%] -translate-y-1/2 left-0 right-0 text-center opacity-0 duration-[0.4s] group-hover:top-1/2 group-hover:opacity-100 group-hover:delay-100">
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="group/bt !p-[12px_27px] border-[2px] !border-white bg-white hover:!border-[#5142FC] hover:!bg-[#5142FC] sc-button style-place-bid style bag fl-button pri-3">
+                                                            <span class="!pl-[28px] !text-[15px] !text-[#343444] before:!text-[var(--primary-color3)] before:!content-['\e901'] before:!duration-[0.05s] group-hover/bt:!text-white group-hover/bt:before:!text-white">Place Bid</span>
+                                                        </a>
                                                     </div>
                                                 </div>
-                                                <div class="card-title">
-                                                    <h5 class="style2"><a href="item-details.html">"Living Vase 01 by Lanza Contemplates "</a></h5>
-                                                    <div class="tags">bsc</div>
+                                                <div class="card-title flex items-center justify-between mb-[16px]">
+                                                    <h5 class="whitespace-nowrap overflow-hidden text-ellipsis max-w-[70%] capitalize leading-[26px]" class="style2"><a href="item-details.html">"Living Vase 01 by Lanza Contemplates "</a></h5>
+                                                    <div class="tags w-[49px] h-[24px] leading-[24px] text-center font-bold text-[12px] text-white bg-[var(--primary-color3)] rounded-[10px] tracking-[0.1em] uppercase">bsc</div>
                                                 </div>
-                                                <div class="meta-info">
-                                                    <div class="author">
-                                                        <div class="avatar">
+                                                <div class="meta-info flex items-center justify-between mb-[4px]">
+                                                    <div class="author flex items-center justify-between">
+                                                        <div class="avatar w-[44px] h-[44px] rounded-[15px] overflow-hidden mr-[12px] flex-shrink-0">
                                                             <img src="assets/images/avatar/avt-13.jpg" alt="Image">
                                                         </div>
                                                         <div class="info">
-                                                            <span>Creator</span>
-                                                            <h6> <a href="author02.html">Freddie Carpenter</a> </h6>
+                                                            <span class="text-[var(--primary-color4)] text-[13px] leading-[21px]">Creator</span>
+                                                            <h6 class="leading-[22px]"> <a href="author02.html">Freddie Carpenter</a> </h6>
                                                         </div>
                                                     </div>
-                                                    <div class="price">
-                                                        <span>Current Bid</span>
-                                                        <h5> 4.89 ETH</h5>
+                                                    <div class="price text-right">
+                                                        <span class="text-[var(--primary-color4)] text-[13px] leading-[21px]">Current Bid</span>
+                                                        <h5 class="mt-[6px] leading-[18px]"> 4.89 ETH</h5>
                                                     </div>
                                                 </div>
                                             </div>    	
@@ -289,35 +303,40 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-item">										
-                                            <div class="sc-card-product">
-                                                <div class="card-media">
-                                                    <a href="item-details.html"><img src="assets/images/box-item/image-box-21.jpg" alt="Image"></a>
-                                                    <button class="wishlist-button heart"><span class="number-like"> 145</span></button>
-                                                    <div class="featured-countdown">
-                                                        <span class="slogan"></span>
+                                            <div class="sc-card-product group hover:translate-y-[-10px] hover:duration-[0.4s] p-[20px] bg-[var(--primary-color)] shadow-[0px_3px_16px_#2f536d1f] rounded-[20px] mb-[40px] overflow-hidden duration-[0.3s] ease-in-out">
+                                                <div class="card-media relative mb-[21px] rounded-[20px] overflow-hidden">
+                                                    <a href="item-details.html"><img src="assets/images/box-item/image-box-21.jpg" alt="Image" class="w-full duration-[0.4s] group-hover:object-cover group-hover:scale-[1.05]"></a>
+                                                    <button class="wishlist-button heart absolute top-[13px] right-[11px] font-bold text-[14px] leading-[24px] text-white p-[2px_11px] rounded-[8px] bg-[#14141F] cursor-pointer border-none hover:border-none
+                                                                    before:content-['\f004'] before:font-['Font_Awesome_5_Pro'] before:font-[300] before:mr-[2px]">
+                                                        <span class="w-[22px] inline-block number-like"> 145</span>
+                                                    </button>
+                                                    <div class="featured-countdown absolute bottom-[8px] left-1/2 -translate-x-1/2 flex items-center justify-center font-bold text-[14px] leading-[23px] uppercase p-0 rounded-[13px] bg-[var(--primary-color)] w-[151px] h-[36px]">
+                                                        <span class="slogan mr-[10px] before:content-['\e900'] before:font-['nfts'] before:text-[var(--primary-color3)] before:text-[20px]"></span>
                                                         <span class="js-countdown" data-timer="716400" data-labels=" :  ,  : , : , "></span>
                                                     </div>
-                                                    <div class="button-place-bid">
-                                                        <a href="#"  data-toggle="modal" data-target="#popup_bid" class="sc-button style-place-bid style bag fl-button pri-3"><span>Place Bid</span></a>
+                                                    <div class="button-place-bid absolute top-[60%] -translate-y-1/2 left-0 right-0 text-center opacity-0 duration-[0.4s] group-hover:top-1/2 group-hover:opacity-100 group-hover:delay-100">
+                                                        <a href="#"  data-toggle="modal" data-target="#popup_bid" class="group/bt !p-[12px_27px] border-[2px] !border-white bg-white hover:!border-[#5142FC] hover:!bg-[#5142FC] sc-button style-place-bid style bag fl-button pri-3">
+                                                            <span class="!pl-[28px] !text-[15px] !text-[#343444] before:!text-[var(--primary-color3)] before:!content-['\e901'] before:!duration-[0.05s] group-hover/bt:!text-white group-hover/bt:before:!text-white">Place Bid</span>
+                                                        </a>
                                                     </div>
                                                 </div>
-                                                <div class="card-title">
-                                                    <h5 class="style2"><a href="item-details.html">"Flame Dress' by Balmain Contemplates "</a></h5>
-                                                    <div class="tags">bsc</div>
+                                                <div class="card-title flex items-center justify-between mb-[16px]">
+                                                    <h5 class="whitespace-nowrap overflow-hidden text-ellipsis max-w-[70%] capitalize leading-[26px]" class="style2"><a href="item-details.html">"Flame Dress' by Balmain Contemplates "</a></h5>
+                                                    <div class="tags w-[49px] h-[24px] leading-[24px] text-center font-bold text-[12px] text-white bg-[var(--primary-color3)] rounded-[10px] tracking-[0.1em] uppercase">bsc</div>
                                                 </div>
-                                                <div class="meta-info">
-                                                    <div class="author">
-                                                        <div class="avatar">
+                                                <div class="meta-info flex items-center justify-between mb-[4px]">
+                                                    <div class="author flex items-center justify-between">
+                                                        <div class="avatar w-[44px] h-[44px] rounded-[15px] overflow-hidden mr-[12px] flex-shrink-0">
                                                             <img src="assets/images/avatar/avt-14.jpg" alt="">
                                                         </div>
                                                         <div class="info">
-                                                            <span>Creator</span>
-                                                            <h6> <a href="author02.html">Tyler Covington</a> </h6>
+                                                            <span class="text-[var(--primary-color4)] text-[13px] leading-[21px]">Creator</span>
+                                                            <h6 class="leading-[22px]"> <a href="author02.html">Tyler Covington</a> </h6>
                                                         </div>
                                                     </div>
-                                                    <div class="price">
-                                                        <span>Current Bid</span>
-                                                        <h5> 4.89 ETH</h5>
+                                                    <div class="price text-right">
+                                                        <span class="text-[var(--primary-color4)] text-[13px] leading-[21px]">Current Bid</span>
+                                                        <h5 class="mt-[6px] leading-[18px]"> 4.89 ETH</h5>
                                                     </div>
                                                 </div>
                                             </div>    	
@@ -325,36 +344,40 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-item">										
-                                            <div class="sc-card-product">
-                                                <div class="card-media">
-                                                    <a href="item-details.html"><img src="assets/images/box-item/card-item8.jpg" alt="Image"></a>
-                                                    <button class="wishlist-button heart"><span class="number-like"> 100</span></button>
-                                                    <div class="featured-countdown">
-                                                        <span class="slogan"></span>
+                                            <div class="sc-card-product group hover:translate-y-[-10px] hover:duration-[0.4s] p-[20px] bg-[var(--primary-color)] shadow-[0px_3px_16px_#2f536d1f] rounded-[20px] mb-[40px] overflow-hidden duration-[0.3s] ease-in-out">
+                                                <div class="card-media relative mb-[21px] rounded-[20px] overflow-hidden">
+                                                    <a href="item-details.html"><img src="assets/images/box-item/card-item8.jpg" alt="Image" class="w-full duration-[0.4s] group-hover:object-cover group-hover:scale-[1.05]"></a>
+                                                    <button class="wishlist-button heart absolute top-[13px] right-[11px] font-bold text-[14px] leading-[24px] text-white p-[2px_11px] rounded-[8px] bg-[#14141F] cursor-pointer border-none hover:border-none
+                                                                    before:content-['\f004'] before:font-['Font_Awesome_5_Pro'] before:font-[300] before:mr-[2px]">
+                                                        <span class="w-[22px] inline-block number-like"> 100</span>
+                                                    </button>
+                                                    <div class="featured-countdown absolute bottom-[8px] left-1/2 -translate-x-1/2 flex items-center justify-center font-bold text-[14px] leading-[23px] uppercase p-0 rounded-[13px] bg-[var(--primary-color)] w-[151px] h-[36px]">
+                                                        <span class="slogan mr-[10px] before:content-['\e900'] before:font-['nfts'] before:text-[var(--primary-color3)] before:text-[20px]"></span>
                                                         <span class="js-countdown" data-timer="516400" data-labels=" :  ,  : , : , "></span>
                                                     </div>
-                                                    <div class="button-place-bid">
-                                                        <a href="#"  data-toggle="modal" data-target="#popup_bid" class="sc-button style-place-bid style bag fl-button pri-3"><span>Place Bid</span></a>
+                                                    <div class="button-place-bid absolute top-[60%] -translate-y-1/2 left-0 right-0 text-center opacity-0 duration-[0.4s] group-hover:top-1/2 group-hover:opacity-100 group-hover:delay-100">
+                                                        <a href="#"  data-toggle="modal" data-target="#popup_bid" class="group/bt !p-[12px_27px] border-[2px] !border-white bg-white hover:!border-[#5142FC] hover:!bg-[#5142FC] sc-button style-place-bid style bag fl-button pri-3">
+                                                            <span class="!pl-[28px] !text-[15px] !text-[#343444] before:!text-[var(--primary-color3)] before:!content-['\e901'] before:!duration-[0.05s] group-hover/bt:!text-white group-hover/bt:before:!text-white">Place Bid</span>
+                                                        </a>
                                                     </div>
                                                 </div>
-                                                <div class="card-title">
-                                                    <h5><a href="item-details.html">"Hamlet Contemplates Contemplates "</a></h5>
-                                                    <div class="tags">bsc</div>
+                                                <div class="card-title flex items-center justify-between mb-[16px]">
+                                                    <h5 class="whitespace-nowrap overflow-hidden text-ellipsis max-w-[70%] capitalize leading-[26px]"><a href="item-details.html">"Hamlet Contemplates Contemplates "</a></h5>
+                                                    <div class="tags w-[49px] h-[24px] leading-[24px] text-center font-bold text-[12px] text-white bg-[var(--primary-color3)] rounded-[10px] tracking-[0.1em] uppercase">bsc</div>
                                                 </div>
-                                                <div class="meta-info">
-                                                    <div class="author">
-                                                        <div class="avatar">
+                                                <div class="meta-info flex items-center justify-between mb-[4px]">
+                                                    <div class="author flex items-center justify-between">
+                                                        <div class="avatar w-[44px] h-[44px] rounded-[15px] overflow-hidden mr-[12px] flex-shrink-0">
                                                             <img src="assets/images/avatar/avt-11.jpg" alt="Image">
                                                         </div>
                                                         <div class="info">
-                                                            <span>Creator</span>
-                                                            <h6> <a href="author02.html">SalvadorDali
-                                                            </a> </h6>
+                                                            <span class="text-[var(--primary-color4)] text-[13px] leading-[21px]">Creator</span>
+                                                            <h6 class="leading-[22px]"> <a href="author02.html">SalvadorDali </a> </h6>
                                                         </div>
                                                     </div>
-                                                    <div class="price">
-                                                        <span>Current Bid</span>
-                                                        <h5> 4.89 ETH</h5>
+                                                    <div class="price text-right">
+                                                        <span class="text-[var(--primary-color4)] text-[13px] leading-[21px]">Current Bid</span>
+                                                        <h5 class="mt-[6px] leading-[18px]"> 4.89 ETH</h5>
                                                     </div>
                                                 </div>
                                             </div>    	
@@ -362,35 +385,40 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-item">										
-                                            <div class="sc-card-product">
-                                                <div class="card-media active">
-                                                    <a href="item-details.html"><img src="assets/images/box-item/image-box-10.jpg" alt="Image"></a>
-                                                    <button class="wishlist-button heart"><span class="number-like"> 220</span></button>
-                                                    <div class="featured-countdown">
-                                                        <span class="slogan"></span>
+                                            <div class="sc-card-product group hover:translate-y-[-10px] hover:duration-[0.4s] p-[20px] bg-[var(--primary-color)] shadow-[0px_3px_16px_#2f536d1f] rounded-[20px] mb-[40px] overflow-hidden duration-[0.3s] ease-in-out">
+                                                <div class="card-media relative mb-[21px] rounded-[20px] overflow-hidden">
+                                                    <a href="item-details.html"><img src="assets/images/box-item/image-box-10.jpg" alt="Image" class="w-full duration-[0.4s] group-hover:object-cover group-hover:scale-[1.05]"></a>
+                                                    <button class="wishlist-button heart absolute top-[13px] right-[11px] font-bold text-[14px] leading-[24px] text-white p-[2px_11px] rounded-[8px] bg-[#14141F] cursor-pointer border-none hover:border-none
+                                                                    before:content-['\f004'] before:font-['Font_Awesome_5_Pro'] before:font-[300] before:mr-[2px]">
+                                                        <span class="w-[22px] inline-block number-like"> 220</span>
+                                                    </button>
+                                                    <div class="featured-countdown absolute bottom-[8px] left-1/2 -translate-x-1/2 flex items-center justify-center font-bold text-[14px] leading-[23px] uppercase p-0 rounded-[13px] bg-[var(--primary-color)] w-[151px] h-[36px]">
+                                                        <span class="slogan mr-[10px] before:content-['\e900'] before:font-['nfts'] before:text-[var(--primary-color3)] before:text-[20px]"></span>
                                                         <span class="js-countdown" data-timer="81640" data-labels=" :  ,  : , : , "></span>
                                                     </div>
-                                                    <div class="button-place-bid">
-                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button style-place-bid style bag fl-button pri-3"><span>Place Bid</span></a>
+                                                    <div class="button-place-bid absolute -translate-y-1/2 left-0 right-0 text-center duration-[0.4s] top-1/2 opacity-100">
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="group/bt !p-[12px_27px] border-[2px] !border-white bg-white hover:!border-[#5142FC] hover:!bg-[#5142FC] sc-button style-place-bid style bag fl-button pri-3">
+                                                            <span class="!pl-[28px] !text-[15px] !text-[#343444] before:!text-[var(--primary-color3)] before:!content-['\e901'] before:!duration-[0.05s] group-hover/bt:!text-white group-hover/bt:before:!text-white">Place Bid</span>
+                                                        </a>
                                                     </div>
                                                 </div>
-                                                <div class="card-title">
-                                                    <h5 class="style2"><a href="item-details.html">"Triumphant Awakening Contemplates "</a></h5>
-                                                    <div class="tags">bsc</div>
+                                                <div class="card-title flex items-center justify-between mb-[16px]">
+                                                    <h5 class="whitespace-nowrap overflow-hidden text-ellipsis max-w-[70%] capitalize leading-[26px]" class="style2"><a href="item-details.html">"Triumphant Awakening Contemplates "</a></h5>
+                                                    <div class="tags w-[49px] h-[24px] leading-[24px] text-center font-bold text-[12px] text-white bg-[var(--primary-color3)] rounded-[10px] tracking-[0.1em] uppercase">bsc</div>
                                                 </div>
-                                                <div class="meta-info">
-                                                    <div class="author">
-                                                        <div class="avatar">
+                                                <div class="meta-info flex items-center justify-between mb-[4px]">
+                                                    <div class="author flex items-center justify-between">
+                                                        <div class="avatar w-[44px] h-[44px] rounded-[15px] overflow-hidden mr-[12px] flex-shrink-0">
                                                             <img src="assets/images/avatar/avt-12.jpg" alt="Image">
                                                         </div>
                                                         <div class="info">
-                                                            <span>Creator</span>
-                                                            <h6> <a href="author02.html">Trista Francis</a> </h6>
+                                                            <span class="text-[var(--primary-color4)] text-[13px] leading-[21px]">Creator</span>
+                                                            <h6 class="leading-[22px]"> <a href="author02.html">Trista Francis</a> </h6>
                                                         </div>
                                                     </div>
-                                                    <div class="price">
-                                                        <span>Current Bid</span>
-                                                        <h5> 4.89 ETH</h5>
+                                                    <div class="price text-right">
+                                                        <span class="text-[var(--primary-color4)] text-[13px] leading-[21px]">Current Bid</span>
+                                                        <h5 class="mt-[6px] leading-[18px]"> 4.89 ETH</h5>
                                                     </div>
                                                 </div>
                                             </div>    	
@@ -398,35 +426,40 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-item">										
-                                            <div class="sc-card-product">
-                                                <div class="card-media">
-                                                    <a href="item-details.html"><img src="assets/images/box-item/image-box-11.jpg" alt="Image"></a>
-                                                    <button class="wishlist-button heart"><span class="number-like"> 90</span></button>
-                                                    <div class="featured-countdown">
-                                                        <span class="slogan"></span>
+                                            <div class="sc-card-product group hover:translate-y-[-10px] hover:duration-[0.4s] p-[20px] bg-[var(--primary-color)] shadow-[0px_3px_16px_#2f536d1f] rounded-[20px] mb-[40px] overflow-hidden duration-[0.3s] ease-in-out">
+                                                <div class="card-media relative mb-[21px] rounded-[20px] overflow-hidden">
+                                                    <a href="item-details.html"><img src="assets/images/box-item/image-box-11.jpg" alt="Image" class="w-full duration-[0.4s] group-hover:object-cover group-hover:scale-[1.05]"></a>
+                                                    <button class="wishlist-button heart absolute top-[13px] right-[11px] font-bold text-[14px] leading-[24px] text-white p-[2px_11px] rounded-[8px] bg-[#14141F] cursor-pointer border-none hover:border-none
+                                                                    before:content-['\f004'] before:font-['Font_Awesome_5_Pro'] before:font-[300] before:mr-[2px]">
+                                                        <span class="w-[22px] inline-block number-like"> 90</span>
+                                                    </button>
+                                                    <div class="featured-countdown absolute bottom-[8px] left-1/2 -translate-x-1/2 flex items-center justify-center font-bold text-[14px] leading-[23px] uppercase p-0 rounded-[13px] bg-[var(--primary-color)] w-[151px] h-[36px]">
+                                                        <span class="slogan mr-[10px] before:content-['\e900'] before:font-['nfts'] before:text-[var(--primary-color3)] before:text-[20px]"></span>
                                                         <span class="js-countdown" data-timer="316400" data-labels=" :  ,  : , : , "></span>
                                                     </div>
-                                                    <div class="button-place-bid">
-                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="sc-button style-place-bid style bag fl-button pri-3"><span>Place Bid</span></a>
+                                                    <div class="button-place-bid absolute top-[60%] -translate-y-1/2 left-0 right-0 text-center opacity-0 duration-[0.4s] group-hover:top-1/2 group-hover:opacity-100 group-hover:delay-100">
+                                                        <a href="#" data-toggle="modal" data-target="#popup_bid" class="group/bt !p-[12px_27px] border-[2px] !border-white bg-white hover:!border-[#5142FC] hover:!bg-[#5142FC] sc-button style-place-bid style bag fl-button pri-3">
+                                                            <span class="!pl-[28px] !text-[15px] !text-[#343444] before:!text-[var(--primary-color3)] before:!content-['\e901'] before:!duration-[0.05s] group-hover/bt:!text-white group-hover/bt:before:!text-white">Place Bid</span>
+                                                        </a>
                                                     </div>
                                                 </div>
-                                                <div class="card-title">
-                                                    <h5 class="style2"><a href="item-details.html">"Living Vase 01 by Lanza Contemplates "</a></h5>
-                                                    <div class="tags">bsc</div>
+                                                <div class="card-title flex items-center justify-between mb-[16px]">
+                                                    <h5 class="whitespace-nowrap overflow-hidden text-ellipsis max-w-[70%] capitalize leading-[26px]" class="style2"><a href="item-details.html">"Living Vase 01 by Lanza Contemplates "</a></h5>
+                                                    <div class="tags w-[49px] h-[24px] leading-[24px] text-center font-bold text-[12px] text-white bg-[var(--primary-color3)] rounded-[10px] tracking-[0.1em] uppercase">bsc</div>
                                                 </div>
-                                                <div class="meta-info">
-                                                    <div class="author">
-                                                        <div class="avatar">
+                                                <div class="meta-info flex items-center justify-between mb-[4px]">
+                                                    <div class="author flex items-center justify-between">
+                                                        <div class="avatar w-[44px] h-[44px] rounded-[15px] overflow-hidden mr-[12px] flex-shrink-0">
                                                             <img src="assets/images/avatar/avt-13.jpg" alt="Image">
                                                         </div>
                                                         <div class="info">
-                                                            <span>Creator</span>
-                                                            <h6> <a href="author02.html">Freddie Carpenter</a> </h6>
+                                                            <span class="text-[var(--primary-color4)] text-[13px] leading-[21px]">Creator</span>
+                                                            <h6 class="leading-[22px]"> <a href="author02.html">Freddie Carpenter</a> </h6>
                                                         </div>
                                                     </div>
-                                                    <div class="price">
-                                                        <span>Current Bid</span>
-                                                        <h5> 4.89 ETH</h5>
+                                                    <div class="price text-right">
+                                                        <span class="text-[var(--primary-color4)] text-[13px] leading-[21px]">Current Bid</span>
+                                                        <h5 class="mt-[6px] leading-[18px]"> 4.89 ETH</h5>
                                                     </div>
                                                 </div>
                                             </div>    	
@@ -434,7 +467,7 @@
                                     </div>
 
                                 </div>
-                                <div class="swiper-pagination mg-t-6"></div>
+                                <div class="swiper-pagination !mt-[6px]"></div>
                                 <div class="swiper-button-next btn-slide-next active"></div>
                                 <div class="swiper-button-prev btn-slide-prev"></div>
                             </div>
@@ -443,189 +476,213 @@
                 </div>
             </section>
 
-            <section class="tf-section live-auctions no-pt-mb tl-pb-0">
+            <section class="tf-section live-auctions !pt-[16px] !pb-0">
                 <div class="themesflat-container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="heading-live-auctions">
-                                <h2 class="tf-title">
+                            <div class="flex items-center justify-between">
+                                <h2 class="relative leading-[44px] text-[var(--primary-color2)] text-center pb-[14px] max-[549px]:text-[24px]">
                                     Top Seller</h2>
                             </div>
                         </div>
                         <div class="col-md-12">
-                            <div class="swiper-container seller style2 seller-slider2 button-arow-style">
+                            <div class="swiper-container seller style2 seller-slider2 button-arow-style pt-[87px] mt-[-66px]">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="slider-item">										
-                                            <div class="sc-author-box style-2">
-                                                <div class="author-avatar">
-                                                        <img src="assets/images/avatar/avt-1.jpg" alt="" class="avatar">
-                                                    <div class="badge"></div>
+                                            <div class="sc-author-box pb-[23px] w-[130px] inline-block text-center bg-transparent">
+                                                <div class="author-avatar mb-[20px] relative">
+                                                    <img src="assets/images/avatar/avt-1.jpg" alt="" class="avatar w-[120px] h-[120px] rounded-[40px] overflow-hidden">
+                                                    <div class="badge w-[26px] h-[26px] leading-[27px] bottom-0 right-[5px] inline-block absolute object-cover text-center rounded-[50%] bg-[var(--primary-color3)] p-0 text-[75%] font-bold text-white whitespace-nowrap align-baseline
+                                                                before:text-[15px] before:text-white before:font-bold before:content-['\f00c'] before:font-['Font_Awesome_5_Pro']">
+                                                    </div>
                                                 </div>
-                                                <div class="author-infor">
-                                                    <h5><a href="author02.html">Crispin Berry</a></h5>
-                                                    <span class="price">214.2 ETH</span>
-                                                </div>
-                                            </div>    	
-                                        </div><!-- item-->
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="slider-item">										
-                                            <div class="sc-author-box style-2">
-                                                <div class="author-avatar">
-                                                        <img src="assets/images/avatar/avt-2.jpg" alt="" class="avatar">
-                                                    <div class="badge"></div>
-                                                </div>
-                                                <div class="author-infor">
-                                                    <h5><a href="author02.html">Samson Frost</a></h5>
-                                                    <span class="price">205.43 ETH</span>
+                                                <div class="author-infor mt-[5px]">
+                                                    <h5 class="mb-[6px]"><a href="author02.html">Crispin Berry</a></h5>
+                                                    <span class="price text-[15px] font-bold leading-[22px] text-[#7A798A]">214.2 ETH</span>
                                                 </div>
                                             </div>    	
                                         </div><!-- item-->
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-item">										
-                                            <div class="sc-author-box style-2">
-                                                <div class="author-avatar">
-                                                        <img src="assets/images/avatar/avt-4.jpg" alt="" class="avatar">
-                                                    <div class="badge"></div>
+                                            <div class="sc-author-box pb-[23px] w-[130px] inline-block text-center bg-transparent">
+                                                <div class="author-avatar mb-[20px] relative">
+                                                    <img src="assets/images/avatar/avt-2.jpg" alt="" class="avatar w-[120px] h-[120px] rounded-[40px] overflow-hidden">
+                                                    <div class="badge w-[26px] h-[26px] leading-[27px] bottom-0 right-[5px] inline-block absolute object-cover text-center rounded-[50%] bg-[var(--primary-color3)] p-0 text-[75%] font-bold text-white whitespace-nowrap align-baseline
+                                                                before:text-[15px] before:text-white before:font-bold before:content-['\f00c'] before:font-['Font_Awesome_5_Pro']">
+                                                    </div>
                                                 </div>
-                                                <div class="author-infor mg-style2">
-                                                    <h5><a href="author02.html">Tommy Alvarez</a></h5>
-                                                    <span class="price">170.3 ETH</span>
-                                                </div>
-                                            </div>    	
-                                        </div><!-- item-->
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="slider-item">										
-                                            <div class="sc-author-box style-2">
-                                                <div class="author-avatar">
-                                                        <img src="assets/images/avatar/avt-5.jpg" alt="" class="avatar">
-                                                    <div class="badge"></div>
-                                                </div>
-                                                <div class="author-infor">
-                                                    <h5><a href="author02.html">Windsor Lane</a></h5>
-                                                    <span class="price">120.7 ETH</span>
+                                                <div class="author-infor mt-[5px]">
+                                                    <h5 class="mb-[6px]"><a href="author02.html">Samson Frost</a></h5>
+                                                    <span class="price text-[15px] font-bold leading-[22px] text-[#7A798A]">205.43 ETH</span>
                                                 </div>
                                             </div>    	
                                         </div><!-- item-->
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-item">										
-                                            <div class="sc-author-box style-2">
-                                                <div class="author-avatar">
-                                                        <img src="assets/images/avatar/avt-3.jpg" alt="" class="avatar">
-                                                    <div class="badge"></div>
+                                            <div class="sc-author-box pb-[23px] w-[130px] inline-block text-center bg-transparent">
+                                                <div class="author-avatar mb-[20px] relative">
+                                                    <img src="assets/images/avatar/avt-4.jpg" alt="" class="avatar w-[120px] h-[120px] rounded-[40px] overflow-hidden">
+                                                    <div class="badge w-[26px] h-[26px] leading-[27px] bottom-0 right-[5px] inline-block absolute object-cover text-center rounded-[50%] bg-[var(--primary-color3)] p-0 text-[75%] font-bold text-white whitespace-nowrap align-baseline
+                                                                before:text-[15px] before:text-white before:font-bold before:content-['\f00c'] before:font-['Font_Awesome_5_Pro']">
+                                                    </div>
                                                 </div>
-                                                <div class="author-infor">
-                                                    <h5><a href="author02.html">Andy Hurlbutt</a></h5>
-                                                    <span class="price">82.79 ETH</span>
-                                                </div>
-                                            </div>    	
-                                        </div><!-- item-->
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="slider-item">										
-                                            <div class="sc-author-box style-2">
-                                                <div class="author-avatar">
-                                                        <img src="assets/images/avatar/avt-8.jpg" alt="" class="avatar">
-                                                    <div class="badge"></div>
-                                                </div>
-                                                <div class="author-infor">
-                                                    <h5><a href="author02.html">Blake Banks</a></h5>
-                                                    <span class="price">68.2 ETH</span>
+                                                <div class="author-infor mg-style2 mt-[5px]">
+                                                    <h5 class="mb-[6px]"><a href="author02.html">Tommy Alvarez</a></h5>
+                                                    <span class="price text-[15px] font-bold leading-[22px] text-[#7A798A]">170.3 ETH</span>
                                                 </div>
                                             </div>    	
                                         </div><!-- item-->
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-item">										
-                                            <div class="sc-author-box style-2">
-                                                <div class="author-avatar">
-                                                        <img src="assets/images/avatar/avt-6.jpg" alt="" class="avatar">
-                                                    <div class="badge"></div>
+                                            <div class="sc-author-box pb-[23px] w-[130px] inline-block text-center bg-transparent">
+                                                <div class="author-avatar mb-[20px] relative">
+                                                    <img src="assets/images/avatar/avt-5.jpg" alt="" class="avatar w-[120px] h-[120px] rounded-[40px] overflow-hidden">
+                                                    <div class="badge w-[26px] h-[26px] leading-[27px] bottom-0 right-[5px] inline-block absolute object-cover text-center rounded-[50%] bg-[var(--primary-color3)] p-0 text-[75%] font-bold text-white whitespace-nowrap align-baseline
+                                                                before:text-[15px] before:text-white before:font-bold before:content-['\f00c'] before:font-['Font_Awesome_5_Pro']">
+                                                    </div>
                                                 </div>
-                                                <div class="author-infor">
-                                                    <h5><a href="author02.html">Monica Lucas</a></h5>
-                                                    <span class="price">52.8 ETH</span>
-                                                </div>
-                                            </div>    	
-                                        </div><!-- item-->
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="slider-item">										
-                                            <div class="sc-author-box style-2">
-                                                <div class="author-avatar">
-                                                        <img src="assets/images/avatar/avt-9.jpg" alt="" class="avatar">
-                                                    <div class="badge"></div>
-                                                </div>
-                                                <div class="author-infor">
-                                                    <h5><a href="author02.html">Matt Ramos</a></h5>
-                                                    <span class="price">38.4 ETH</span>
+                                                <div class="author-infor mt-[5px]">
+                                                    <h5 class="mb-[6px]"><a href="author02.html">Windsor Lane</a></h5>
+                                                    <span class="price text-[15px] font-bold leading-[22px] text-[#7A798A]">120.7 ETH</span>
                                                 </div>
                                             </div>    	
                                         </div><!-- item-->
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-item">										
-                                            <div class="sc-author-box style-2">
-                                                <div class="author-avatar">
-                                                        <img src="assets/images/avatar/avt-7.jpg" alt="" class="avatar">
-                                                    <div class="badge"></div>
+                                            <div class="sc-author-box pb-[23px] w-[130px] inline-block text-center bg-transparent">
+                                                <div class="author-avatar mb-[20px] relative">
+                                                    <img src="assets/images/avatar/avt-3.jpg" alt="" class="avatar w-[120px] h-[120px] rounded-[40px] overflow-hidden">
+                                                    <div class="badge w-[26px] h-[26px] leading-[27px] bottom-0 right-[5px] inline-block absolute object-cover text-center rounded-[50%] bg-[var(--primary-color3)] p-0 text-[75%] font-bold text-white whitespace-nowrap align-baseline
+                                                                before:text-[15px] before:text-white before:font-bold before:content-['\f00c'] before:font-['Font_Awesome_5_Pro']">
+                                                    </div>
                                                 </div>
-                                                <div class="author-infor">
-                                                    <h5><a href="author02.html">Harper Wilcher</a></h5>
-                                                    <span class="price">29.2 ETH</span>
+                                                <div class="author-infor mt-[5px]">
+                                                    <h5 class="mb-[6px]"><a href="author02.html">Andy Hurlbutt</a></h5>
+                                                    <span class="price text-[15px] font-bold leading-[22px] text-[#7A798A]">82.79 ETH</span>
+                                                </div>
+                                            </div>    	
+                                        </div><!-- item-->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-item">										
+                                            <div class="sc-author-box pb-[23px] w-[130px] inline-block text-center bg-transparent">
+                                                <div class="author-avatar mb-[20px] relative">
+                                                    <img src="assets/images/avatar/avt-8.jpg" alt="" class="avatar w-[120px] h-[120px] rounded-[40px] overflow-hidden">
+                                                    <div class="badge w-[26px] h-[26px] leading-[27px] bottom-0 right-[5px] inline-block absolute object-cover text-center rounded-[50%] bg-[var(--primary-color3)] p-0 text-[75%] font-bold text-white whitespace-nowrap align-baseline
+                                                                before:text-[15px] before:text-white before:font-bold before:content-['\f00c'] before:font-['Font_Awesome_5_Pro']">
+                                                    </div>
+                                                </div>
+                                                <div class="author-infor mt-[5px]">
+                                                    <h5 class="mb-[6px]"><a href="author02.html">Blake Banks</a></h5>
+                                                    <span class="price text-[15px] font-bold leading-[22px] text-[#7A798A]">68.2 ETH</span>
+                                                </div>
+                                            </div>    	
+                                        </div><!-- item-->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-item">										
+                                            <div class="sc-author-box pb-[23px] w-[130px] inline-block text-center bg-transparent">
+                                                <div class="author-avatar mb-[20px] relative">
+                                                    <img src="assets/images/avatar/avt-6.jpg" alt="" class="avatar w-[120px] h-[120px] rounded-[40px] overflow-hidden">
+                                                    <div class="badge w-[26px] h-[26px] leading-[27px] bottom-0 right-[5px] inline-block absolute object-cover text-center rounded-[50%] bg-[var(--primary-color3)] p-0 text-[75%] font-bold text-white whitespace-nowrap align-baseline
+                                                                before:text-[15px] before:text-white before:font-bold before:content-['\f00c'] before:font-['Font_Awesome_5_Pro']">
+                                                    </div>
+                                                </div>
+                                                <div class="author-infor mt-[5px]">
+                                                    <h5 class="mb-[6px]"><a href="author02.html">Monica Lucas</a></h5>
+                                                    <span class="price text-[15px] font-bold leading-[22px] text-[#7A798A]">52.8 ETH</span>
+                                                </div>
+                                            </div>    	
+                                        </div><!-- item-->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-item">										
+                                            <div class="sc-author-box pb-[23px] w-[130px] inline-block text-center bg-transparent">
+                                                <div class="author-avatar mb-[20px] relative">
+                                                    <img src="assets/images/avatar/avt-9.jpg" alt="" class="avatar w-[120px] h-[120px] rounded-[40px] overflow-hidden">
+                                                    <div class="badge w-[26px] h-[26px] leading-[27px] bottom-0 right-[5px] inline-block absolute object-cover text-center rounded-[50%] bg-[var(--primary-color3)] p-0 text-[75%] font-bold text-white whitespace-nowrap align-baseline
+                                                                before:text-[15px] before:text-white before:font-bold before:content-['\f00c'] before:font-['Font_Awesome_5_Pro']">
+                                                    </div>
+                                                </div>
+                                                <div class="author-infor mt-[5px]">
+                                                    <h5 class="mb-[6px]"><a href="author02.html">Matt Ramos</a></h5>
+                                                    <span class="price text-[15px] font-bold leading-[22px] text-[#7A798A]">38.4 ETH</span>
+                                                </div>
+                                            </div>    	
+                                        </div><!-- item-->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-item">										
+                                            <div class="sc-author-box pb-[23px] w-[130px] inline-block text-center bg-transparent">
+                                                <div class="author-avatar mb-[20px] relative">
+                                                    <img src="assets/images/avatar/avt-7.jpg" alt="" class="avatar w-[120px] h-[120px] rounded-[40px] overflow-hidden">
+                                                    <div class="badge w-[26px] h-[26px] leading-[27px] bottom-0 right-[5px] inline-block absolute object-cover text-center rounded-[50%] bg-[var(--primary-color3)] p-0 text-[75%] font-bold text-white whitespace-nowrap align-baseline
+                                                                before:text-[15px] before:text-white before:font-bold before:content-['\f00c'] before:font-['Font_Awesome_5_Pro']">
+                                                    </div>
+                                                </div>
+                                                <div class="author-infor mt-[5px]">
+                                                    <h5 class="mb-[6px]"><a href="author02.html">Harper Wilcher</a></h5>
+                                                    <span class="price text-[15px] font-bold leading-[22px] text-[#7A798A]">29.2 ETH</span>
                                                 </div>
                                             </div>    	
                                         </div><!-- item--> 
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-item">										
-                                            <div class="sc-author-box style-2">
-                                                <div class="author-avatar">
-                                                        <img src="assets/images/avatar/avt-1.jpg" alt="" class="avatar">
-                                                    <div class="badge"></div>
+                                            <div class="sc-author-box pb-[23px] w-[130px] inline-block text-center bg-transparent">
+                                                <div class="author-avatar mb-[20px] relative">
+                                                    <img src="assets/images/avatar/avt-1.jpg" alt="" class="avatar w-[120px] h-[120px] rounded-[40px] overflow-hidden">
+                                                    <div class="badge w-[26px] h-[26px] leading-[27px] bottom-0 right-[5px] inline-block absolute object-cover text-center rounded-[50%] bg-[var(--primary-color3)] p-0 text-[75%] font-bold text-white whitespace-nowrap align-baseline
+                                                                before:text-[15px] before:text-white before:font-bold before:content-['\f00c'] before:font-['Font_Awesome_5_Pro']">
+                                                    </div>
                                                 </div>
-                                                <div class="author-infor">
-                                                    <h5><a href="author02.html">Crispin Berry</a></h5>
-                                                    <span class="price">214.2 ETH</span>
-                                                </div>
-                                            </div>    	
-                                        </div><!-- item-->
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="slider-item">										
-                                            <div class="sc-author-box style-2">
-                                                <div class="author-avatar">
-                                                        <img src="assets/images/avatar/avt-2.jpg" alt="" class="avatar">
-                                                    <div class="badge"></div>
-                                                </div>
-                                                <div class="author-infor">
-                                                    <h5><a href="author02.html">Samson Frost</a></h5>
-                                                    <span class="price">205.43 ETH</span>
+                                                <div class="author-infor mt-[5px]">
+                                                    <h5 class="mb-[6px]"><a href="author02.html">Crispin Berry</a></h5>
+                                                    <span class="price text-[15px] font-bold leading-[22px] text-[#7A798A]">214.2 ETH</span>
                                                 </div>
                                             </div>    	
                                         </div><!-- item-->
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="slider-item">										
-                                            <div class="sc-author-box style-2">
-                                                <div class="author-avatar">
-                                                        <img src="assets/images/avatar/avt-4.jpg" alt="" class="avatar">
-                                                    <div class="badge"></div>
+                                            <div class="sc-author-box pb-[23px] w-[130px] inline-block text-center bg-transparent">
+                                                <div class="author-avatar mb-[20px] relative">
+                                                    <img src="assets/images/avatar/avt-2.jpg" alt="" class="avatar w-[120px] h-[120px] rounded-[40px] overflow-hidden">
+                                                    <div class="badge w-[26px] h-[26px] leading-[27px] bottom-0 right-[5px] inline-block absolute object-cover text-center rounded-[50%] bg-[var(--primary-color3)] p-0 text-[75%] font-bold text-white whitespace-nowrap align-baseline
+                                                                before:text-[15px] before:text-white before:font-bold before:content-['\f00c'] before:font-['Font_Awesome_5_Pro']">
+                                                    </div>
                                                 </div>
-                                                <div class="author-infor">
-                                                    <h5><a href="author02.html">Tommy Alvarez</a></h5>
-                                                    <span class="price">170.3 ETH</span>
+                                                <div class="author-infor mt-[5px]">
+                                                    <h5 class="mb-[6px]"><a href="author02.html">Samson Frost</a></h5>
+                                                    <span class="price text-[15px] font-bold leading-[22px] text-[#7A798A]">205.43 ETH</span>
+                                                </div>
+                                            </div>    	
+                                        </div><!-- item-->
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-item">										
+                                            <div class="sc-author-box pb-[23px] w-[130px] inline-block text-center bg-transparent">
+                                                <div class="author-avatar mb-[20px] relative">
+                                                    <img src="assets/images/avatar/avt-4.jpg" alt="" class="avatar w-[120px] h-[120px] rounded-[40px] overflow-hidden">
+                                                    <div class="badge w-[26px] h-[26px] leading-[27px] bottom-0 right-[5px] inline-block absolute object-cover text-center rounded-[50%] bg-[var(--primary-color3)] p-0 text-[75%] font-bold text-white whitespace-nowrap align-baseline
+                                                                before:text-[15px] before:text-white before:font-bold before:content-['\f00c'] before:font-['Font_Awesome_5_Pro']">
+                                                    </div>
+                                                </div>
+                                                <div class="author-infor mt-[5px]">
+                                                    <h5 class="mb-[6px]"><a href="author02.html">Tommy Alvarez</a></h5>
+                                                    <span class="price text-[15px] font-bold leading-[22px] text-[#7A798A]">170.3 ETH</span>
                                                 </div>
                                             </div>    	
                                         </div><!-- item-->
                                     </div>
                                 </div>
-                                <div class="swiper-button-next btn-slide-next active"></div>
-                                <div class="swiper-button-prev btn-slide-prev "></div>
+                                <div class="swiper-button-next btn-slide-next !right-0 !top-[34px]"></div>
+                                <div class="swiper-button-prev btn-slide-prev !right-[56px] !top-[34px] !left-auto"></div>
                             </div>
                         </div>
                     </div>
