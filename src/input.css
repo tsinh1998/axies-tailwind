@@ -558,3 +558,14 @@ a:focus {
 .auctions .swiper-button-prev.btn-slide-prev::after {
     @apply text-[var(--primary-color2)] text-[16px] font-bold ;
 }
+
+.tf-soft .dropdown-toggle:hover,
+.tf-soft .show > .btn-secondary.dropdown-toggle {
+    @apply border-[#5142FC] shadow-none bg-[#5142FC] ;
+}
+.tf-soft .soft-right input:checked[type=checkbox] {
+    @apply bg-[#5142fc] duration-[0.5s] ;
+}
+.tf-soft .soft-right input:checked[type=checkbox]::before {
+    @apply bg-white left-[14px] ;
+}
