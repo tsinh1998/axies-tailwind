@@ -271,7 +271,7 @@ a:focus {
     @apply text-white
 }
 .sc-button.style span {
-    @apply pl-[26px] before:absolute before:font-['nfts'] before:text-[20px] before:left-0 before:font-[100] before:top-[-4px]; ;
+    @apply pl-[26px] before:absolute before:font-['nfts'] before:text-[20px] before:left-0 before:font-[100] before:top-[-4px]; 
 }
 .sc-button.style-1 {
     @apply border-[2px] border-solid border-white text-white bg-none bg-transparent bg-repeat bg-scroll bg-[0_0]
@@ -502,6 +502,11 @@ a:focus {
     -webkit-text-stroke: 3px transparent;
     -webkit-text-fill-color: unset;
 }
+.bg-heading-1 {
+    @apply bg-[linear-gradient(178.56deg,#E250E5_5.32%,#4B50E6_94.32%)] ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .sc-card-product .card-media .featured-countdown .countdown__label {
     @apply mx-[5px] ;
@@ -569,3 +574,4 @@ a:focus {
 .tf-soft .soft-right input:checked[type=checkbox]::before {
     @apply bg-white left-[14px] ;
 }
+
