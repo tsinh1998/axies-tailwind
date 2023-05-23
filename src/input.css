@@ -1,3 +1,10 @@
+/**
+  * Name: Axies - NFT Marketplace Tailwindcss Template
+  * Version: 1.0.0
+  * Author: Themesflat
+  * Author URI: https://themeforest.net/user/themesflat/portfolio
+*/
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -275,7 +282,7 @@ a:focus {
 }
 .sc-button.style-1 {
     @apply border-[2px] border-solid border-white text-white bg-none bg-transparent bg-repeat bg-scroll bg-[0_0]
-    dark:border-[2px] dark:border-[#5142FC] dark:text-white dark:bg-[transparent_none_repeat_scroll_0_0] 
+    dark:border-[2px] dark:border-[#5142FC] dark:text-white dark:bg-transparent dark:bg-none dark:bg-repeat dark:bg-scroll dark:bg-[0_0]
     dark:hover:border-[2px] dark:hover:border-white dark:hover:bg-white;
 }
 .sc-button.style-1:hover span,
@@ -300,9 +307,9 @@ a:focus {
 }
 .sc-button.loadmore {
     @apply bg-[#eeecff] border-[2px] border-solid border-[#eeecff] p-[14px_40px]
-    hover:border-transparent hover:outline-0 hover:bg-[transparent_none_repeat_scroll_0_0]
-    dark:bg-[transparent_none_repeat_scroll_0_0] dark:text-white
-    dark:hover:after:bg-white dark:hover:bg-transparent dark:hover:outline-0 ;
+    hover:border-transparent hover:outline-0 hover:bg-transparent hover:bg-none hover:bg-repeat hover:bg-scroll hover:bg-[0_0]
+    dark:bg-transparent dark:bg-none dark:bg-repeat dark:bg-scroll dark:bg-[0_0] dark:text-white
+    dark:hover:!bg-white dark:hover:bg-transparent dark:hover:outline-0 dark:hover:!border-white;
 }
 .is_dark .sc-button.loadmore:hover:after{
     background-color: #fff;
@@ -486,6 +493,7 @@ a:focus {
     @apply !translate-y-0 !opacity-100 duration-[0.7s] delay-[0.9s]  ;
 }
 .swiper-slide-active .flat-slider h2,
+.swiper-slide-active .flat-slider h4,
 .swiper-slide-active .flat-slider h1 {
     @apply !translate-y-0 !opacity-100 duration-[0.7s] delay-[0.7s]  ;
 }
@@ -564,9 +572,12 @@ a:focus {
     @apply text-[var(--primary-color2)] text-[16px] font-bold ;
 }
 
+.tf-soft .dropdown-toggle {
+    @apply dark:!bg-transparent;
+}
 .tf-soft .dropdown-toggle:hover,
 .tf-soft .show > .btn-secondary.dropdown-toggle {
-    @apply border-[#5142FC] shadow-none bg-[#5142FC] ;
+    @apply border-[#5142FC] shadow-none bg-[#5142FC] dark:!bg-transparent ;
 }
 .tf-soft .soft-right input:checked[type=checkbox] {
     @apply bg-[#5142fc] duration-[0.5s] ;
@@ -575,3 +586,12 @@ a:focus {
     @apply bg-white left-[14px] ;
 }
 
+.dropdown-menu {
+    @apply !text-white !bg-[#343444] ;
+}
+.dropdown-menu.show {
+    @apply block !translate-y-0 !inset-[36px_auto_auto_-140px]  ;
+} 
+.dropdown-toggle::after {
+    @apply hidden
+}

@@ -25,6 +25,10 @@ module.exports = {
           '50%': { background_position: 'right' },
           '100%': { background_position: 'left' },
         },
+        watermarkanimate: {
+          '0%': { left: '0' },
+          '100%': { left: '90%' },
+        },
       }
     },
   },
