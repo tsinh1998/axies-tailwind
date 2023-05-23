@@ -229,24 +229,13 @@ label.error {
 }
 
 .bg-style{
-    @apply !bg-[var(--primary-color5)] ;
-    
+    @apply !bg-[var(--primary-color5)]  ;
 }
 .bg-style2{
-    @apply !bg-[#fff] ;
-    
-}
-.is_dark .bg-style2{
-    @apply !bg-[#1F1F2C] ;
-    
+    @apply !bg-[#fff] dark:!bg-[#1F1F2C] ;
 }
 .bg-style3{
-    @apply !bg-[#f8f8f8] ;
-    
-}
-.is_dark .bg-style3{
-    @apply !bg-[#1F1F2C] ;
-    
+    @apply !bg-[#f8f8f8] dark:!bg-[#1F1F2C] ;
 }
 #wrapper{
     @apply relative overflow-hidden max-w-full h-full ;
@@ -478,6 +467,9 @@ a:focus {
     @apply p-[80px_0] bg-[var(--bg-section)] duration-[0.3s] ease-in-out transition-all ;
 }
 
+.swiper-container.show-shadow {
+    @apply !px-[15px] !mx-[-15px] ;
+}
 .swiper-button-prev, 
 .swiper-button-next {
     @apply opacity-0 duration-[0.3s] max-[1366px]:!hidden ;
@@ -594,4 +586,18 @@ a:focus {
 } 
 .dropdown-toggle::after {
     @apply hidden
+}
+
+.seller-tab .menu-tab li.item-title.active {
+    @apply bg-[#5142FC] dark:bg-[#343444];
+}
+.seller-tab .menu-tab li.item-title.active span {
+    @apply text-white ;
+}
+
+.home6.page-title .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    @apply bg-white border-white before:border-white ;
+}
+.home6.page-title .swiper-pagination-bullet {
+    @apply border-white ;
 }
