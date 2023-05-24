@@ -53,7 +53,10 @@
                                         <div id="site-logo-inner" class="absolute top-1/2 -translate-y-1/2">
                                             <a href="index.html" rel="home" class="main-logo">
                                                 <img id="logo_header" src="assets/images/logo/logo.png" alt="nft-gaming" width="133" height="56"
-                                                data-retina="assets/images/logo/logo_dark@2x.png" data-width="133"
+                                                data-retina="assets/images/logo/logo_dark@2x.png" data-width="133" class="block dark:hidden"
+                                                data-height="56">
+                                                <img id="logo_header" src="assets/images/logo/logo_dark.png" alt="nft-gaming" width="133" height="56"
+                                                data-retina="assets/images/logo/logo_dark@2x.png" data-width="133" class="hidden dark:block"
                                                 data-height="56">
                                             </a>
                                         </div>
@@ -158,7 +161,7 @@
                                                 <form action="#" method="get" role="search" class="search-form relative">
                                                     <input type="search" id="s" placeholder="Search..." value="" name="s" title="Search for" required=""
                                                      class="search-field !bg-[#F8F8F8] !text-[#14141F] !w-full !border-[1px] !border-solid !border-white !rounded-[30px] !eading-[23px] !p-[13px_50px_13px_15px]">
-                                                    <button class="search search-submit absolute top-0 right-0 text-[20px] text-[#14141F] duration-[0.3s] border-none rounded-[30px] leading-[20px] p-[15px] bg-transparent hover:border-0 hover:text-white"
+                                                    <button class="search search-submit absolute top-0 right-0 text-[20px] text-[#14141F] duration-[0.3s] border-none rounded-[30px] leading-[20px] p-[15px] bg-transparent hover:border-0"
                                                      type="submit" title="Search">
                                                         <i class="icon-fl-search-filled"></i>
                                                     </button>
@@ -166,9 +169,6 @@
                                             </div>
                                         </div>
                                         <div class="sc-btn-top mr-[12px]" id="site-header">
-                                            <!-- <a href="connect-wallet.html" id="connectbtn" class="sc-button header-slider style style-1 wallet fl-button pri-1">
-                                                <span >Wallet connect</span>
-                                            </a> -->
                                             <a href="connect-wallet.html" id="connectbtn" class="group p-[12px_35px_12px_32px] border-[2px] border-solid border-white text-white bg-[transparen_none_repeat_scroll_0_0] relative inline-block rounded-[30px] hover:bg-white">
                                                 <span class="pl-[28px] text-[15px] z-[1] font-[700] leading-[22px] relative duration-[0.3s] group-hover:text-[var(--primary-color3)]
                                                 before:content-['\e917'] before:absolute before:font-['nfts'] before:text-[20px] before:left-0 before:font-[100] before:top-[-4px] before:z-[1]">Wallet connect</span>
@@ -422,7 +422,7 @@
             </header>
                 
             <!-- title page -->
-            <section class="flat-title-page pt-[139px] pb-[59px] relative bg-[url('../images/backgroup-secsion/img_bg_page_title_inner.jpg')] bg-cover bg-center bg-no-repeat">
+            <section class="flat-title-page pt-[139px] pb-[59px] relative bg-[url('../images/backgroup-secsion/img_bg_page_title_inner.jpg')] dark:bg-[url('../images/backgroup-secsion/img_bg_page_title_dark.jpg')] bg-cover bg-center bg-no-repeat">
                 <div class="overlay absolute top-0 left-0 w-full h-full bg-[#3434444d] duration-[0.3s] transition-all ease-in-out"></div>
                 <div class="themesflat-container">
                     <div class="row">
@@ -609,7 +609,7 @@
             </div>
 
             <!-- Footer -->
-           <footer id="footer" class="py-[80px] bg-white">
+           <footer id="footer" class="py-[80px] bg-white dark:bg-[#0D0D11]">
             <div class="themesflat-container">
                 <div class="row">
                     <div class="col-lg-3 col-md-12 col-12">
@@ -617,7 +617,10 @@
                             <div class="logo-footer mb-[13px]" id="logo-footer">
                                 <a href="index.html">
                                     <img id="logo_footer" src="assets/images/logo/logo2.png" alt="nft-gaming" width="135" height="56"
-                                    data-retina="assets/images/logo/logo_dark@2x.png" data-width="135"
+                                    data-retina="assets/images/logo/logo_dark@2x.png" data-width="135" class="block dark:hidden"
+                                    data-height="56">
+                                    <img id="logo_footer" src="assets/images/logo/logo_dark.png" alt="nft-gaming" width="135" height="56"
+                                    data-retina="assets/images/logo/logo_dark@2x.png" data-width="133" class="hidden dark:block"
                                     data-height="56">
                                 </a>
                             </div>
@@ -687,9 +690,9 @@
                             <div class="form-subcribe">
                                 <form id="subscribe-form" action="#" method="GET" accept-charset="utf-8" class="form-submit relative">
                                     <input name="email" value="" type="email" placeholder="info@yourgmail.com" required 
-                                    class="!border-[1px] !border-[#8a8aa04d] !rounded-[10px] !bg-[#F8F8F8] !w-full !p-[13px_50px_12px_22px] !text-[14px] focus:!border-[#5142FC]" >
+                                    class="!border-[1px] !border-[#8a8aa04d] !rounded-[10px] !bg-[#F8F8F8] !w-full !p-[13px_50px_12px_22px] !text-[14px] focus:!border-[#5142FC] placeholder:text-[14px]" >
                                     <button id="submit" name="submit" type="submit"
-                                    class="!absolute !top-0 !right-0 !bg-[var(--primary-color3)] !text-[21px] !p-[15px_18px_14px_19px] !text-[var(--primary-color)] rounded-tr-[10px] rounded-br-[10px] rounded-tl-none rounded-bl-none hover:opacity-90"><i class="icon-fl-send"></i></button>
+                                    class="!absolute !top-0 !right-0 !bg-[var(--primary-color3)] !text-[21px] !p-[15px_18px_14px_19px] !text-[var(--primary-color)] rounded-tr-[10px] rounded-br-[10px] rounded-tl-none rounded-bl-none hover:opacity-90"><i class="icon-fl-send dark:text-white"></i></button>
                                 </form>
                             </div>
                             <div class="widget-social style-1 mt-[32px]">

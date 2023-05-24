@@ -16,7 +16,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/ntfs.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="assets/icon/Favicon.png">
@@ -24,35 +32,41 @@
 
 </head>
 
-<body class="body header-fixed is_dark">
+<body class="body header-fixed">
+    
     <!-- preloade -->
     <div class="preload preload-container">
         <div class="preload-logo"></div>
     </div>
     <!-- /preload -->
 
+
     <div id="wrapper" class="item">
-        <div id="page" class="clearfix">
-            <header id="header_main" class="header_1 header_2 style2 style3 js-header">
-                <div class="themesflat-container">
+        <div id="page">
+
+            <header id="header_main" class="absolute z-[100] dark:bg-[#14141F] dark:bg-none bg-[linear-gradient(227.3deg,#8A208C_0%,#181B81_100.84%)] h-[104px] w-full border-b-[1px] border-solid border-b-[rgba(235,235,235,0.2)] transition-[all] duration-[0.5s] ease-in">
+                <div class="themesflat-container !w-[1830px]">
                     <div class="row">
                         <div class="col-md-12">                              
                             <div id="site-header-inner"> 
                                 <div class="wrap-box flex">
-                                    <div id="site-logo" class="clearfix">
-                                        <div id="site-logo-inner">
+                                    <div id="site-logo" class="h-[80px]">
+                                        <div id="site-logo-inner" class="absolute top-1/2 -translate-y-1/2">
                                             <a href="index.html" rel="home" class="main-logo">
+                                                <img id="logo_header" src="assets/images/logo/logo.png" alt="nft-gaming" width="133" height="56"
+                                                data-retina="assets/images/logo/logo_dark@2x.png" data-width="133" class="block dark:hidden"
+                                                data-height="56">
                                                 <img id="logo_header" src="assets/images/logo/logo_dark.png" alt="nft-gaming" width="133" height="56"
-                                                    data-retina="assets/images/logo/logo_dark@2x.png" data-width="133"
-                                                    data-height="56">
+                                                data-retina="assets/images/logo/logo_dark@2x.png" data-width="133" class="hidden dark:block"
+                                                data-height="56">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="mobile-button"><span></span></div><!-- /.mobile-button -->
-                                    <div class="question-form">
-                                        <form action="#" mETHod="get">
+                                    <div class="question-form absolute left-[12.7%]">
+                                        <form action="#" method="get" class="relative">
                                             <input type="text" placeholder="Type to search..." required>
-                                            <button type="submit">
+                                            <button type="submit" class="absolute">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <mask id="mask0_334_638" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="1" width="18" height="17">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.66699 1.66666H17.6862V17.3322H1.66699V1.66666Z" fill="white" stroke="white"/>
@@ -68,13 +82,13 @@
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7166 18.3333C17.5596 18.3333 17.4016 18.2746 17.2807 18.1572L14.3823 15.3308C14.1413 15.0952 14.1405 14.7131 14.3815 14.4774C14.6217 14.2402 15.0123 14.2418 15.2541 14.4758L18.1526 17.303C18.3935 17.5387 18.3944 17.9199 18.1534 18.1556C18.0333 18.2746 17.8746 18.3333 17.7166 18.3333Z" fill="white"/>
                                                     <path d="M17.7166 18.3333C17.5595 18.3333 17.4016 18.2746 17.2807 18.1572L14.3823 15.3308C14.1413 15.0952 14.1405 14.7131 14.3815 14.4774C14.6217 14.2402 15.0123 14.2418 15.2541 14.4758L18.1526 17.303C18.3935 17.5387 18.3944 17.9199 18.1534 18.1556C18.0333 18.2746 17.8746 18.3333 17.7166 18.3333" stroke="white"/>
                                                     </g>
-                                                    </svg>
+                                                </svg>
                                             </button>
                                         </form>
                                     </div>
-                                    <nav id="main-nav" class="main-nav">
+                                    <nav id="main-nav" class="main-nav absolute left-[44.1%] top-1/2 z-0 -translate-y-1/2 ">
                                         <ul id="menu-primary-menu" class="menu">
-                                            <li class="menu-item menu-item-has-children">
+                                            <li class="menu-item current-menu-item menu-item-has-children !p-[26px_13px_26px_13px]">
                                                 <a href="#">Home</a>
                                                 <ul class="sub-menu">
                                                     <li class="menu-item"><a href="index.html">Home 1</a></li>
@@ -83,9 +97,9 @@
                                                     <li class="menu-item"><a href="home4.html">Home 4</a></li>
                                                     <li class="menu-item"><a href="home5.html">Home 5</a></li>
                                                     <li class="menu-item"><a href="home6.html">Home 6</a></li>
-                                                    <li class="menu-item"><a href="home7.html">Home 7</a></li>
-                                                    <li class="menu-item current-item"><a href="home8.html">Home 8 ( Special )</a></li>
-                                                                                                        <li class="menu-item menu-item-has-children">
+                                                                                                        <li class="menu-item"><a href="home7.html">Home 7</a></li>
+                                                    <li class="menu-item"><a href="home8.html">Home 8 ( Special )</a></li>
+                                                    <li class="menu-item menu-item-has-children">
                                                         <a href="#">Slider Styles</a>
                                                         <ul class="sub-menu">
                                                             <li class="menu-item"><a href="slider-typer-text.html">Text Type</a></li>
@@ -95,7 +109,7 @@
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li class="menu-item menu-item-has-children">
+                                            <li class="menu-item menu-item-has-children !p-[26px_13px_26px_13px]">
                                                 <a href="#">Explore</a>
                                                 <ul class="sub-menu">
                                                     <li class="menu-item"><a href="explore-1.html">Explore Style 1</a></li>
@@ -107,22 +121,22 @@
                                                     <li class="menu-item"><a href="item-details-2.html">Item Details 2</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="menu-item menu-item-has-children">
+                                            <li class="menu-item menu-item-has-children !p-[26px_13px_26px_13px]">
                                                 <a href="#">Activity</a>
                                                 <ul class="sub-menu">
                                                     <li class="menu-item"><a href="activity1.html">Activity 1</a></li>
                                                     <li class="menu-item"><a href="activity2.html">Activity 2</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="menu-item menu-item-has-children">
+                                            <li class="menu-item menu-item-has-children !p-[26px_13px_26px_13px]">
                                                 <a href="#">Community</a>
                                                 <ul class="sub-menu">
-                                                    <li class="menu-item"><a href="blog.html">Blog</a></li>
+                                                    <li class="menu-item current-item"><a href="blog.html">Blog</a></li>
                                                     <li class="menu-item"><a href="blog-details.html">Blog Details</a></li>
                                                     <li class="menu-item"><a href="help-center.html">Help Center</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="menu-item current-menu-item menu-item-has-children">
+                                            <li class="menu-item menu-item-has-children !p-[26px_13px_26px_13px]">
                                                 <a href="#">Pages</a>
                                                 <ul class="sub-menu">
                                                     <li class="menu-item"><a href="author01.html">Authors</a></li>
@@ -130,6 +144,7 @@
                                                     <li class="menu-item"><a href="connect-wallet.html">Wallet Connect</a></li>
                                                     <li class="menu-item"><a href="create-item.html">Create Item</a></li>
                                                     <li class="menu-item"><a href="profile.html">Edit Profile</a></li>
+                                                     
                                                     <li class="menu-item"><a href="ranking.html">Ranking</a></li>
                                                     <li class="menu-item"><a href="login.html">Login</a></li>
                                                     <li class="menu-item"><a href="signup.html">Sign Up</a></li>
@@ -137,7 +152,7 @@
                                                     <li class="menu-item"><a href="faq.html">FAQ</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="menu-item  menu-item-has-children">
+                                            <li class="menu-item menu-item-has-children !p-[26px_13px_26px_13px]">
                                                 <a href="#">Contact</a>
                                                 <ul class="sub-menu">
                                                     <li class="menu-item"><a href="contact1.html">Contact 1</a></li>
@@ -145,14 +160,15 @@
                                                 </ul>
                                             </li>
                                         </ul>
-                                    </nav><!-- /#main-nav -->   
-                                    <div class="flat-search-btn flex">
-                                        <div class="sc-btn-top mg-r-12" id="site-header">
-                                            <a  href="connect-wallet.html" id="connectbtn" class="sc-button header-slider style style-1 wallet fl-button pri-1"><span>Wallet connect
-                                            </span></a>
+                                    </nav> 
+                                    <div class="flat-search-btn flex p-[16px_0] absolute right-[132px] top-0 items-center justify-end">
+                                        <div class="sc-btn-top mr-[12px]" id="site-header">
+                                            <a href="connect-wallet.html" id="connectbtn" class="group p-[12px_35px_12px_32px] border-[2px] border-solid border-white text-white bg-[transparen_none_repeat_scroll_0_0] relative inline-block rounded-[30px] hover:bg-white">
+                                                <span class="pl-[28px] text-[15px] z-[1] font-[700] leading-[22px] relative duration-[0.3s] group-hover:text-[var(--primary-color3)]
+                                                before:content-['\e917'] before:absolute before:font-['nfts'] before:text-[20px] before:left-0 before:font-[100] before:top-[-4px] before:z-[1]">Wallet connect</span>
+                                            </a>
                                         </div>
-
-                                        <div class="admin_active" id="header_admin">
+                                        <div class="admin_active hidden" id="header_admin">
                                             <div class="header_avatar">
                                                 <div class="popup-notification">
                                                     <div class="notification">
@@ -385,164 +401,165 @@
                         </div>
                     </div>
                 </div>
-                <div class="mode_switcher style2">
-                    <h6>Dark mode <strong>Available</strong></h6>
-                    <a href="#" class="light d-flex align-items-center">
-                        <img src="assets/images/icon/sun.png" alt="">
-                    </a>
-                    <a href="#" class="dark d-flex align-items-center is_active">
-                        <img id="moon_dark" src="assets/images/icon/moon-2.png" alt="">
-                    </a>
+                <div class="mode_switcher absolute top-[21px] right-[50px] flex items-center justify-center max-[1818px]:!right-[15px] max-[991px]:!top-[105px] ">
+                    <div class="flex cursor-pointer max-[991px]:block" id="dark-mode">
+                        <a class="dark--mode__icon ionicon bg-[linear-gradient(216.56deg,#E250E5_5.32%,#4B50E6_94.32%)] dark:bg-none dark:bg-[#343444] max-[991px]:mb-[5px] rounded-[10px] w-[40px] h-[40px] min-w-[40px] text-[16px] ml-[10px] flex justify-center items-center">
+                            <img src="assets/images/icon/sun.png" alt="" >
+                        </a>
+                        <a class="light--mode__icon ionicon bg-[#343444] rounded-[10px] w-[40px] h-[40px] min-w-[40px] text-[16px] ml-[10px] flex justify-center items-center">
+                            <img src="assets/images/icon/moon-2.png" alt="" class="hidden dark:block">
+                            <img src="assets/images/icon/moon.png" alt="" class="block dark:hidden">
+                        </a>
+                    </div>
                 </div>
             </header>
-            <!-- Header -->        
-            
-            <section class="tf-item tf-section">
-                <div class="themesflat-container">
+
+            <section class="tf-item tf-section !pt-[104px]">
+                <div class="themesflat-container !w-full">
                     <div class="row">
-                        <div class="col-box-17">
-                            <div id="side-bar" class="side-bar style-3 item">
-                                <div class="widget widget-filter style-1 mgbt-0">
-                                    <div class="header-widget-filter">
-                                        <h4 class="title-widget">Filter</h4>
-                                        <a href="#" class="clear-checkbox btn-filter style-2">
+                        <div class="col-box-17 max-w-[17.1875%] flex-[0_0_17.1875%]">
+                            <div id="side-bar" class="side-bar dark:bg-[#1F1F2C] style-3 item fixed overflow-x-auto h-[800px] bg-white pt-[14px] pb-[30px] mt-[83px] w-[330px] z-[9] duration-[0.5s]">
+                                <div class="widget widget-filter mx-[40px] mb-[13px]">
+                                    <div class="header-widget-filter flex items-center justify-between">
+                                        <h4 class="title-widget leading-[30px] text-[var(--primary-color2)]">Filter</h4>
+                                        <a href="#" class="text-[14px] leading-[26px] text-[var(--primary-color3)] font-bold">
                                             Reset
                                         </a>
                                     </div>
                                 </div>     
-                                <div class="divider"></div>    
-                                <div class="wrap-category">
-                                    <div class="widget widget-category boder-bt">
-                                        <div class="title-wg-category">
-                                            <h5 class="title-widget style-2">Categories</h5>
-                                            <i class="far fa-chevron-up"></i>
+                                <div class="w-full h-[1px] bg-[#3C3C56] mb-[16px]"></div>    
+                                <div class="wrap-category px-[40px] pb-[13px]">
+                                    <div class="widget widget-category pb-[17px] mb-[16px] border-b-[1px] border-solid border-b-[#3C3C56]">
+                                        <div class="title-wg-category items-center pr-[4px] mb-[16px] flex justify-between cursor-pointer">
+                                            <h5 class="title-widget leading-[26px] text-[var(--primary-color2)]">Categories</h5>
+                                            <i class="far fa-chevron-up text-[12px] font-normal"></i>
                                         </div>
-                                        <div class="content-wg-category">
-                                            <form action="#" class="form-checkbox">
-                                                <label>
-                                                    <span>Art</span>
-                                                    <span class="pst-re">
-                                                        <input type="checkbox" checked="checked">
-                                                        <span class="btn-checkbox"></span>
+                                        <div class="content-wg-category ">
+                                            <form action="#" class="form-checkbox pr-[20px]">
+                                                <label class="flex justify-between mb-[-2px] tracking-normal text-[14px] leading-[16px] relative cursor-pointer">
+                                                    <span class="text-[15px] leading-[26px]">Art</span>
+                                                    <span class="pst-re mt-[3px] text-[15px] leading-[26px] relative">
+                                                        <input type="checkbox" checked="checked" class="absolute opacity-0 w-full h-full top-0 left-0 z-[1] ">
+                                                        <span class="btn-checkbox w-[20px] h-[20px] flex items-center justify-center text-[15px] leading-[26px] border-[1px] border-solid border-[#7A798A] absolute top-0 left-0 bg-transparent rounded-[4px]"></span>
                                                     </span>
                                                 </label><br>
-                                                <label>
-                                                    <span>Music</span>
-                                                    <span class="pst-re">
-                                                        <input type="checkbox">
-                                                        <span class="btn-checkbox"></span>
+                                                <label class="flex justify-between mb-[-2px] tracking-normal text-[14px] leading-[16px] relative cursor-pointer">
+                                                    <span class="text-[15px] leading-[26px]">Music</span>
+                                                    <span class="pst-re mt-[3px] text-[15px] leading-[26px] relative">
+                                                        <input type="checkbox" class="absolute opacity-0 w-full h-full top-0 left-0 z-[1] ">
+                                                        <span class="btn-checkbox w-[20px] h-[20px] flex items-center justify-center text-[15px] leading-[26px] border-[1px] border-solid border-[#7A798A] absolute top-0 left-0 bg-transparent rounded-[4px]"></span>
                                                     </span>
                                                 </label><br>
-                                                <label>
-                                                    <span>Domain Names</span>
-                                                    <span class="pst-re">
-                                                        <input type="checkbox">
-                                                        <span class="btn-checkbox"></span>
+                                                <label class="flex justify-between mb-[-2px] tracking-normal text-[14px] leading-[16px] relative cursor-pointer">
+                                                    <span class="text-[15px] leading-[26px]">Domain Names</span>
+                                                    <span class="pst-re mt-[3px] text-[15px] leading-[26px] relative">
+                                                        <input type="checkbox" class="absolute opacity-0 w-full h-full top-0 left-0 z-[1] ">
+                                                        <span class="btn-checkbox w-[20px] h-[20px] flex items-center justify-center text-[15px] leading-[26px] border-[1px] border-solid border-[#7A798A] absolute top-0 left-0 bg-transparent rounded-[4px]"></span>
                                                     </span>
                                                 </label><br>
-                                                <label>
-                                                    <span>Virtual Worlds</span>
-                                                    <span class="pst-re">
-                                                        <input type="checkbox">
-                                                        <span class="btn-checkbox"></span>
+                                                <label class="flex justify-between mb-[-2px] tracking-normal text-[14px] leading-[16px] relative cursor-pointer">
+                                                    <span class="text-[15px] leading-[26px]">Virtual Worlds</span>
+                                                    <span class="pst-re mt-[3px] text-[15px] leading-[26px] relative">
+                                                        <input type="checkbox" class="absolute opacity-0 w-full h-full top-0 left-0 z-[1] ">
+                                                        <span class="btn-checkbox w-[20px] h-[20px] flex items-center justify-center text-[15px] leading-[26px] border-[1px] border-solid border-[#7A798A] absolute top-0 left-0 bg-transparent rounded-[4px]"></span>
                                                     </span>
                                                 </label><br>
-                                                <label>
-                                                    <span>Trading  Cards</span>
-                                                    <span class="pst-re">
-                                                        <input type="checkbox">
-                                                        <span class="btn-checkbox"></span>
+                                                <label class="flex justify-between mb-[-2px] tracking-normal text-[14px] leading-[16px] relative cursor-pointer">
+                                                    <span class="text-[15px] leading-[26px]">Trading  Cards</span>
+                                                    <span class="pst-re mt-[3px] text-[15px] leading-[26px] relative">
+                                                        <input type="checkbox" class="absolute opacity-0 w-full h-full top-0 left-0 z-[1] ">
+                                                        <span class="btn-checkbox w-[20px] h-[20px] flex items-center justify-center text-[15px] leading-[26px] border-[1px] border-solid border-[#7A798A] absolute top-0 left-0 bg-transparent rounded-[4px]"></span>
                                                     </span>
                                                 </label><br>
-                                                <label>
-                                                    <span>Collectibles</span>
-                                                    <span class="pst-re">
-                                                        <input type="checkbox">
-                                                        <span class="btn-checkbox"></span>
+                                                <label class="flex justify-between mb-[-2px] tracking-normal text-[14px] leading-[16px] relative cursor-pointer">
+                                                    <span class="text-[15px] leading-[26px]">Collectibles</span>
+                                                    <span class="pst-re mt-[3px] text-[15px] leading-[26px] relative">
+                                                        <input type="checkbox" class="absolute opacity-0 w-full h-full top-0 left-0 z-[1] ">
+                                                        <span class="btn-checkbox w-[20px] h-[20px] flex items-center justify-center text-[15px] leading-[26px] border-[1px] border-solid border-[#7A798A] absolute top-0 left-0 bg-transparent rounded-[4px]"></span>
                                                     </span>
                                                 </label><br>
-                                                <label>
-                                                    <span>Sports</span>
-                                                    <span class="pst-re">
-                                                        <input type="checkbox">
-                                                        <span class="btn-checkbox"></span>
+                                                <label class="flex justify-between mb-[-2px] tracking-normal text-[14px] leading-[16px] relative cursor-pointer">
+                                                    <span class="text-[15px] leading-[26px]">Sports</span>
+                                                    <span class="pst-re mt-[3px] text-[15px] leading-[26px] relative">
+                                                        <input type="checkbox" class="absolute opacity-0 w-full h-full top-0 left-0 z-[1] ">
+                                                        <span class="btn-checkbox w-[20px] h-[20px] flex items-center justify-center text-[15px] leading-[26px] border-[1px] border-solid border-[#7A798A] absolute top-0 left-0 bg-transparent rounded-[4px]"></span>
                                                     </span>
                                                 </label><br>
-                                                <label>
-                                                    <span>Utility</span>
-                                                    <span class="pst-re">
-                                                        <input type="checkbox" checked="checked">
-                                                        <span class="btn-checkbox"></span>
+                                                <label class="flex justify-between mb-[-2px] tracking-normal text-[14px] leading-[16px] relative cursor-pointer">
+                                                    <span class="text-[15px] leading-[26px]">Utility</span>
+                                                    <span class="pst-re mt-[3px] text-[15px] leading-[26px] relative">
+                                                        <input type="checkbox" checked="checked" class="absolute opacity-0 w-full h-full top-0 left-0 z-[1] ">
+                                                        <span class="btn-checkbox w-[20px] h-[20px] flex items-center justify-center text-[15px] leading-[26px] border-[1px] border-solid border-[#7A798A] absolute top-0 left-0 bg-transparent rounded-[4px]"></span>
                                                     </span>
                                                 </label>
                                             </form>
                                         </div>
                                     </div>
-                                    <div class="widget widget-category style2 boder-bt">
-                                        <div class="title-wg-category">
-                                            <h5 class="title-widget style-2">File Types</h5>
-                                            <i class="far fa-chevron-up"></i>
+                                    <div class="widget widget-category pb-[17px] mb-[28px] border-b-[1px] border-solid border-b-[#3C3C56]">
+                                        <div class="title-wg-category items-center pr-[4px] mb-[16px] flex justify-between cursor-pointer">
+                                            <h5 class="title-widget leading-[26px] text-[var(--primary-color2)]">File Types</h5>
+                                            <i class="far fa-chevron-up text-[12px] font-normal"></i>
                                         </div>
                                         <div class="content-wg-category">
-                                            <form action="#" class="form-checkbox">
-                                                <label>
-                                                    <span>Image</span>
-                                                    <span class="pst-re">
-                                                        <input type="checkbox" checked="checked">
-                                                        <span class="btn-checkbox"></span>
+                                            <form action="#" class="form-checkbox pr-[20px]">
+                                                <label class="flex justify-between mb-[-2px] tracking-normal text-[14px] leading-[16px] relative cursor-pointer">
+                                                    <span class="text-[15px] leading-[26px]">Image</span>
+                                                    <span class="pst-re mt-[3px] text-[15px] leading-[26px] relative">
+                                                        <input type="checkbox" checked="checked" class="absolute opacity-0 w-full h-full top-0 left-0 z-[1] ">
+                                                        <span class="btn-checkbox w-[20px] h-[20px] flex items-center justify-center text-[15px] leading-[26px] border-[1px] border-solid border-[#7A798A] absolute top-0 left-0 bg-transparent rounded-[4px]"></span>
                                                     </span>
                                                 </label><br>
-                                                <label>
-                                                    <span>Video</span>
-                                                    <span class="pst-re">
-                                                        <input type="checkbox">
-                                                        <span class="btn-checkbox"></span>
+                                                <label class="flex justify-between mb-[-2px] tracking-normal text-[14px] leading-[16px] relative cursor-pointer">
+                                                    <span class="text-[15px] leading-[26px]">Video</span>
+                                                    <span class="pst-re mt-[3px] text-[15px] leading-[26px] relative">
+                                                        <input type="checkbox" class="absolute opacity-0 w-full h-full top-0 left-0 z-[1] ">
+                                                        <span class="btn-checkbox w-[20px] h-[20px] flex items-center justify-center text-[15px] leading-[26px] border-[1px] border-solid border-[#7A798A] absolute top-0 left-0 bg-transparent rounded-[4px]"></span>
                                                     </span>
                                                 </label><br>
-                                                <label>
-                                                    <span>Audio</span>
-                                                    <span class="pst-re">
-                                                        <input type="checkbox">
-                                                        <span class="btn-checkbox"></span>
+                                                <label class="flex justify-between mb-[-2px] tracking-normal text-[14px] leading-[16px] relative cursor-pointer">
+                                                    <span class="text-[15px] leading-[26px]">Audio</span>
+                                                    <span class="pst-re mt-[3px] text-[15px] leading-[26px] relative">
+                                                        <input type="checkbox" class="absolute opacity-0 w-full h-full top-0 left-0 z-[1] ">
+                                                        <span class="btn-checkbox w-[20px] h-[20px] flex items-center justify-center text-[15px] leading-[26px] border-[1px] border-solid border-[#7A798A] absolute top-0 left-0 bg-transparent rounded-[4px]"></span>
                                                     </span>
                                                 </label>
                                             </form>
                                         </div>
                                     </div>
-                                    <div class="widget widget-category boder-bt">
-                                        <div class="title-wg-category">
-                                            <h5 class="title-widget style-2">Currencies</h5>
-                                            <i class="far fa-chevron-up"></i>
+                                    <div class="widget widget-category pb-[17px] mb-[16px] border-b-[1px] border-solid border-b-[#3C3C56]">
+                                        <div class="title-wg-category items-center pr-[4px] mb-[16px] flex justify-between cursor-pointer">
+                                            <h5 class="title-widget leading-[26px] text-[var(--primary-color2)]">Currencies</h5>
+                                            <i class="far fa-chevron-up text-[12px] font-normal"></i>
                                         </div>
                                         <div class="content-wg-category">
-                                            <form action="#" class="form-checkbox">
-                                                <label>
-                                                    <span>BNB</span>
-                                                    <span class="pst-re">
-                                                        <input type="checkbox" checked="checked">
-                                                        <span class="btn-checkbox"></span>
+                                            <form action="#" class="form-checkbox pr-[20px]">
+                                                <label class="flex justify-between mb-[-2px] tracking-normal text-[14px] leading-[16px] relative cursor-pointer">
+                                                    <span class="text-[15px] leading-[26px]">BNB</span>
+                                                    <span class="pst-re mt-[3px] text-[15px] leading-[26px] relative">
+                                                        <input type="checkbox" checked="checked" class="absolute opacity-0 w-full h-full top-0 left-0 z-[1] ">
+                                                        <span class="btn-checkbox w-[20px] h-[20px] flex items-center justify-center text-[15px] leading-[26px] border-[1px] border-solid border-[#7A798A] absolute top-0 left-0 bg-transparent rounded-[4px]"></span>
                                                     </span>
                                                 </label><br>
-                                                <label>
-                                                    <span>BUSD</span>
-                                                    <span class="pst-re">
-                                                        <input type="checkbox">
-                                                        <span class="btn-checkbox"></span>
+                                                <label class="flex justify-between mb-[-2px] tracking-normal text-[14px] leading-[16px] relative cursor-pointer">
+                                                    <span class="text-[15px] leading-[26px]">BUSD</span>
+                                                    <span class="pst-re mt-[3px] text-[15px] leading-[26px] relative">
+                                                        <input type="checkbox" class="absolute opacity-0 w-full h-full top-0 left-0 z-[1] ">
+                                                        <span class="btn-checkbox w-[20px] h-[20px] flex items-center justify-center text-[15px] leading-[26px] border-[1px] border-solid border-[#7A798A] absolute top-0 left-0 bg-transparent rounded-[4px]"></span>
                                                     </span>
                                                 </label><br>
-                                                <label>
-                                                    <span>ETH</span>
-                                                    <span class="pst-re">
-                                                        <input type="checkbox">
-                                                        <span class="btn-checkbox"></span>
+                                                <label class="flex justify-between mb-[-2px] tracking-normal text-[14px] leading-[16px] relative cursor-pointer">
+                                                    <span class="text-[15px] leading-[26px]">ETH</span>
+                                                    <span class="pst-re mt-[3px] text-[15px] leading-[26px] relative">
+                                                        <input type="checkbox" class="absolute opacity-0 w-full h-full top-0 left-0 z-[1] ">
+                                                        <span class="btn-checkbox w-[20px] h-[20px] flex items-center justify-center text-[15px] leading-[26px] border-[1px] border-solid border-[#7A798A] absolute top-0 left-0 bg-transparent rounded-[4px]"></span>
                                                     </span>
                                                 </label>
                                             </form>
                                         </div>
                                     </div>
-                                    <div class="widget widget-category style3">
-                                        <div class="title-wg-category">
-                                            <h5 class="title-widget style-2">Price Range</h5>
+                                    <div class="widget widget-category pb-[17px] mb-[16px]">
+                                        <div class="title-wg-category items-center pr-[4px] mb-[23px] flex justify-between cursor-pointer">
+                                            <h5 class="title-widget leading-[26px] text-[var(--primary-color2)]">Price Range</h5>
                                         </div>
                                         <div id="slider-range"></div>
                                         <div class="slider-labels flex">
@@ -557,7 +574,7 @@
                             </div>
                         </div>
                         
-                        <div class="col-box-83">
+                        <div class="col-box-83 max-w-[82.8125%] flex-[0_0_82.8125%]">
                             <div class="flat-tabs items">
                                 <ul class="menu-tab">
                                     <li class="active"><span>Live Auctions</span></li>
@@ -1519,7 +1536,7 @@
                                                     </div>
                                                 </div>   
                                             </div>
-
+            
                                         </div>
                                     </div>
                                     <div class="content-inner">
@@ -4947,55 +4964,53 @@
                 </div>
             </section>
 
-            <!-- Footer -->
         </div>
-        <!-- /#page -->
-
+        
         <!-- Modal Popup Bid -->
-        <div class="modal fade popup" id="popup_bid_success" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+        <div class="modal fade popup z-[99999] !overflow-hidden !pr-0" id="popup_bid_success" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered flex items-center min-h-[calc(100%-1rem)] " role="document">
+                <div class="modal-content !rounded-[20px] !border-none !shadow-[0px_3px_16px_rgb(47_83_109/12%)] bg-[var(--primary-color)] w-full relative flex flex-col">
+                    <button type="button" class="close dark:!bg-[#14141F] hover:opacity-100 hover:border-0 overflow-hidden w-[30px] h-[30px] rounded-[50px] absolute right-[-15px] top-[-15px] !bg-white border-none outline-0 !z-10 opacity-100 shadow-[0px_3px_16px_rgb(47_83_109/12%)]" data-dismiss="modal" aria-label="Close">
+                        <span class="text-[15px] text-[var(--primary-color2)]" aria-hidden="true">&times;</span>
                     </button>
-                    <div class="modal-body space-y-20 pd-40">
+                    <div class="modal-body space-y-20 p-[40px]">
                         <h3 class="text-center">Your Bidding
                             Successfuly Added</h3>
-                        <p class="text-center">your bid <span class="price color-popup">(4ETH) </span> has been listing to our database</p>
-                        <a href="#" class="btn btn-primary"> Watch the listings</a>
+                        <p class="text-center mt-[20px] mb-0">your bid <span class="price text-[18px] text-[var(--primary-color2)] font-bold">(4ETH) </span> has been listing to our database</p>
+                        <a href class="btn btn-primary mt-[20px] mb-0 w-full rounded-[20px] font-bold text-[15px] leading-[22px] p-[10px_20px] !bg-[#5142FC] duration-[0.3s] ease-in-out outline-0 border-0 hover:opacity-80"> Watch the listings</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade popup" id="popup_bid" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+        <div class="modal fade popup z-[99999] !overflow-hidden !pr-0" id="popup_bid" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered flex items-center min-h-[calc(100%-1rem)] " role="document">
+                <div class="modal-content !rounded-[20px] !border-none !shadow-[0px_3px_16px_rgb(47_83_109/12%)] bg-[var(--primary-color)] w-full relative flex flex-col">
+                    <button type="button" class="close dark:!bg-[#14141F] hover:opacity-100 hover:border-0 overflow-hidden w-[30px] h-[30px] rounded-[50px] absolute right-[-15px] top-[-15px] !bg-white border-none outline-0 !z-10 opacity-100 shadow-[0px_3px_16px_rgb(47_83_109/12%)]" data-dismiss="modal" aria-label="Close">
+                        <span class="text-[15px] text-[var(--primary-color2)]" aria-hidden="true">&times;</span>
                     </button>
-                    <div class="modal-body space-y-20 pd-40">
-                        <h3>Place a Bid</h3>
-                        <p class="text-center">You must bid at least <span class="price color-popup">4.89 ETH</span>
+                    <div class="modal-body p-[40px]">
+                        <h3 class="text-center">Place a Bid</h3>
+                        <p class="text-center mt-[20px] mb-0">You must bid at least <span class="price text-[18px] text-[var(--primary-color2)] font-bold">4.89 ETH</span>
                         </p>
-                        <input type="text" class="form-control"
+                        <input type="text" class="form-control mt-[20px] mb-0"
                             placeholder="00.00 ETH">
-                        <p>Enter quantity. <span class="color-popup">5 available</span>
+                        <p class="mt-[20px] mb-0">Enter quantity. <span class="color-popup text-[var(--primary-color2)]">5 available</span>
                         </p>
-                        <input type="text" class="form-control quantity" value="1">
-                        <div class="hr"></div>
-                        <div class="d-flex justify-content-between">
+                        <input type="text" class="form-control mt-[20px] mb-0 text-[var(--primary-color2)]" value="1">
+                        <div class="mt-[20px] mb-0"></div>
+                        <div class="flex justify-between mt-[20px] mb-0">
                             <p> You must bid at least:</p>
-                            <p class="text-right price color-popup"> 4.89 ETH </p>
+                            <p class="text-right text-[var(--primary-color2)] text-[18px] font-bold"> 4.89 ETH </p>
                         </div>
-                        <div class="d-flex justify-content-between">
+                        <div class="flex justify-between mt-[20px] mb-0">
                             <p> Service free:</p>
-                            <p class="text-right price color-popup"> 0,89 ETH </p>
+                            <p class="text-right text-[var(--primary-color2)] text-[18px] font-bold"> 0,89 ETH </p>
                         </div>
-                        <div class="d-flex justify-content-between">
+                        <div class="flex justify-between mt-[20px] mb-0">
                             <p> Total bid amount:</p>
-                            <p class="text-right price color-popup"> 4 ETH </p>
+                            <p class="text-right text-[var(--primary-color2)] text-[18px] font-bold"> 4 ETH </p>
                         </div>
-                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#popup_bid_success" data-dismiss="modal" aria-label="Close"> Place a bid</a>
+                        <a href="#" class="btn btn-primary mt-[20px] mb-0 w-full rounded-[20px] font-bold text-[15px] leading-[22px] p-[10px_20px] !bg-[#5142FC] duration-[0.3s] ease-in-out outline-0 border-0 hover:opacity-80" data-toggle="modal" data-target="#popup_bid_success" data-dismiss="modal" aria-label="Close"> Place a bid</a>
                     </div>
                 </div>
             </div>
