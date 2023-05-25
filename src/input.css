@@ -154,7 +154,7 @@ input[type="url"]::placeholder,
 input[type="search"]::placeholder,
 input[type="tel"]::placeholder,
 input[type="color"]::placeholder {
-    @apply text-[18px] font-[400] leading-[28px] text-[#8A8AA0];
+    @apply text-[13px] font-[400] leading-[28px] text-[#8A8AA0];
 }
 button,
 input[type="button"],
@@ -450,11 +450,11 @@ a:focus {
     dark:bg-[#14141F] dark:bg-none dark:shadow-[1px_1px_5px_0px_rgb(0_0_0/50%)] ;
 }
 
-.fl-item,
+/* .fl-item,
 .fl-item2,
 .fl-item3 {
     @apply hidden;
-}
+} */
 
 #scroll-top {
     @apply fixed block w-[50px] h-[50px] leading-[50px] rounded-[50%] text-center z-[1] right-[14px] bottom-[23px] opacity-0 invisible cursor-pointer overflow-hidden
@@ -724,4 +724,39 @@ a:focus {
 }
 .slider-labels .title {
     @apply text-[#8A8AA0] mr-[3px] ;
+}
+
+.flat-tabs.items .menu-tab li.active::after {
+    @apply absolute left-0 bottom-0 content-[''] h-[3px] w-full bg-[#5142FC] ;
+}
+.flat-tabs.items .menu-tab li.active span {
+    @apply text-[#5142FC] dark:text-white ;
+}
+.flat-tabs.items .content-tab .content-inner .option .view ul li svg path {
+    @apply fill-[#5142FC] duration-[0.3s] ease-in-out dark:fill-white ;
+}
+.flat-tabs.items .content-tab .content-inner .option .view ul li:hover svg path, 
+.flat-tabs.items .content-tab .content-inner .option .view ul li.active svg path {
+    @apply fill-white ;
+}
+.flat-tabs.items .content-tab .content-inner .option .view ul li.active {
+    @apply bg-[#5142FC] dark:bg-[#343444];
+}
+.flat-tabs.items .content-tab .content-inner .option .view ul li.active a span {
+    @apply text-white ;
+}
+.dropdown ul.show {
+    @apply opacity-100 translate-y-0 duration-[0.3s] ;
+}
+.sc-card-product.style-h7 .card-media .featured-countdown .js-countdown span {
+    @apply text-[16px] leading-[24px] ;
+}
+
+.question-form input[type="text"]:focus {
+    @apply !border-[#5142FC] ;
+}
+
+.content-item2 .sc-card-product.menu_card.style-h7 .meta-info .info p.pricing,
+.content-item2 .sc-card-product .countdown .featured-countdown span {
+    @apply dark:text-white ;
 }
