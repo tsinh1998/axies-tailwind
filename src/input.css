@@ -300,9 +300,9 @@ a:focus {
     dark:bg-transparent dark:bg-none dark:bg-repeat dark:bg-scroll dark:bg-[0_0] dark:text-white
     dark:hover:!bg-white dark:hover:bg-transparent dark:hover:outline-0 dark:hover:!border-white;
 }
-.is_dark .sc-button.loadmore:hover:after{
+/* .is_dark .sc-button.loadmore:hover:after{
     background-color: #fff;
-}
+} */
 .sc-button.loadmore span {
     @apply text-[15px] ;
 }
@@ -514,6 +514,18 @@ a:focus {
     -webkit-text-fill-color: transparent;
 }
 
+@keyframes rainbow {
+    0% {
+        background-position: left ;
+    }
+    50% {
+        background-position: right ;
+    }
+    100% {
+        background-position: left ;
+    }
+}
+
 .sc-card-product .card-media .featured-countdown .countdown__label {
     @apply mx-[5px] ;
 }
@@ -585,13 +597,13 @@ a:focus {
 }
 
 .dropdown-menu {
-    @apply !text-white !bg-[#343444] ;
+    @apply !text-white dark:!bg-[#343444] ;
 }
 .dropdown-menu.show {
-    @apply block !translate-y-0 !inset-[36px_auto_auto_-140px]  ;
+    @apply block !translate-y-0 !inset-[36px_auto_auto_-140px] ;
 } 
 .dropdown-toggle::after {
-    @apply hidden
+    @apply hidden ;
 }
 
 .seller-tab .menu-tab li.item-title.active {
@@ -616,11 +628,9 @@ a:focus {
 .widget-category form label input:checked ~ .btn-checkbox {
     @apply bg-[var(--primary-color3)] border-[1px] border-solid border-[var(--primary-color3)] ;
 }
-
 .widget-category .btn-checkbox:after {
     @apply content-['\e921'] absolute hidden font-['nfts'] text-[10px] left-[2px] top-0 text-white;
 }
-
 .widget-category form label input:checked ~ .btn-checkbox:after {
     @apply block ;
 }
@@ -629,7 +639,6 @@ a:focus {
 .item .side-bar.item::-webkit-scrollbar {
     @apply w-[1px] bg-[var(--primary-color5)] ;
 }
-
 /* .tf-item-details .content-right .themesflat-tabs .tab-content::-webkit-scrollbar-thumb, */
 .item .side-bar.item::-webkit-scrollbar {
     @apply bg-[#8A8AA0] h-[30px] rounded-[100px] ;
@@ -759,4 +768,98 @@ a:focus {
 .content-item2 .sc-card-product.menu_card.style-h7 .meta-info .info p.pricing,
 .content-item2 .sc-card-product .countdown .featured-countdown span {
     @apply dark:text-white ;
+}
+
+/* animationtext */
+.animationtext {
+    @apply h-[70px] overflow-hidden ;
+}
+.cd-words-wrapper {
+    @apply inline-block relative text-left ;
+}
+.cd-words-wrapper .item-text {
+    @apply inline-block absolute whitespace-nowrap left-0 top-0 ;
+}
+.cd-words-wrapper .item-text.is-visible {
+    @apply relative ;
+}
+.no-js .cd-words-wrapper .item-text {
+    @apply opacity-0 ;
+}
+.no-js .cd-words-wrapper .item-text.is-visible {
+    @apply opacity-100 ;
+}
+.cd-words-wrapper .item-text , 
+.cd-words-wrapper .item-text i {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-fill-color: rgb(0 0 0/0%);
+}
+.dark .cd-words-wrapper .item-text , 
+.dark .cd-words-wrapper .item-text i {
+    @apply text-[#14141f] bg-[linear-gradient(-45deg,#E250E5,#4B50E6,#E250E5,#4B50E6)] bg-[length:100%_100%];
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px transparent;
+    -webkit-text-fill-color: #14141f;
+}
+/* animationtext.slide */
+.animationtext.slide span {
+    @apply inline-block;
+}
+.animationtext.slide .cd-words-wrapper {
+    @apply overflow-hidden align-top;
+}
+.animationtext.slide .item-text {
+    @apply opacity-0 top-[0.2em] ;
+}
+.animationtext.slide .item-text.is-visible {
+    @apply top-0 opacity-100 animate-[slidein_0.6s] ;
+}
+.animationtext.slide .item-text.is-hidden {
+    @apply animate-[slideout_0.6s] ;
+} 
+/* animationtext.rotate-3 */
+.animationtext.rotate-3 .cd-words-wrapper {
+    -webkit-perspective: 300px;
+    -moz-perspective: 300px;
+    perspective: 300px;
+}
+.animationtext.rotate-3 .item-text {
+    @apply opacity-0 ;
+}
+.animationtext.rotate-3 i {
+    @apply inline-block rotate-[0_180deg] ;
+    backface-visibility: hidden;
+}
+.is-visible .animationtext.rotate-3 i {
+    @apply rotate-0 ;
+}
+.animationtext.rotate-3 i.in {
+    @apply animate-[cdrotate3in_0.6s_forwards] ;
+}
+.animationtext.rotate-3 i.out {
+    @apply animate-[cdrotate3out_0.6s_forwards] ;
+}
+.no-csstransitions .animationtext.rotate-3 i {
+    @apply rotate-0 opacity-0 ;
+}
+.no-csstransitions .animationtext.rotate-3 .is-visible i {
+    @apply opacity-100 ;
+}
+
+.tf-item-details .content-right .meta-item-details .count-down .countdown__item {
+    @apply text-[var(--primary-color2)] font-bold text-[18px] leading-[26px];
+}
+.tf-item-details .content-right .meta-item-details .js-countdown .countdown__label {
+    @apply m-[0_5px] ;
+}
+.tf-item-details .content-right .meta-item-details .countdown__item:last-child .countdown__label {
+    @apply m-0 ;
+}
+
+.tf-item-details .content-right .themesflat-tabs .tab-title li.active::after {
+    @apply content-[''] absolute bottom-[-8px] left-0 w-full h-[2px] bg-[var(--primary-color3)] ;
+}
+.tf-item-details .content-right .themesflat-tabs .tab-title li.active {
+    @apply text-[var(--primary-color3)] ;
 }
