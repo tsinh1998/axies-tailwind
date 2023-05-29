@@ -11,6 +11,7 @@
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     @apply m-0 p-0 border-b-0 outline-0 text-[100%] ;
+    font: inherit;
 }
 html {
     @apply text-[62.5%] overflow-y-scroll box-border ;
@@ -850,9 +851,34 @@ a:focus {
     @apply m-0 ;
 }
 
-.tf-item-details .content-right .themesflat-tabs .tab-title li.active::after {
-    @apply content-[''] absolute bottom-[-8px] left-0 w-full h-[2px] bg-[var(--primary-color3)] ;
-}
 .tf-item-details .content-right .themesflat-tabs .tab-title li.active {
-    @apply text-[var(--primary-color3)] ;
+    @apply text-[var(--primary-color3)] after:content-[''] after:absolute after:bottom-[-8px] after:left-0 after:w-full after:h-[2px] after:bg-[var(--primary-color3)] ;
+}
+
+.tf-item-details .content-right .meta-item-details .count-down .countdown__item {
+    @apply text-[var(--primary-color2)] font-bold text-[18px] leading-[26px];
+}
+.tf-item-details.style-2 .content-right .meta-item-details .countdown__value {
+    @apply inline-block w-[44px] h-[58px] leading-[58px] text-center bg-[var(--primary-color3)] rounded-[6px] font-bold text-[20px] text-white ;
+}
+.tf-item-details.style-2 .content-right .meta-item-details .js-countdown .countdown__label {
+    @apply m-[0_11.1px] text-[30px] text-[#8A8AA0] ;
+}
+.tf-item-details.style-2 .content-right .meta-item-details .countdown__item:last-child .countdown__label {
+    @apply m-0 ;
+}
+
+.widget-filter a.box-widget-filter.active, .widget-filter a.box-widget-filter:hover {
+    @apply bg-[var(--primary-color3)] text-white ;
+}
+.widget-filter a.box-widget-filter.active i,
+.widget-filter a.box-widget-filter:hover i {
+    @apply text-white duration-[0.3s] ease-in-out ;
+}
+
+.widget-filter .btn-checkbox {
+    @apply absolute top-0 left-0 w-[28px] h-[28px] bg-transparent rounded-[8px] after:absolute after:content-['\e921'] after:font-['nfts'] after:left-[6px] after:top-[2px] after:text-white ;
+}
+.widget-filter.style-1 form label input:checked~.btn-checkbox {
+    @apply bg-[var(--primary-color3)] border-[1px] border-[var(--primary-color3)] after:block ;
 }

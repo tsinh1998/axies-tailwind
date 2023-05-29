@@ -42,25 +42,28 @@
 
     <div id="wrapper">
         <div id="page" class="clearfix">
-            <header id="header_main" class="header_1 js-header">
+            <header id="header_main" class="absolute z-[100] h-[80px] w-full border-b-[1px] border-solid border-b-[rgba(235,235,235,0.2)] transition-[all] duration-[0.5s] ease-in">
                 <div class="themesflat-container">
                     <div class="row">
                         <div class="col-md-12">                              
                             <div id="site-header-inner"> 
                                 <div class="wrap-box flex">
-                                    <div id="site-logo" class="clearfix">
-                                        <div id="site-logo-inner">
+                                    <div id="site-logo" class="h-[80px]">
+                                        <div id="site-logo-inner" class="absolute top-1/2 -translate-y-1/2">
                                             <a href="index.html" rel="home" class="main-logo">
+                                                <img id="logo_header" src="assets/images/logo/logo.png" alt="nft-gaming" width="133" height="56"
+                                                data-retina="assets/images/logo/logo_dark@2x.png" data-width="133" class="block dark:hidden"
+                                                data-height="56">
                                                 <img id="logo_header" src="assets/images/logo/logo_dark.png" alt="nft-gaming" width="133" height="56"
-                                                    data-retina="assets/images/logo/logo_dark@2x.png" data-width="133"
-                                                    data-height="56">
+                                                data-retina="assets/images/logo/logo_dark@2x.png" data-width="133" class="hidden dark:block"
+                                                data-height="56">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="mobile-button"><span></span></div><!-- /.mobile-button -->
-                                    <nav id="main-nav" class="main-nav">
+                                    <nav id="main-nav" class="main-nav absolute left-[26%] top-1/2 z-0 -translate-y-1/2 ">
                                         <ul id="menu-primary-menu" class="menu">
-                                            <li class="menu-item menu-item-has-children">
+                                            <li class="menu-item current-menu-item menu-item-has-children">
                                                 <a href="#">Home</a>
                                                 <ul class="sub-menu">
                                                     <li class="menu-item"><a href="index.html">Home 1</a></li>
@@ -71,7 +74,7 @@
                                                     <li class="menu-item"><a href="home6.html">Home 6</a></li>
                                                                                                         <li class="menu-item"><a href="home7.html">Home 7</a></li>
                                                     <li class="menu-item"><a href="home8.html">Home 8 ( Special )</a></li>
-                                                                                                        <li class="menu-item menu-item-has-children">
+                                                    <li class="menu-item menu-item-has-children">
                                                         <a href="#">Slider Styles</a>
                                                         <ul class="sub-menu">
                                                             <li class="menu-item"><a href="slider-typer-text.html">Text Type</a></li>
@@ -93,7 +96,7 @@
                                                     <li class="menu-item"><a href="item-details-2.html">Item Details 2</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="menu-item menu-item-has-children current-menu-item">
+                                            <li class="menu-item menu-item-has-children">
                                                 <a href="#">Activity</a>
                                                 <ul class="sub-menu">
                                                     <li class="menu-item current-item"><a href="activity1.html">Activity 1</a></li>
@@ -124,7 +127,7 @@
                                                     <li class="menu-item"><a href="faq.html">FAQ</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="menu-item  menu-item-has-children">
+                                            <li class="menu-item menu-item-has-children">
                                                 <a href="#">Contact</a>
                                                 <ul class="sub-menu">
                                                     <li class="menu-item"><a href="contact1.html">Contact 1</a></li>
@@ -132,9 +135,9 @@
                                                 </ul>
                                             </li>
                                         </ul>
-                                    </nav><!-- /#main-nav -->   
-                                    <div class="flat-search-btn flex">
-                                        <div class="header-search flat-show-search" id="s1">
+                                    </nav> 
+                                    <div class="flat-search-btn flex p-[16px_0] absolute right-[15px] top-0 items-center justify-end">
+                                        <div class="relative mr-[36px] p-[14px_0] flat-show-search" id="s1">
                                             <a href="#" class="show-search header-search-trigger">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <mask id="mask0_334_638" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="1" width="18" height="17">
@@ -151,23 +154,26 @@
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7166 18.3333C17.5596 18.3333 17.4016 18.2746 17.2807 18.1572L14.3823 15.3308C14.1413 15.0952 14.1405 14.7131 14.3815 14.4774C14.6217 14.2402 15.0123 14.2418 15.2541 14.4758L18.1526 17.303C18.3935 17.5387 18.3944 17.9199 18.1534 18.1556C18.0333 18.2746 17.8746 18.3333 17.7166 18.3333Z" fill="white"/>
                                                     <path d="M17.7166 18.3333C17.5595 18.3333 17.4016 18.2746 17.2807 18.1572L14.3823 15.3308C14.1413 15.0952 14.1405 14.7131 14.3815 14.4774C14.6217 14.2402 15.0123 14.2418 15.2541 14.4758L18.1526 17.303C18.3935 17.5387 18.3944 17.9199 18.1534 18.1556C18.0333 18.2746 17.8746 18.3333 17.7166 18.3333" stroke="white"/>
                                                     </g>
-                                                    </svg>
+                                                </svg>
                                             </a>
-                                            <div class="top-search">
-                                                <form action="#" method="get" role="search" class="search-form">
-                                                    <input type="search" id="s" class="search-field" placeholder="Search..." value="" name="s" title="Search for" required="">
-                                                    <button class="search search-submit" type="submit" title="Search">
+                                            <div class="top-search absolute right-[-16px] top-[130%] w-[250px] opacity-0 invisible">
+                                                <form action="#" method="get" role="search" class="search-form relative">
+                                                    <input type="search" id="s" placeholder="Search..." value="" name="s" title="Search for" required=""
+                                                     class="search-field !bg-[#F8F8F8] !text-[#14141F] !w-full !border-[1px] !border-solid !border-white !rounded-[30px] !eading-[23px] !p-[13px_50px_13px_15px]">
+                                                    <button class="search search-submit absolute top-0 right-0 text-[20px] text-[#14141F] duration-[0.3s] border-none rounded-[30px] leading-[20px] p-[15px] bg-transparent hover:border-0"
+                                                     type="submit" title="Search">
                                                         <i class="icon-fl-search-filled"></i>
                                                     </button>
                                                 </form>
                                             </div>
                                         </div>
-                                        <div class="sc-btn-top mg-r-12" id="site-header">
-                                            <a  href="connect-wallet.html" id="connectbtn" class="sc-button header-slider style style-1 wallet fl-button pri-1"><span>Wallet connect
-                                            </span></a>
+                                        <div class="sc-btn-top mr-[12px]" id="site-header">
+                                            <a href="connect-wallet.html" id="connectbtn" class="group p-[12px_35px_12px_32px] border-[2px] border-solid border-white text-white bg-[transparen_none_repeat_scroll_0_0] relative inline-block rounded-[30px] hover:bg-white">
+                                                <span class="pl-[28px] text-[15px] z-[1] font-[700] leading-[22px] relative duration-[0.3s] group-hover:text-[var(--primary-color3)]
+                                                before:content-['\e917'] before:absolute before:font-['nfts'] before:text-[20px] before:left-0 before:font-[100] before:top-[-4px] before:z-[1]">Wallet connect</span>
+                                            </a>
                                         </div>
-
-                                        <div class="admin_active" id="header_admin">
+                                        <div class="admin_active hidden" id="header_admin">
                                             <div class="header_avatar">
                                                 <div class="popup-notification">
                                                     <div class="notification">
@@ -400,30 +406,40 @@
                         </div>
                     </div>
                 </div>
-                <div class="mode_switcher">
-                    <h6>Dark mode <strong>Available</strong></h6>
-                    <a href="#" class="light d-flex align-items-center">
-                        <img src="assets/images/icon/sun.png" alt="">
-                    </a>
-                    <a href="#" class="dark d-flex align-items-center is_active">
-                        <img id="moon_dark" src="assets/images/icon/moon-2.png" alt="">
-                    </a>
+                <div class="mode_switcher absolute top-[21px] right-[11px] flex items-center justify-center max-[1818px]:!right-[15px] max-[991px]:!top-[105px] ">
+                    <h6 class="leading-[1.2] w-[85px] text-center text-white max-[1565px]:hidden">Dark mode <strong class="text-[18px]">Available</strong></h6>
+                    <div class="flex cursor-pointer max-[991px]:block" id="dark-mode">
+                        <a class="dark--mode__icon ionicon bg-[linear-gradient(216.56deg,#E250E5_5.32%,#4B50E6_94.32%)] dark:bg-none dark:bg-[#343444] max-[991px]:mb-[5px] rounded-[10px] w-[40px] h-[40px] min-w-[40px] text-[16px] ml-[10px] flex justify-center items-center">
+                            <img src="assets/images/icon/sun.png" alt="" >
+                        </a>
+                        <a class="light--mode__icon ionicon bg-[#343444] rounded-[10px] w-[40px] h-[40px] min-w-[40px] text-[16px] ml-[10px] flex justify-center items-center">
+                            <img src="assets/images/icon/moon-2.png" alt="" class="hidden dark:block">
+                            <img src="assets/images/icon/moon.png" alt="" class="block dark:hidden">
+                        </a>
+                    </div>
                 </div>
             </header>
+                
             <!-- title page -->
-            <section class="flat-title-page inner">
-                <div class="overlay"></div>
+            <section class="flat-title-page pt-[139px] pb-[59px] relative bg-[url('../images/backgroup-secsion/img_bg_page_title_inner.jpg')] dark:bg-[url('../images/backgroup-secsion/img_bg_page_title_dark.jpg')] bg-cover bg-center bg-no-repeat">
+                <div class="overlay absolute top-0 left-0 w-full h-full bg-[#3434444d] duration-[0.3s] transition-all ease-in-out"></div>
                 <div class="themesflat-container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="page-title-heading mg-bt-12">
-                                <h1 class="heading text-center">Activity 1</h1>
+                            <div class="mb-[12px]">
+                                <h1 class="text-center leading-[58px] text-white">Activity 1</h1>
                             </div>
-                            <div class="breadcrumbs">
+                            <div class="flex w-full justify-center">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="#">Activity</a></li>
-                                    <li>Activity 1</li>
+                                    <li class="text-[18px] leading-[28px] inline-block text-white py-0 pr-[8px] pl-[6px]">
+                                        <a class="relative text-[#8A8AA0] pr-[15px] after:content-[''] after:absolute after:bg-[#8A8AA0] after:w-[1px] after:h-[14px] after:bottom-[4px] after:right-0 after:rotate-[13deg] hover:text-white" 
+                                        href="index.html">Home</a>
+                                    </li>
+                                    <li class="text-[18px] leading-[28px] inline-block text-white py-0 pr-[8px] pl-[6px]">
+                                        <a class="relative text-[#8A8AA0] pr-[15px] after:content-[''] after:absolute after:bg-[#8A8AA0] after:w-[1px] after:h-[14px] after:bottom-[4px] after:right-0 after:rotate-[13deg] hover:text-white" 
+                                        href="#">Activity</a>
+                                    </li>
+                                    <li class="text-[18px] leading-[28px] inline-block text-white py-0 pr-[8px] pl-[6px]">Activity 1</li>
                                 </ul>
                             </div>
                         </div>
@@ -431,189 +447,143 @@
                 </div>                    
             </section>
 
-            <section class="tf-activity s1 tf-section">
+            <section class="tf-activity s1 tf-section max-[767px]:!py-[70px]">
                 <div class="themesflat-container">
                     <div class="row">
                         <div class="col-lg-8 col-md-8 col-12">
-                            <div class="sc-card-activity style1">
-                                <div class="content">
-                                    <div class="media">
+                            <div class="sc-card-activity style1 bg-[var(--primary-color)] shadow-[0px_3px_16px_rgba(47,83,109,0.12)] rounded-[12px] p-[24px] flex items-center justify-between mb-[28px]">
+                                <div class="content flex items-center max-[575px]:flex-wrap">
+                                    <div class="media max-[991px]:mr-[15px] max-[451px]:h-auto w-[112px] h-[112px] rounded-[10px] overflow-hidden object-cover mr-[29px] flex-shrink-0 flex items-start">
                                         <img src="assets/images/box-item/card-item-10.jpg" alt="">
                                     </div>
-                                    <div class="infor">
-                                        <h3> <a href="item-details.html">Monica Lucas</a></h3>
-                                        <div class="status">started following <span class="author">Gayle Hicks</span></div>
-                                        <div class="time">At 2:30 PM on 19th June, 2021</div>
+                                    <div class="infor mt-[3px] max-[549px]:mt-[15px]">
+                                        <h3 class="max-[767px]:text-[20px] mb-[12px] translate-y-[-7px] capitalize "> <a href="item-details.html">Monica Lucas</a></h3>
+                                        <div class="status mb-[6px] text-[18px] leading-[28px] text-[var(--primary-color4)]">started following <span class="author font-bold text-[16px] leading-[26px] text-[var(--primary-color3)] mx-[2px]">Gayle Hicks</span></div>
+                                        <div class="time text-[18px] leading-[28px] text-[var(--primary-color4)]">At 2:30 PM on 19th June, 2021</div>
                                     </div>
                                 </div>
-                                <div class="button-active icon icon-1"></div>
+                                <div class="button-active icon icon-1 max-[451px]:m-[10px_auto_0_auto] max-[767px]:text-[17px] max-[767px]:w-[40px] max-[767px]:h-[40px] max-[767px]:leading-[40px] font-thin text-[26px] w-[68px] h-[68px] leading-[68px] text-center bg-[var(--primary-color3)] rounded-[50%] object-cover mr-[15px] flex-shrink-0 text-white duration-[0.3s] ease-in-out after:content-['\e93d']"></div>
                             </div>
-                            <div class="sc-card-activity style1">
-                                <div class="content">
-                                    <div class="media">
+                            <div class="sc-card-activity style1 bg-[var(--primary-color)] shadow-[0px_3px_16px_rgba(47,83,109,0.12)] rounded-[12px] p-[24px] flex items-center justify-between mb-[28px]">
+                                <div class="content flex items-center max-[575px]:flex-wrap">
+                                    <div class="media max-[991px]:mr-[15px] max-[451px]:h-auto w-[112px] h-[112px] rounded-[10px] overflow-hidden object-cover mr-[29px] flex-shrink-0 flex items-start">
                                         <img src="assets/images/box-item/image-box-10.jpg" alt="">
                                     </div>
-                                    <div class="infor">
-                                        <h3> <a href="item-details.html">Wow! That Brain is Floating</a> </h3>
-                                        <div class="status"> <span class="quote">10 editions listed </span> by<span class="author"> Meowbids </span> for <span class="quote"> 2.50 ETH</span>each</div>
-                                        <div class="time">At 2:30 PM on 19th June, 2021</div>
+                                    <div class="infor mt-[3px] max-[549px]:mt-[15px]">
+                                        <h3 class="max-[767px]:text-[20px] mb-[12px] translate-y-[-7px] capitalize "> <a href="item-details.html">Wow! That Brain is Floating</a> </h3>
+                                        <div class="status mb-[6px] text-[18px] leading-[28px] text-[var(--primary-color4)]"> <span class="quote font-bold text-[16px] leading-[26px] mr-[3px]">10 editions listed </span> by<span class="author font-bold text-[16px] leading-[26px] text-[var(--primary-color3)] mx-[2px]"> Meowbids </span> for <span class="quote font-bold text-[16px] leading-[26px] mr-[3px]"> 2.50 ETH</span>each</div>
+                                        <div class="time text-[18px] leading-[28px] text-[var(--primary-color4)]">At 2:30 PM on 19th June, 2021</div>
                                     </div>
                                 </div>
-                                <div class="button-active icon icon-2"></div>
+                                <div class="button-active icon icon-2 max-[451px]:m-[10px_auto_0_auto] max-[767px]:text-[17px] max-[767px]:w-[40px] max-[767px]:h-[40px] max-[767px]:leading-[40px] font-thin text-[26px] w-[68px] h-[68px] leading-[68px] text-center bg-[var(--primary-color3)] rounded-[50%] object-cover mr-[15px] flex-shrink-0 text-white duration-[0.3s] ease-in-out after:content-['\e93b']"></div>
                             </div>
-                            <div class="sc-card-activity style1">
-                                <div class="content">
-                                    <div class="media">
+                            <div class="sc-card-activity style1 bg-[var(--primary-color)] shadow-[0px_3px_16px_rgba(47,83,109,0.12)] rounded-[12px] p-[24px] flex items-center justify-between mb-[28px]">
+                                <div class="content flex items-center max-[575px]:flex-wrap">
+                                    <div class="media max-[991px]:mr-[15px] max-[451px]:h-auto w-[112px] h-[112px] rounded-[10px] overflow-hidden object-cover mr-[29px] flex-shrink-0 flex items-start">
                                         <img src="assets/images/box-item/image-box-11.jpg" alt="">
                                     </div>
-                                    <div class="infor">
-                                        <h3> <a href="item-details.html">Erotic 35mm and polaroid photography</a> </h3>
-                                        <div class="status">started following <span class="author">Gayle Hicks</span></div>
-                                        <div class="time">At 2:30 PM on 19th June, 2021</div>
+                                    <div class="infor mt-[3px] max-[549px]:mt-[15px]">
+                                        <h3 class="max-[767px]:text-[20px] mb-[12px] translate-y-[-7px] capitalize "> <a href="item-details.html">Erotic 35mm and polaroid photography</a> </h3>
+                                        <div class="status mb-[6px] text-[18px] leading-[28px] text-[var(--primary-color4)]">started following <span class="author font-bold text-[16px] leading-[26px] text-[var(--primary-color3)] mx-[2px]">Gayle Hicks</span></div>
+                                        <div class="time text-[18px] leading-[28px] text-[var(--primary-color4)]">At 2:30 PM on 19th June, 2021</div>
                                     </div>
                                 </div>
-                                <div class="button-active icon icon-3"></div>
+                                <div class="button-active icon icon-3 max-[451px]:m-[10px_auto_0_auto] max-[767px]:text-[17px] max-[767px]:w-[40px] max-[767px]:h-[40px] max-[767px]:leading-[40px] font-thin text-[26px] w-[68px] h-[68px] leading-[68px] text-center bg-[var(--primary-color3)] rounded-[50%] object-cover mr-[15px] flex-shrink-0 text-white duration-[0.3s] ease-in-out after:content-['\e934']"></div>
                             </div>
-                            <div class="sc-card-activity style1">
-                                <div class="content">
-                                    <div class="media">
+                            <div class="sc-card-activity style1 bg-[var(--primary-color)] shadow-[0px_3px_16px_rgba(47,83,109,0.12)] rounded-[12px] p-[24px] flex items-center justify-between mb-[28px]">
+                                <div class="content flex items-center max-[575px]:flex-wrap">
+                                    <div class="media max-[991px]:mr-[15px] max-[451px]:h-auto w-[112px] h-[112px] rounded-[10px] overflow-hidden object-cover mr-[29px] flex-shrink-0 flex items-start">
                                         <img src="assets/images/box-item/image-box-21.jpg" alt="">
                                     </div>
-                                    <div class="infor">
-                                        <h3> <a href="item-details.html">Our Journey Start</a> </h3>
-                                        <div class="status">started following <span class="author">Gayle Hicks</span></div>
-                                        <div class="time">At 2:30 PM on 19th June, 2021</div>
+                                    <div class="infor mt-[3px] max-[549px]:mt-[15px]">
+                                        <h3 class="max-[767px]:text-[20px] mb-[12px] translate-y-[-7px] capitalize "> <a href="item-details.html">Our Journey Start</a> </h3>
+                                        <div class="status mb-[6px] text-[18px] leading-[28px] text-[var(--primary-color4)]">started following <span class="author font-bold text-[16px] leading-[26px] text-[var(--primary-color3)] mx-[2px]">Gayle Hicks</span></div>
+                                        <div class="time text-[18px] leading-[28px] text-[var(--primary-color4)]">At 2:30 PM on 19th June, 2021</div>
                                     </div>
                                 </div>
-                                <div class="button-active icon icon-4"></div>
+                                <div class="button-active icon icon-4 max-[451px]:m-[10px_auto_0_auto] max-[767px]:text-[17px] max-[767px]:w-[40px] max-[767px]:h-[40px] max-[767px]:leading-[40px] font-thin text-[26px] w-[68px] h-[68px] leading-[68px] text-center bg-[var(--primary-color3)] rounded-[50%] object-cover mr-[15px] flex-shrink-0 text-white duration-[0.3s] ease-in-out after:content-['\e937']"></div>
                             </div>
-                            <div class="sc-card-activity style1">
-                                <div class="content">
-                                    <div class="media">
+                            <div class="sc-card-activity style1 bg-[var(--primary-color)] shadow-[0px_3px_16px_rgba(47,83,109,0.12)] rounded-[12px] p-[24px] flex items-center justify-between mb-[28px]">
+                                <div class="content flex items-center max-[575px]:flex-wrap">
+                                    <div class="media max-[991px]:mr-[15px] max-[451px]:h-auto w-[112px] h-[112px] rounded-[10px] overflow-hidden object-cover mr-[29px] flex-shrink-0 flex items-start">
                                         <img src="assets/images/box-item/image-box-6.jpg" alt="">
                                     </div>
-                                    <div class="infor">
-                                        <h3> <a href="item-details.html">Skrrt Cobain Official</a> </h3>
-                                        <div class="status">started following <span class="author">Gayle Hicks</span></div>
-                                        <div class="time">At 2:30 PM on 19th June, 2021</div>
+                                    <div class="infor mt-[3px] max-[549px]:mt-[15px]">
+                                        <h3 class="max-[767px]:text-[20px] mb-[12px] translate-y-[-7px] capitalize "> <a href="item-details.html">Skrrt Cobain Official</a> </h3>
+                                        <div class="status mb-[6px] text-[18px] leading-[28px] text-[var(--primary-color4)]">started following <span class="author font-bold text-[16px] leading-[26px] text-[var(--primary-color3)] mx-[2px]">Gayle Hicks</span></div>
+                                        <div class="time text-[18px] leading-[28px] text-[var(--primary-color4)]">At 2:30 PM on 19th June, 2021</div>
                                     </div>
                                 </div>
-                                <div class="button-active icon icon-5"></div>
+                                <div class="button-active icon icon-5 max-[451px]:m-[10px_auto_0_auto] max-[767px]:text-[17px] max-[767px]:w-[40px] max-[767px]:h-[40px] max-[767px]:leading-[40px] font-thin text-[26px] w-[68px] h-[68px] leading-[68px] text-center bg-[var(--primary-color3)] rounded-[50%] object-cover mr-[15px] flex-shrink-0 text-white duration-[0.3s] ease-in-out after:content-['\e935']"></div>
                             </div>                          
                             
-                            <div class="btn-activity mg-t-40 center">
+                            <div class="btn-activity mt-[40px] text-center">
                                 <a href="#" class="sc-button loadmore fl-button pri-3"><span>Load More</span></a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-12">
-
-                            <div id="side-bar" class="side-bar style-2">
-
-                                <div class="widget widget-search mgbt-24">
-                                    <form action="#">
-                                        <input type="text" placeholder="Enter your word art" required>
-                                        <button><i class="icon-fl-search-filled"></i></button>
+                            <div id="side-bar" class="side-bar style-2 pl-[50px] max-[1565px]:p-0 max-[767px]:mt-[50px]">
+                                <div class="widget widget-search mb-[24px]">
+                                    <form action="#" class="relative">
+                                        <input type="text" placeholder="Enter your word art" required class="!rounded-[10px] !p-[10px_70px_8px_19px] !text-[13px]">
+                                        <button class="rounded-[0_10px_10px_0] absolute top-0 right-0 text-[17px] p-[12.5px_22px] hover:text-white !border-none"><i class="icon-fl-search-filled"></i></button>
                                     </form>
                                 </div>
-
                                 <div class="widget widget-filter style-2 mgbt-0">
-                                    <h3 class="title-widget">Filter</h3>
-                                    <ul class="box-check">
-                                        <li><a href="#" class="box-widget-filter"><i class="icon-fl-sort-filled"></i>Listings</a></li>
-                                        <li><a href="#" class="box-widget-filter"><i class="icon-fl-heart-filled"></i>Like</a></li>
-                                        <li><a href="#" class="box-widget-filter"><i class="icon-fl-buy"></i>Purchases</a></li>
-                                        <li><a href="#" class="box-widget-filter"><i class="icon-fl-discount"></i>Sales</a></li>
-                                        <li><a href="#" class="box-widget-filter"><i class="icon-fl-logout"></i>Transfer</a></li>
-                                        <li><a href="#" class="box-widget-filter"><i class="icon-fl-star"></i>Burns</a></li>
-                                        <li><a href="#" class="box-widget-filter"><i class="icon-fl-credit-card"></i>Bids</a></li>
-                                        <li><a href="#" class="box-widget-filter"><i class="icon-fl-users-filled"></i>Followings</a></li>
+                                    <h3 class="title-widget leading-[30px] mb-[20px] text-[var(--primary-color2)]">Filter</h3>
+                                    <ul class="box-check flex flex-wrap mb-[8px]">
+                                        <li class="mr-[12px] mb-[13px]">
+                                            <a href="#" class="box-widget-filter max-[549px]:p-[0_15px] shadow-[0px_2px_6px_0px_rgb(47_83_109/10%)] bg-[var(--primary-color)] leading-[38px] px-[20px] text-[15px] font-semibold rounded-[40px] flex items-center justify-center">
+                                                <i class="mr-[8px] dark:text-white text-[var(--primary-color3)] icon-fl-sort-filled"></i>Listings
+                                            </a>
+                                        </li>
+                                        <li class="mr-[12px] mb-[13px]">
+                                            <a href="#" class="box-widget-filter max-[549px]:p-[0_15px] shadow-[0px_2px_6px_0px_rgb(47_83_109/10%)] bg-[var(--primary-color)] leading-[38px] px-[20px] text-[15px] font-semibold rounded-[40px] flex items-center justify-center">
+                                                <i class="mr-[8px] dark:text-white text-[var(--primary-color3)] icon-fl-heart-filled"></i>Like
+                                            </a>
+                                        </li>
+                                        <li class="mr-[12px] mb-[13px]">
+                                            <a href="#" class="box-widget-filter max-[549px]:p-[0_15px] shadow-[0px_2px_6px_0px_rgb(47_83_109/10%)] bg-[var(--primary-color)] leading-[38px] px-[20px] text-[15px] font-semibold rounded-[40px] flex items-center justify-center">
+                                                <i class="mr-[8px] dark:text-white text-[var(--primary-color3)] icon-fl-buy"></i>Purchases
+                                            </a>
+                                        </li>
+                                        <li class="mr-[12px] mb-[13px]">
+                                            <a href="#" class="box-widget-filter max-[549px]:p-[0_15px] shadow-[0px_2px_6px_0px_rgb(47_83_109/10%)] bg-[var(--primary-color)] leading-[38px] px-[20px] text-[15px] font-semibold rounded-[40px] flex items-center justify-center">
+                                                <i class="mr-[8px] dark:text-white text-[var(--primary-color3)] icon-fl-discount"></i>Sales
+                                            </a>
+                                        </li>
+                                        <li class="mr-[12px] mb-[13px]">
+                                            <a href="#" class="box-widget-filter max-[549px]:p-[0_15px] shadow-[0px_2px_6px_0px_rgb(47_83_109/10%)] bg-[var(--primary-color)] leading-[38px] px-[20px] text-[15px] font-semibold rounded-[40px] flex items-center justify-center">
+                                                <i class="mr-[8px] dark:text-white text-[var(--primary-color3)] icon-fl-logout"></i>Transfer
+                                            </a>
+                                        </li>
+                                        <li class="mr-[12px] mb-[13px]">
+                                            <a href="#" class="box-widget-filter max-[549px]:p-[0_15px] shadow-[0px_2px_6px_0px_rgb(47_83_109/10%)] bg-[var(--primary-color)] leading-[38px] px-[20px] text-[15px] font-semibold rounded-[40px] flex items-center justify-center">
+                                                <i class="mr-[8px] dark:text-white text-[var(--primary-color3)] icon-fl-star"></i>Burns
+                                            </a>
+                                        </li>
+                                        <li class="mr-[12px] mb-[13px]">
+                                            <a href="#" class="box-widget-filter max-[549px]:p-[0_15px] shadow-[0px_2px_6px_0px_rgb(47_83_109/10%)] bg-[var(--primary-color)] leading-[38px] px-[20px] text-[15px] font-semibold rounded-[40px] flex items-center justify-center">
+                                                <i class="mr-[8px] dark:text-white text-[var(--primary-color3)] icon-fl-credit-card"></i>Bids
+                                            </a>
+                                        </li>
+                                        <li class="mr-[12px] mb-[13px]">
+                                            <a href="#" class="box-widget-filter max-[549px]:p-[0_15px] shadow-[0px_2px_6px_0px_rgb(47_83_109/10%)] bg-[var(--primary-color)] leading-[38px] px-[20px] text-[15px] font-semibold rounded-[40px] flex items-center justify-center">
+                                                <i class="mr-[8px] dark:text-white text-[var(--primary-color3)] icon-fl-users-filled"></i>Followings
+                                            </a>
+                                        </li>
                                     </ul>
-                                    <a href="#" class="clear-check btn-filter style-2">
+                                    <a href="#" class="clear-check btn-filter style-2 pt-[5px] text-[var(--primary-color3)] text-[16px] leading-[26px] font-bold relative cursor-pointer">
                                         Clear All Filters
                                     </a>
                                 </div>
-
                             </div><!--/.side-bar-->
-
                         </div>
                     </div>
                 </div>
             </section>
 
-           <!-- Footer -->
-           <footer id="footer" class="clearfix">
-            <div class="themesflat-container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-12 col-12">
-                        <div class="widget widget-logo">
-                            <div class="logo-footer" id="logo-footer">
-                                <a href="index.html">
-                                    <img id="logo_footer" src="assets/images/logo/logo_dark.png" alt="nft-gaming" width="135" height="56"
-                                    data-retina="assets/images/logo/logo_dark@2x.png" data-width="135"
-                                    data-height="56">
-                                </a>
-                            </div>
-                            <p class="sub-widget-logo">Lorem ipsum dolor sit amet,consectetur adipisicing elit. Quis non, fugit totam vel laboriosam vitae.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-5 col-5">
-                        <div class="widget widget-menu style-1">
-                            <h5 class="title-widget">My Account</h5>
-                            <ul>
-                                <li><a href="author01.html">Authors</a></li>
-                                <li><a href="connect-wallet.html">Collection</a></li>
-                                <li><a href="profile.html">Author Profile</a></li>
-                                <li><a href="create-item.html">Create Item</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-7 col-7">
-                        <div class="widget widget-menu style-2">
-                            <h5 class="title-widget">Resources</h5>
-                            <ul>
-                                <li><a href="help-center.html">Help & Support</a></li>
-                                <li><a href="auctions.html">Live Auctions</a></li>
-                                <li><a href="item-details.html">Item Details</a></li>
-                                <li><a href="activity1.html">Activity</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-5 col-5">
-                        <div class="widget widget-menu fl-st-3">
-                            <h5 class="title-widget">Company</h5>
-                            <ul>
-                                <li><a href="explore-1.html">Explore</a></li>
-                                <li><a href="contact1.html">Contact Us</a></li>
-                                <li><a href="blog.html">Our Blog</a></li>
-                                <li><a href="faq.html">FAQ</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-7 col-12">
-                        <div class="widget widget-subcribe">
-                            <h5 class="title-widget">Subscribe Us</h5>
-                            <div class="form-subcribe">
-                                <form id="subscribe-form" action="#" method="GET" accept-charset="utf-8" class="form-submit">
-                                    <input name="email" value="" class="email" type="email" placeholder="info@yourgmail.com" required>
-                                    <button id="submit" name="submit" type="submit"><i class="icon-fl-send"></i></button>
-                                </form>
-                            </div>
-                            <div class="widget-social style-1 mg-t32">
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                    
-                                    <li class="style-2"><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                                    <li class="mgr-none"><a href="#"><i class="icon-fl-tik-tok-2"></i></a></li>
-                                    <li class="mgr-none"><a href="#"><i class="icon-fl-vt"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </footer><!-- /#footer -->
+           
         <!-- Bottom -->
         </div>
         <!-- /#page -->
