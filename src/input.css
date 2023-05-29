@@ -635,11 +635,11 @@ a:focus {
     @apply block ;
 }
 
-/* .tf-item-details .content-right .themesflat-tabs .tab-content::-webkit-scrollbar, */
+.tf-item-details .content-right .themesflat-tabs .tab-content::-webkit-scrollbar,
 .item .side-bar.item::-webkit-scrollbar {
     @apply w-[1px] bg-[var(--primary-color5)] ;
 }
-/* .tf-item-details .content-right .themesflat-tabs .tab-content::-webkit-scrollbar-thumb, */
+.tf-item-details .content-right .themesflat-tabs .tab-content::-webkit-scrollbar-thumb,
 .item .side-bar.item::-webkit-scrollbar {
     @apply bg-[#8A8AA0] h-[30px] rounded-[100px] ;
 }
@@ -683,13 +683,6 @@ a:focus {
 }
 .noUi-horizontal .noUi-handle {
     @apply relative w-[16px] h-[16px] rounded-[50%] left-0 top-[-7px] bg-[#5142FC] ;
-    position: relative;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    left: 0px;
-    top: -7px;
-    background-color: #5142FC;
 }
 .noUi-horizontal .noUi-handle::after {
     @apply content-[''] w-[6px] h-[6px] rounded-[50%] bg-[#5142FC] absolute top-1/2 left-1/2 -translate-x-0 -translate-y-0 ;
