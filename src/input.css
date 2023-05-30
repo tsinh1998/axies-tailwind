@@ -252,6 +252,12 @@ a:hover,
 a:focus {
     @apply no-underline text-[var(--primary-color3)] outline-0 duration-[0.3s] transition-[all] ease-in-out;
 }
+svg {
+    @apply inline align-baseline ;
+}
+img {
+    @apply inline ;
+}
 
 .sc-button {
     @apply inline-block border-[2px] border-solid border-[var(--primary-color3)] text-[var(--primary-color3)] p-[11px_35px] rounded-[30px] duration-[0.3s]
@@ -451,11 +457,11 @@ a:focus {
     dark:bg-[#14141F] dark:bg-none dark:shadow-[1px_1px_5px_0px_rgb(0_0_0/50%)] ;
 }
 
-/* .fl-item,
+.fl-item,
 .fl-item2,
 .fl-item3 {
     @apply hidden;
-} */
+}
 
 #scroll-top {
     @apply fixed block w-[50px] h-[50px] leading-[50px] rounded-[50%] text-center z-[1] right-[14px] bottom-[23px] opacity-0 invisible cursor-pointer overflow-hidden
@@ -881,4 +887,11 @@ a:focus {
 }
 .widget-filter.style-1 form label input:checked~.btn-checkbox {
     @apply bg-[var(--primary-color3)] border-[1px] border-[var(--primary-color3)] after:block ;
+}
+
+.help-center-form input::placeholder {
+    @apply text-[18px] ;
+}
+.tab-authors .menu-tab .tablinks.active {
+    @apply text-[var(--primary-color3)] relative ;
 }

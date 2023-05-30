@@ -42,25 +42,28 @@
 
     <div id="wrapper">
         <div id="page" class="clearfix">
-            <header id="header_main" class="header_1 js-header">
+            <header id="header_main" class="absolute z-[100] h-[80px] w-full border-b-[1px] border-solid border-b-[rgba(235,235,235,0.2)] transition-[all] duration-[0.5s] ease-in">
                 <div class="themesflat-container">
                     <div class="row">
                         <div class="col-md-12">                              
                             <div id="site-header-inner"> 
                                 <div class="wrap-box flex">
-                                    <div id="site-logo" class="clearfix">
-                                        <div id="site-logo-inner">
+                                    <div id="site-logo" class="h-[80px]">
+                                        <div id="site-logo-inner" class="absolute top-1/2 -translate-y-1/2">
                                             <a href="index.html" rel="home" class="main-logo">
+                                                <img id="logo_header" src="assets/images/logo/logo.png" alt="nft-gaming" width="133" height="56"
+                                                data-retina="assets/images/logo/logo_dark@2x.png" data-width="133" class="block dark:hidden"
+                                                data-height="56">
                                                 <img id="logo_header" src="assets/images/logo/logo_dark.png" alt="nft-gaming" width="133" height="56"
-                                                    data-retina="assets/images/logo/logo_dark@2x.png" data-width="133"
-                                                    data-height="56">
+                                                data-retina="assets/images/logo/logo_dark@2x.png" data-width="133" class="hidden dark:block"
+                                                data-height="56">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="mobile-button"><span></span></div><!-- /.mobile-button -->
-                                    <nav id="main-nav" class="main-nav">
+                                    <nav id="main-nav" class="main-nav absolute left-[26%] top-1/2 z-0 -translate-y-1/2 ">
                                         <ul id="menu-primary-menu" class="menu">
-                                            <li class="menu-item menu-item-has-children">
+                                            <li class="menu-item current-menu-item menu-item-has-children">
                                                 <a href="#">Home</a>
                                                 <ul class="sub-menu">
                                                     <li class="menu-item"><a href="index.html">Home 1</a></li>
@@ -71,7 +74,7 @@
                                                     <li class="menu-item"><a href="home6.html">Home 6</a></li>
                                                                                                         <li class="menu-item"><a href="home7.html">Home 7</a></li>
                                                     <li class="menu-item"><a href="home8.html">Home 8 ( Special )</a></li>
-                                                                                                        <li class="menu-item menu-item-has-children">
+                                                    <li class="menu-item menu-item-has-children">
                                                         <a href="#">Slider Styles</a>
                                                         <ul class="sub-menu">
                                                             <li class="menu-item"><a href="slider-typer-text.html">Text Type</a></li>
@@ -100,7 +103,7 @@
                                                     <li class="menu-item"><a href="activity2.html">Activity 2</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="menu-item menu-item-has-children current-menu-item">
+                                            <li class="menu-item menu-item-has-children">
                                                 <a href="#">Community</a>
                                                 <ul class="sub-menu">
                                                     <li class="menu-item"><a href="blog.html">Blog</a></li>
@@ -124,7 +127,7 @@
                                                     <li class="menu-item"><a href="faq.html">FAQ</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="menu-item  menu-item-has-children">
+                                            <li class="menu-item menu-item-has-children">
                                                 <a href="#">Contact</a>
                                                 <ul class="sub-menu">
                                                     <li class="menu-item"><a href="contact1.html">Contact 1</a></li>
@@ -132,9 +135,9 @@
                                                 </ul>
                                             </li>
                                         </ul>
-                                    </nav><!-- /#main-nav -->   
-                                    <div class="flat-search-btn flex">
-                                        <div class="header-search flat-show-search" id="s1">
+                                    </nav> 
+                                    <div class="flat-search-btn flex p-[16px_0] absolute right-[15px] top-0 items-center justify-end">
+                                        <div class="relative mr-[36px] p-[14px_0] flat-show-search" id="s1">
                                             <a href="#" class="show-search header-search-trigger">
                                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <mask id="mask0_334_638" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="1" width="18" height="17">
@@ -151,23 +154,26 @@
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7166 18.3333C17.5596 18.3333 17.4016 18.2746 17.2807 18.1572L14.3823 15.3308C14.1413 15.0952 14.1405 14.7131 14.3815 14.4774C14.6217 14.2402 15.0123 14.2418 15.2541 14.4758L18.1526 17.303C18.3935 17.5387 18.3944 17.9199 18.1534 18.1556C18.0333 18.2746 17.8746 18.3333 17.7166 18.3333Z" fill="white"/>
                                                     <path d="M17.7166 18.3333C17.5595 18.3333 17.4016 18.2746 17.2807 18.1572L14.3823 15.3308C14.1413 15.0952 14.1405 14.7131 14.3815 14.4774C14.6217 14.2402 15.0123 14.2418 15.2541 14.4758L18.1526 17.303C18.3935 17.5387 18.3944 17.9199 18.1534 18.1556C18.0333 18.2746 17.8746 18.3333 17.7166 18.3333" stroke="white"/>
                                                     </g>
-                                                    </svg>
+                                                </svg>
                                             </a>
-                                            <div class="top-search">
-                                                <form action="#" method="get" role="search" class="search-form">
-                                                    <input type="search" id="s" class="search-field" placeholder="Search..." value="" name="s" title="Search for" required="">
-                                                    <button class="search search-submit" type="submit" title="Search">
+                                            <div class="top-search absolute right-[-16px] top-[130%] w-[250px] opacity-0 invisible">
+                                                <form action="#" method="get" role="search" class="search-form relative">
+                                                    <input type="search" id="s" placeholder="Search..." value="" name="s" title="Search for" required=""
+                                                     class="search-field !bg-[#F8F8F8] !text-[#14141F] !w-full !border-[1px] !border-solid !border-white !rounded-[30px] !eading-[23px] !p-[13px_50px_13px_15px]">
+                                                    <button class="search search-submit absolute top-0 right-0 text-[20px] text-[#14141F] duration-[0.3s] border-none rounded-[30px] leading-[20px] p-[15px] bg-transparent hover:border-0"
+                                                     type="submit" title="Search">
                                                         <i class="icon-fl-search-filled"></i>
                                                     </button>
                                                 </form>
                                             </div>
                                         </div>
-                                        <div class="sc-btn-top mg-r-12" id="site-header">
-                                            <a  href="connect-wallet.html" id="connectbtn" class="sc-button header-slider style style-1 wallet fl-button pri-1"><span>Wallet connect
-                                            </span></a>
+                                        <div class="sc-btn-top mr-[12px]" id="site-header">
+                                            <a href="connect-wallet.html" id="connectbtn" class="group p-[12px_35px_12px_32px] border-[2px] border-solid border-white text-white bg-[transparen_none_repeat_scroll_0_0] relative inline-block rounded-[30px] hover:bg-white">
+                                                <span class="pl-[28px] text-[15px] z-[1] font-[700] leading-[22px] relative duration-[0.3s] group-hover:text-[var(--primary-color3)]
+                                                before:content-['\e917'] before:absolute before:font-['nfts'] before:text-[20px] before:left-0 before:font-[100] before:top-[-4px] before:z-[1]">Wallet connect</span>
+                                            </a>
                                         </div>
-
-                                        <div class="admin_active" id="header_admin">
+                                        <div class="admin_active hidden" id="header_admin">
                                             <div class="header_avatar">
                                                 <div class="popup-notification">
                                                     <div class="notification">
@@ -400,31 +406,40 @@
                         </div>
                     </div>
                 </div>
-                <div class="mode_switcher">
-                    <h6>Dark mode <strong>Available</strong></h6>
-                    <a href="#" class="light d-flex align-items-center">
-                        <img src="assets/images/icon/sun.png" alt="">
-                    </a>
-                    <a href="#" class="dark d-flex align-items-center is_active">
-                        <img id="moon_dark" src="assets/images/icon/moon-2.png" alt="">
-                    </a>
+                <div class="mode_switcher absolute top-[21px] right-[11px] flex items-center justify-center max-[1818px]:!right-[15px] max-[991px]:!top-[105px] ">
+                    <h6 class="leading-[1.2] w-[85px] text-center text-white max-[1565px]:hidden">Dark mode <strong class="text-[18px]">Available</strong></h6>
+                    <div class="flex cursor-pointer max-[991px]:block" id="dark-mode">
+                        <a class="dark--mode__icon ionicon bg-[linear-gradient(216.56deg,#E250E5_5.32%,#4B50E6_94.32%)] dark:bg-none dark:bg-[#343444] max-[991px]:mb-[5px] rounded-[10px] w-[40px] h-[40px] min-w-[40px] text-[16px] ml-[10px] flex justify-center items-center">
+                            <img src="assets/images/icon/sun.png" alt="" >
+                        </a>
+                        <a class="light--mode__icon ionicon bg-[#343444] rounded-[10px] w-[40px] h-[40px] min-w-[40px] text-[16px] ml-[10px] flex justify-center items-center">
+                            <img src="assets/images/icon/moon-2.png" alt="" class="hidden dark:block">
+                            <img src="assets/images/icon/moon.png" alt="" class="block dark:hidden">
+                        </a>
+                    </div>
                 </div>
             </header>
                 
             <!-- title page -->
-            <section class="flat-title-page inner">
-                <div class="overlay"></div>
+            <section class="flat-title-page pt-[139px] pb-[59px] relative bg-[url('../images/backgroup-secsion/img_bg_page_title_inner.jpg')] dark:bg-[url('../images/backgroup-secsion/img_bg_page_title_dark.jpg')] bg-cover bg-center bg-no-repeat">
+                <div class="overlay absolute top-0 left-0 w-full h-full bg-[#3434444d] duration-[0.3s] transition-all ease-in-out"></div>
                 <div class="themesflat-container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="page-title-heading mg-bt-12">
-                                <h1 class="heading text-center">Help Center</h1>
+                            <div class="mb-[12px]">
+                                <h1 class="text-center leading-[58px] text-white">Help Center</h1>
                             </div>
-                            <div class="breadcrumbs style2">
+                            <div class="flex w-full justify-center">
                                 <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="#">Community</a></li>
-                                    <li>Help Center</li>
+                                    <li class="text-[18px] leading-[28px] inline-block text-white py-0 pr-[8px] pl-[6px]">
+                                        <a class="relative text-[#8A8AA0] pr-[15px] after:content-[''] after:absolute after:bg-[#8A8AA0] after:w-[1px] after:h-[14px] after:bottom-[4px] after:right-0 after:rotate-[13deg] hover:text-white" 
+                                        href="index.html">Home</a>
+                                    </li>
+                                    <li class="text-[18px] leading-[28px] inline-block text-white py-0 pr-[8px] pl-[6px]">
+                                        <a class="relative text-[#8A8AA0] pr-[15px] after:content-[''] after:absolute after:bg-[#8A8AA0] after:w-[1px] after:h-[14px] after:bottom-[4px] after:right-0 after:rotate-[13deg] hover:text-white" 
+                                        href="#">Community</a>
+                                    </li>
+                                    <li class="text-[18px] leading-[28px] inline-block text-white py-0 pr-[8px] pl-[6px]">Help Center</li>
                                 </ul>
                             </div>
                         </div>
@@ -432,20 +447,20 @@
                 </div>                    
             </section>
 
-            <section class="tf-help-center tf-section">
+            <section class="tf-help-center tf-section max-[767px]:!p-[70px_0]">
                 <div class="themesflat-container">
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="tf-title-heading ct style-2 fs-30 mg-bt-10">
+                        <h2 class="text-center mb-[10px] text-[30px] relative leading-[44px] text-[var(--primary-color2)]">
                             How Can We Help You?
                         </h2>
-                        <h5 class="sub-title help-center mg-bt-32 ">
+                        <h5 class="max-w-[600px] mx-auto text-center mb-[32px] leading-[28px] font-normal text-[var(--primary-color8)] ">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.
                         </h5>
-                        <form action="#" class="help-center-form">
-                            <input type="text" placeholder="Type your question here" required>
-                            <button>
-                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <form action="#" class="help-center-form max-w-[690px] mx-auto relative">
+                            <input type="text" placeholder="Type your question here" required class="!p-[0_90px_0_25px] h-[64px] !rounded-[12px]">
+                            <button class="absolute top-0 right-0 w-[90px] h-[64px] rounded-[0_12px_12px_0] !p-[15px_39px]">
+                                <svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <mask id="mask0_1241_902" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="0" width="25" height="24">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M24.666 1.3335H2.23912V23.2653H24.666V1.3335Z" fill="white" stroke="white"/>
                                     </mask>
@@ -463,12 +478,12 @@
                                 </svg>  
                             </button>
                         </form>
-                        <p class="text-center mg-t-40 mg-bt-60">Or choose a categories to quickly find the help you need</p>
+                        <p class="text-center mt-[40px] mb-[60px]">Or choose a categories to quickly find the help you need</p>
                     </div>
                     </div>
-                    <div class="sc-box-icon-inner style-3">
-                        <div class="sc-box-icon">
-                            <div class="icon">
+                    <div class="sc-box-icon-inner style-3 ml-[-30px] flex flex-wrap ">
+                        <div class="sc-box-icon max-[549px]:!mb-[30px] max-[549px]:w-[calc(100%-30px)] max-[767px]:w-[calc(50%-30px)] max-[1199px]:w-[calc(33.3%-30px)] group ml-[30px] w-[calc(25%-30px)] p-[40px_24px] rounded-[16px] shadow-[0px_3px_16px_0px_#2F536D1F] mb-[30px] text-center bg-[var(--primary-color)]">
+                            <div class="icon mb-[17px] duration-[0.8s] ease-in-out group-hover:rotate-[360deg]">
                                 <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="60" height="60" rx="18" fill="#5142FC"/>
                                     <path d="M45.6588 18.9334L40.9057 41.349C40.5468 42.9308 39.612 43.3245 38.2833 42.5798L31.0406 37.2428L27.5463 40.6043C27.1593 40.9913 26.8365 41.3141 26.0906 41.3141L26.6115 33.9386L40.0338 21.81C40.6177 21.2903 39.9067 21.0011 39.1271 21.522L22.5333 31.971L15.3896 29.7345C13.836 29.2496 13.8078 28.1809 15.7136 27.435L43.6552 16.6699C44.949 16.185 46.0807 16.9579 45.6588 18.9345V18.9334Z" fill="white"/>
@@ -476,154 +491,75 @@
                                     <path d="M44.6588 21.9334L39.9057 44.349C39.5468 45.9308 38.612 46.3245 37.2833 45.5798L30.0406 40.2428L26.5463 43.6043C26.1593 43.9913 25.8365 44.3141 25.0906 44.3141L25.6115 36.9386L39.0338 24.81C39.6177 24.2903 38.9067 24.0011 38.1271 24.522L21.5333 34.971L14.3896 32.7345C12.836 32.2496 12.8078 31.1809 14.7136 30.435L42.6552 19.6699C43.949 19.185 45.0807 19.9579 44.6588 21.9345V21.9334Z" fill="white"/>
                                     </g>
                                     </svg>
-                                    
                             </div>
-                            <h4 class="heading"><a href="#">Getting Started</a> </h4>
-                            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                            <h4 class="heading mb-[11px]"><a href="#">Getting Started</a> </h4>
+                            <p class="content text-[13px] leading-[20px] dark:text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                         </div>
-                        <div class="sc-box-icon">
-                            <div class="icon">
+                        <div class="sc-box-icon max-[549px]:!mb-[30px] max-[549px]:w-[calc(100%-30px)] max-[767px]:w-[calc(50%-30px)] max-[1199px]:w-[calc(33.3%-30px)] group ml-[30px] w-[calc(25%-30px)] p-[40px_24px] rounded-[16px] shadow-[0px_3px_16px_0px_#2F536D1F] mb-[30px] text-center bg-[var(--primary-color)]">
+                            <div class="icon mb-[17px] duration-[0.8s] ease-in-out group-hover:rotate-[360deg]">
                                 <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="60" height="60" rx="18" fill="#5142FC"/>
                                     <rect opacity="0.4" x="28.1113" y="25.2778" width="12.2778" height="13.2222" fill="white"/>
                                     <path d="M41.334 21.4998H30.0007L28.0032 19.5023C27.4648 18.964 26.7423 18.6665 25.9915 18.6665H18.6673C17.0948 18.6665 15.8482 19.9273 15.8482 21.4998L15.834 38.4998C15.834 40.0723 17.0948 41.3332 18.6673 41.3332H41.334C42.8923 41.3332 44.1673 40.0582 44.1673 38.4998V24.3332C44.1673 22.7748 42.8923 21.4998 41.334 21.4998ZM38.5007 32.8332H35.6673V35.6665C35.6673 36.4457 35.0298 37.0832 34.2507 37.0832C33.4715 37.0832 32.834 36.4457 32.834 35.6665V32.8332H30.0007C29.2215 32.8332 28.584 32.1957 28.584 31.4165C28.584 30.6373 29.2215 29.9998 30.0007 29.9998H32.834V27.1665C32.834 26.3873 33.4715 25.7498 34.2507 25.7498C35.0298 25.7498 35.6673 26.3873 35.6673 27.1665V29.9998H38.5007C39.2798 29.9998 39.9173 30.6373 39.9173 31.4165C39.9173 32.1957 39.2798 32.8332 38.5007 32.8332Z" fill="white"/>
                                     </svg>
-                                    
                             </div>
-                            <h4 class="heading"> Creating</h4>
-                            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                            <h4 class="heading mb-[11px]"> Creating</h4>
+                            <p class="content text-[13px] leading-[20px] dark:text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                         </div>
-                        <div class="sc-box-icon">
-                            <div class="icon">
+                        <div class="sc-box-icon max-[549px]:!mb-[30px] max-[549px]:w-[calc(100%-30px)] max-[767px]:w-[calc(50%-30px)] max-[1199px]:w-[calc(33.3%-30px)] group ml-[30px] w-[calc(25%-30px)] p-[40px_24px] rounded-[16px] shadow-[0px_3px_16px_0px_#2F536D1F] mb-[30px] text-center bg-[var(--primary-color)]">
+                            <div class="icon mb-[17px] duration-[0.8s] ease-in-out group-hover:rotate-[360deg]">
                                 <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="60" height="60" rx="18" fill="#5142FC"/>
                                     <path d="M17.3944 18.2931C17.3944 18.0544 17.4892 17.8255 17.658 17.6567C17.8268 17.4879 18.0557 17.3931 18.2944 17.3931H19.0828C20.3914 17.3931 21.1438 18.2445 21.5794 19.0941C21.8764 19.6755 22.0906 20.3847 22.2688 21.0003H40.7998C41.0779 21.0004 41.3522 21.0649 41.6012 21.1888C41.8502 21.3127 42.0671 21.4927 42.2349 21.7145C42.4027 21.9363 42.5167 22.194 42.5682 22.4674C42.6196 22.7407 42.607 23.0222 42.5314 23.2899L39.8386 32.7849C39.6244 33.5382 39.1704 34.2011 38.5454 34.6731C37.9204 35.1451 37.1586 35.4004 36.3754 35.4003H27.2332C26.4435 35.4005 25.6756 35.1411 25.0478 34.662C24.4201 34.1829 23.9673 33.5107 23.7592 32.7489L22.6036 28.5099C22.597 28.4909 22.5909 28.4717 22.5856 28.4523L20.7298 22.1577L20.5498 21.5511C20.3698 20.9283 20.2114 20.3775 19.9738 19.9149C19.6876 19.3569 19.4248 19.1949 19.081 19.1949H18.2926C18.0539 19.1949 17.825 19.1 17.6562 18.9313C17.4874 18.7625 17.3926 18.5336 17.3926 18.2949L17.3944 18.2931Z" fill="white"/>
                                     <path opacity="0.4" d="M27.2996 42.6002C28.0157 42.6002 28.7025 42.3157 29.2088 41.8094C29.7151 41.303 29.9996 40.6163 29.9996 39.9002C29.9996 39.1841 29.7151 38.4974 29.2088 37.991C28.7025 37.4847 28.0157 37.2002 27.2996 37.2002C26.5835 37.2002 25.8968 37.4847 25.3904 37.991C24.8841 38.4974 24.5996 39.1841 24.5996 39.9002C24.5996 40.6163 24.8841 41.303 25.3904 41.8094C25.8968 42.3157 26.5835 42.6002 27.2996 42.6002Z" fill="white"/>
                                     <path opacity="0.4" d="M36.2996 42.6002C37.0157 42.6002 37.7024 42.3157 38.2088 41.8094C38.7151 41.303 38.9996 40.6163 38.9996 39.9002C38.9996 39.1841 38.7151 38.4974 38.2088 37.991C37.7024 37.4847 37.0157 37.2002 36.2996 37.2002C35.5835 37.2002 34.8968 37.4847 34.3904 37.991C33.8841 38.4974 33.5996 39.1841 33.5996 39.9002C33.5996 40.6163 33.8841 41.303 34.3904 41.8094C34.8968 42.3157 35.5835 42.6002 36.2996 42.6002Z" fill="white"/>
                                     </svg>
-                                    
                             </div>
-                            <h4 class="heading">Buying</h4>
-                            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                            <h4 class="heading mb-[11px]">Buying</h4>
+                            <p class="content text-[13px] leading-[20px] dark:text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                         </div>
-                        <div class="sc-box-icon mg-bt">
-                            <div class="icon">
+                        <div class="sc-box-icon max-[549px]:!mb-[30px] max-[549px]:w-[calc(100%-30px)] max-[767px]:w-[calc(50%-30px)] max-[1199px]:w-[calc(33.3%-30px)] group ml-[30px] w-[calc(25%-30px)] p-[40px_24px] rounded-[16px] shadow-[0px_3px_16px_0px_#2F536D1F] mb-[30px] text-center bg-[var(--primary-color)] mg-bt">
+                            <div class="icon mb-[17px] duration-[0.8s] ease-in-out group-hover:rotate-[360deg]">
                                 <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="60" height="60" rx="18" fill="#5142FC"/>
                                     <rect opacity="0.4" x="14" y="30" width="8" height="15" rx="2" fill="white"/>
                                     <rect x="26" y="15" width="8" height="30" rx="2" fill="white"/>
                                     <rect opacity="0.4" x="38" y="25" width="8" height="20" rx="2" fill="white"/>
                                     </svg>
-                                    
                             </div>
-                            <h4 class="heading">Selling</h4>
-                            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                            <h4 class="heading mb-[11px]">Selling</h4>
+                            <p class="content text-[13px] leading-[20px] dark:text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                         </div>
-                        <div class="sc-box-icon no-box-shadown mgbt-0 none">
+                        <div class="sc-box-icon max-[1199px]:hidden ml-[30px] w-[calc(25%-30px)] p-[40px_24px] rounded-[16px] shadow-[0px_3px_16px_0px_#2F536D1F] text-center bg-[var(--primary-color)] mb-0 opacity-0 invisible">
                         </div>
-                        <div class="sc-box-icon mgbt-0">
-                            <div class="icon">
+                        <div class="sc-box-icon max-[549px]:!mb-[30px] max-[549px]:w-[calc(100%-30px)] max-[767px]:w-[calc(50%-30px)] max-[1199px]:w-[calc(33.3%-30px)] group ml-[30px] w-[calc(25%-30px)] p-[40px_24px] rounded-[16px] shadow-[0px_3px_16px_0px_#2F536D1F] mb-0 text-center bg-[var(--primary-color)]">
+                            <div class="icon mb-[17px] duration-[0.8s] ease-in-out group-hover:rotate-[360deg]">
                                 <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="60" height="60" rx="18" fill="#5142FC"/>
                                     <path d="M24.6969 28.9396C26.3964 27.2401 29.3604 27.2401 31.0599 28.9396L32.1204 30.0001L34.2414 27.8791L33.1809 26.8186C31.7664 25.4026 29.8824 24.6211 27.8784 24.6211C25.8744 24.6211 23.9904 25.4026 22.5759 26.8186L19.3929 30.0001C17.9893 31.4082 17.2012 33.3152 17.2012 35.3033C17.2012 37.2915 17.9893 39.1985 19.3929 40.6066C20.0887 41.3034 20.9153 41.8558 21.8253 42.2322C22.7353 42.6085 23.7106 42.8014 24.6954 42.7996C25.6804 42.8016 26.656 42.609 27.5663 42.2326C28.4765 41.8562 29.3034 41.3036 29.9994 40.6066L31.0599 39.5461L28.9389 37.4251L27.8784 38.4856C27.0331 39.3271 25.8889 39.7995 24.6961 39.7995C23.5034 39.7995 22.3592 39.3271 21.5139 38.4856C20.6716 37.6407 20.1987 36.4963 20.1987 35.3033C20.1987 34.1103 20.6716 32.966 21.5139 32.1211L24.6969 28.9396Z" fill="white"/>
                                     <path opacity="0.4" d="M29.9998 19.3936L28.9393 20.4541L31.0603 22.5751L32.1208 21.5146C32.9661 20.6731 34.1103 20.2007 35.3031 20.2007C36.4958 20.2007 37.64 20.6731 38.4853 21.5146C39.3276 22.3595 39.8005 23.5039 39.8005 24.6969C39.8005 25.8899 39.3276 27.0342 38.4853 27.8791L35.3023 31.0606C33.6028 32.7601 30.6388 32.7601 28.9393 31.0606L27.8788 30.0001L25.7578 32.1211L26.8183 33.1816C28.2328 34.5976 30.1168 35.3791 32.1208 35.3791C34.1248 35.3791 36.0088 34.5976 37.4233 33.1816L40.6063 30.0001C42.0099 28.592 42.798 26.685 42.798 24.6969C42.798 22.7087 42.0099 20.8017 40.6063 19.3936C39.1986 17.9893 37.2914 17.2007 35.3031 17.2007C33.3147 17.2007 31.4075 17.9893 29.9998 19.3936Z" fill="white"/>
                                     </svg>
-                                    
                             </div>
-                            <h4 class="heading">Partners</h4>
-                            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                            <h4 class="heading mb-[11px]">Partners</h4>
+                            <p class="content text-[13px] leading-[20px] dark:text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                         </div>
-                        <div class="sc-box-icon mgbt-0">
-                            <div class="icon">
+                        <div class="sc-box-icon max-[549px]:w-[calc(100%-30px)] max-[767px]:w-[calc(50%-30px)] max-[1199px]:w-[calc(33.3%-30px)] group ml-[30px] w-[calc(25%-30px)] p-[40px_24px] rounded-[16px] shadow-[0px_3px_16px_0px_#2F536D1F] mb-0 text-center bg-[var(--primary-color)]">
+                            <div class="icon mb-[17px] duration-[0.8s] ease-in-out group-hover:rotate-[360deg]">
                                 <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="60" height="60" rx="18" fill="#5142FC"/>
                                     <rect opacity="0.4" x="22" y="22" width="15" height="16" fill="white"/>
                                     <path d="M29.9996 33.6001C30.9544 33.6001 31.8701 33.2208 32.5452 32.5457C33.2203 31.8705 33.5996 30.9549 33.5996 30.0001C33.5996 29.0453 33.2203 28.1296 32.5452 27.4545C31.8701 26.7794 30.9544 26.4001 29.9996 26.4001C29.0448 26.4001 28.1292 26.7794 27.454 27.4545C26.7789 28.1296 26.3996 29.0453 26.3996 30.0001C26.3996 30.9549 26.7789 31.8705 27.454 32.5457C28.1292 33.2208 29.0448 33.6001 29.9996 33.6001ZM26.3996 16.5001C26.3996 16.2614 26.3048 16.0325 26.136 15.8637C25.9672 15.6949 25.7383 15.6001 25.4996 15.6001C25.2609 15.6001 25.032 15.6949 24.8632 15.8637C24.6944 16.0325 24.5996 16.2614 24.5996 16.5001V19.2001H23.6996C22.5061 19.2001 21.3615 19.6742 20.5176 20.5181C19.6737 21.362 19.1996 22.5066 19.1996 23.7001V24.6001H16.4996C16.2609 24.6001 16.032 24.6949 15.8632 24.8637C15.6944 25.0325 15.5996 25.2614 15.5996 25.5001C15.5996 25.7388 15.6944 25.9677 15.8632 26.1365C16.032 26.3053 16.2609 26.4001 16.4996 26.4001H19.1996V29.1001H16.4996C16.2609 29.1001 16.032 29.1949 15.8632 29.3637C15.6944 29.5325 15.5996 29.7614 15.5996 30.0001C15.5996 30.2388 15.6944 30.4677 15.8632 30.6365C16.032 30.8053 16.2609 30.9001 16.4996 30.9001H19.1996V33.6001H16.4996C16.2609 33.6001 16.032 33.6949 15.8632 33.8637C15.6944 34.0325 15.5996 34.2614 15.5996 34.5001C15.5996 34.7388 15.6944 34.9677 15.8632 35.1365C16.032 35.3053 16.2609 35.4001 16.4996 35.4001H19.1996V36.3001C19.1996 37.4936 19.6737 38.6382 20.5176 39.4821C21.3615 40.326 22.5061 40.8001 23.6996 40.8001H24.5996V43.5001C24.5996 43.7388 24.6944 43.9677 24.8632 44.1365C25.032 44.3053 25.2609 44.4001 25.4996 44.4001C25.7383 44.4001 25.9672 44.3053 26.136 44.1365C26.3048 43.9677 26.3996 43.7388 26.3996 43.5001V40.8001H29.0996V43.5001C29.0996 43.7388 29.1944 43.9677 29.3632 44.1365C29.532 44.3053 29.7609 44.4001 29.9996 44.4001C30.2383 44.4001 30.4672 44.3053 30.636 44.1365C30.8048 43.9677 30.8996 43.7388 30.8996 43.5001V40.8001H33.5996V43.5001C33.5996 43.7388 33.6944 43.9677 33.8632 44.1365C34.032 44.3053 34.2609 44.4001 34.4996 44.4001C34.7383 44.4001 34.9672 44.3053 35.136 44.1365C35.3048 43.9677 35.3996 43.7388 35.3996 43.5001V40.8001H36.2996C37.4931 40.8001 38.6377 40.326 39.4816 39.4821C40.3255 38.6382 40.7996 37.4936 40.7996 36.3001V35.4001H43.4996C43.7383 35.4001 43.9672 35.3053 44.136 35.1365C44.3048 34.9677 44.3996 34.7388 44.3996 34.5001C44.3996 34.2614 44.3048 34.0325 44.136 33.8637C43.9672 33.6949 43.7383 33.6001 43.4996 33.6001H40.7996V30.9001H43.4996C43.7383 30.9001 43.9672 30.8053 44.136 30.6365C44.3048 30.4677 44.3996 30.2388 44.3996 30.0001C44.3996 29.7614 44.3048 29.5325 44.136 29.3637C43.9672 29.1949 43.7383 29.1001 43.4996 29.1001H40.7996V26.4001H43.4996C43.7383 26.4001 43.9672 26.3053 44.136 26.1365C44.3048 25.9677 44.3996 25.7388 44.3996 25.5001C44.3996 25.2614 44.3048 25.0325 44.136 24.8637C43.9672 24.6949 43.7383 24.6001 43.4996 24.6001H40.7996V23.7001C40.7996 22.5066 40.3255 21.362 39.4816 20.5181C38.6377 19.6742 37.4931 19.2001 36.2996 19.2001H35.3996V16.5001C35.3996 16.2614 35.3048 16.0325 35.136 15.8637C34.9672 15.6949 34.7383 15.6001 34.4996 15.6001C34.2609 15.6001 34.032 15.6949 33.8632 15.8637C33.6944 16.0325 33.5996 16.2614 33.5996 16.5001V19.2001H30.8996V16.5001C30.8996 16.2614 30.8048 16.0325 30.636 15.8637C30.4672 15.6949 30.2383 15.6001 29.9996 15.6001C29.7609 15.6001 29.532 15.6949 29.3632 15.8637C29.1944 16.0325 29.0996 16.2614 29.0996 16.5001V19.2001H26.3996V16.5001ZM35.3996 30.0001C35.3996 31.4323 34.8307 32.8058 33.818 33.8185C32.8053 34.8312 31.4318 35.4001 29.9996 35.4001C28.5674 35.4001 27.1939 34.8312 26.1812 33.8185C25.1685 32.8058 24.5996 31.4323 24.5996 30.0001C24.5996 28.5679 25.1685 27.1944 26.1812 26.1817C27.1939 25.169 28.5674 24.6001 29.9996 24.6001C31.4318 24.6001 32.8053 25.169 33.818 26.1817C34.8307 27.1944 35.3996 28.5679 35.3996 30.0001Z" fill="white"/>
                                     <rect x="26" y="26" width="8" height="8" rx="4" fill="#978EFD"/>
                                     </svg>
-                                    
                             </div>
-                            <h4 class="heading">Developers</h4>
-                            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                            <h4 class="heading mb-[11px]">Developers</h4>
+                            <p class="content text-[13px] leading-[20px] dark:text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                         </div>
                     </div>                                      
                 </div>
             </section>
 
-           <!-- Footer -->
-           <footer id="footer" class="clearfix">
-            <div class="themesflat-container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-12 col-12">
-                        <div class="widget widget-logo">
-                            <div class="logo-footer" id="logo-footer">
-                                <a href="index.html">
-                                    <img id="logo_footer" src="assets/images/logo/logo_dark.png" alt="nft-gaming" width="135" height="56"
-                                    data-retina="assets/images/logo/logo_dark@2x.png" data-width="135"
-                                    data-height="56">
-                                </a>
-                            </div>
-                            <p class="sub-widget-logo">Lorem ipsum dolor sit amet,consectetur adipisicing elit. Quis non, fugit totam vel laboriosam vitae.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-5 col-5">
-                        <div class="widget widget-menu style-1">
-                            <h5 class="title-widget">My Account</h5>
-                            <ul>
-                                <li><a href="author01.html">Authors</a></li>
-                                <li><a href="connect-wallet.html">Collection</a></li>
-                                <li><a href="profile.html">Author Profile</a></li>
-                                <li><a href="create-item.html">Create Item</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-7 col-7">
-                        <div class="widget widget-menu style-2">
-                            <h5 class="title-widget">Resources</h5>
-                            <ul>
-                                <li><a href="help-center.html">Help & Support</a></li>
-                                <li><a href="auctions.html">Live Auctions</a></li>
-                                <li><a href="item-details.html">Item Details</a></li>
-                                <li><a href="activity1.html">Activity</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-5 col-5">
-                        <div class="widget widget-menu fl-st-3">
-                            <h5 class="title-widget">Company</h5>
-                            <ul>
-                                <li><a href="explore-1.html">Explore</a></li>
-                                <li><a href="contact1.html">Contact Us</a></li>
-                                <li><a href="blog.html">Our Blog</a></li>
-                                <li><a href="faq.html">FAQ</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-7 col-12">
-                        <div class="widget widget-subcribe">
-                            <h5 class="title-widget">Subscribe Us</h5>
-                            <div class="form-subcribe">
-                                <form id="subscribe-form" action="#" method="GET" accept-charset="utf-8" class="form-submit">
-                                    <input name="email" value="" class="email" type="email" placeholder="info@yourgmail.com" required>
-                                    <button id="submit" name="submit" type="submit"><i class="icon-fl-send"></i></button>
-                                </form>
-                            </div>
-                            <div class="widget-social style-1 mg-t32">
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                    
-                                    <li class="style-2"><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                                    <li class="mgr-none"><a href="#"><i class="icon-fl-tik-tok-2"></i></a></li>
-                                    <li class="mgr-none"><a href="#"><i class="icon-fl-vt"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </footer><!-- /#footer -->
+           
         <!-- Bottom -->
         </div>
         <!-- /#page -->
