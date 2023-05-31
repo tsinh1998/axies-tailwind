@@ -893,5 +893,14 @@ img {
     @apply text-[18px] ;
 }
 .tab-authors .menu-tab .tablinks.active {
-    @apply text-[var(--primary-color3)] relative ;
+    @apply text-[var(--primary-color3)] relative after:content-[''] after:absolute after:bottom-[-7.5px] after:left-1/2 after:w-[15px] after:h-[15px] after:rotate-[45deg] after:bg-[var(--bg-section)] after:m-[0_-7.5px];
+}
+.flat-accordion2 .flat-toggle2 .toggle-title.active::after {
+    @apply content-['\f068'];
+}
+.form-inner form label input:checked~.btn-checkbox {
+    @apply bg-[var(--primary-color3)] border-[2px] border-[var(--primary-color3)] ;
+}
+.form-inner form label input:checked~.btn-checkbox:after {
+    @apply !block ;
 }

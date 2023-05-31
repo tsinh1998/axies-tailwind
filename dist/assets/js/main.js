@@ -423,7 +423,6 @@
             if ($(".fl-item3:hidden").length == 0) {
                 $(".loadmore").hide();
             }
-            $('html, body').animate({scrollTop: $('.themesflat-container').offset().top + 500 }, 'slow');
         });
     });
 
@@ -437,7 +436,6 @@
         avatar_popup1();
         avatar_popup2();
         sortBy();
-        // loadmore();
     });
 
 })(jQuery);
