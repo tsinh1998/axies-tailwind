@@ -457,11 +457,11 @@ img {
     dark:bg-[#14141F] dark:bg-none dark:shadow-[1px_1px_5px_0px_rgb(0_0_0/50%)] ;
 }
 
-.fl-item,
+/* .fl-item,
 .fl-item2,
 .fl-item3 {
     @apply hidden;
-}
+} */
 
 #scroll-top {
     @apply fixed block w-[50px] h-[50px] leading-[50px] rounded-[50%] text-center z-[1] right-[14px] bottom-[23px] opacity-0 invisible cursor-pointer overflow-hidden
@@ -903,4 +903,18 @@ img {
 }
 .form-inner form label input:checked~.btn-checkbox:after {
     @apply !block ;
+}
+
+.tab-create-item .tablinks.active {
+    @apply bg-[#5142fc1a] text-[var(--primary-color3)] duration-[0.3s] ease-in-out dark:bg-white ;
+}
+.tab-create-item .tablinks.active span {
+    @apply text-[var(--primary-color3)] dark:text-[var(--primary-color3)] ;
+}
+.tab-create-item form input::placeholder,
+.tab-create-item form textarea::placeholder  {
+    @apply !text-[var(--primary-color4)] text-[14px];
+}
+.wishlist-button.heart:focus {
+    @apply !border-none ;
 }
