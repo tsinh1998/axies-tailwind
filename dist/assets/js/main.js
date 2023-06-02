@@ -163,12 +163,12 @@
         $('.popup-notification').find('.notification').on('click',function(event){
             event.stopPropagation();});
         $('.popup-notification').find('.notification').on('click', function(event){
-            if(!$('.avatar_popup2').hasClass('visible')){
-                $('.avatar_popup2').addClass('visible');
+            if(!$('.avatar_popup2').hasClass('show')){
+                $('.avatar_popup2').addClass('show');
                     event.preventDefault();
                 }
             else
-                $('.avatar_popup2').removeClass('visible');
+                $('.avatar_popup2').removeClass('show');
         })    
     };
 
@@ -176,12 +176,12 @@
         $('.popup-user').find('.avatar').on('click',function(event){
             event.stopPropagation();});
         $('.popup-user').find('.avatar').on('click', function(event){
-            if(!$('.avatar_popup').hasClass('visible')){
-                $('.avatar_popup').toggleClass('visible');
+            if(!$('.avatar_popup').hasClass('show')){
+                $('.avatar_popup').toggleClass('show');
                     event.preventDefault();
                 }
             else
-                $('.avatar_popup').removeClass('visible');
+                $('.avatar_popup').removeClass('show');
         })
     };
     var sortBy = function(){
@@ -431,7 +431,7 @@
         headerFixed();
         mobileNav();
         ajaxSubscribe.eventLoad();
-        ajaxContactForm();
+        // ajaxContactForm();
         alertBox();
         avatar_popup1();
         avatar_popup2();
