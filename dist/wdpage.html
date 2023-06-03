@@ -339,7 +339,7 @@
             </header> -->
 
             <!-- header3 -->
-            <header id="header_main" class="absolute z-[100] h-[80px] w-full border-b-[1px] border-solid border-b-[rgba(235,235,235,0.2)] transition-[all] duration-[0.5s] ease-in">
+            <!-- <header id="header_main" class="absolute z-[100] h-[80px] w-full border-b-[1px] border-solid border-b-[rgba(235,235,235,0.2)] transition-[all] duration-[0.5s] ease-in">
                 <div class="themesflat-container">
                     <div class="row">
                         <div class="col-md-12">                              
@@ -473,7 +473,7 @@
                                                             <path d="M18.4915 15.495L17.209 13.65C17.0339 13.3992 16.9397 13.1009 16.939 12.795V7.5C16.939 5.51088 16.1488 3.60322 14.7423 2.1967C13.3357 0.790176 11.4281 0 9.43896 0C7.44984 0 5.54218 0.790176 4.13566 2.1967C2.72914 3.60322 1.93896 5.51088 1.93896 7.5V12.795C1.93824 13.1009 1.84403 13.3992 1.66896 13.65L0.386463 15.495C0.192273 15.7102 0.064576 15.977 0.018815 16.2632C-0.0269461 16.5494 0.0111884 16.8427 0.128607 17.1077C0.246026 17.3727 0.437699 17.598 0.680449 17.7563C0.923199 17.9147 1.20663 17.9993 1.49646 18H5.76396C5.9361 18.8477 6.39601 19.6099 7.06577 20.1573C7.73553 20.7047 8.57394 21.0038 9.43896 21.0038C10.304 21.0038 11.1424 20.7047 11.8122 20.1573C12.4819 19.6099 12.9418 18.8477 13.114 18H17.3815C17.6713 17.9993 17.9547 17.9147 18.1975 17.7563C18.4402 17.598 18.6319 17.3727 18.7493 17.1077C18.8667 16.8427 18.9049 16.5494 18.8591 16.2632C18.8133 15.977 18.6856 15.7102 18.4915 15.495ZM9.43896 19.5C8.97475 19.4987 8.52231 19.3538 8.14366 19.0853C7.76501 18.8168 7.4787 18.4377 7.32396 18H11.554C11.3992 18.4377 11.1129 18.8168 10.7343 19.0853C10.3556 19.3538 9.90317 19.4987 9.43896 19.5ZM1.49646 16.5C1.53036 16.4685 1.56056 16.4333 1.58646 16.395L2.89896 14.505C3.24909 14.0034 3.43751 13.4067 3.43896 12.795V7.5C3.43896 5.9087 4.0711 4.38258 5.19632 3.25736C6.32154 2.13214 7.84766 1.5 9.43896 1.5C11.0303 1.5 12.5564 2.13214 13.6816 3.25736C14.8068 4.38258 15.439 5.9087 15.439 7.5V12.795C15.4404 13.4067 15.6288 14.0034 15.979 14.505L17.2915 16.395C17.3174 16.4333 17.3476 16.4685 17.3815 16.5H1.49646Z" fill="white"/>
                                                         </svg>
                                                     </div>
-                                                    <div class="avatar_popup2 mt-[20px] absolute right-[39%] p-[35px_20px_12px_20px] top-[53px] overflow-hidden rounded-[10px] bg-[#14141F] duration-[0.2s] ease-in-out shadow-[0px_3px_16px_0px_#2f536d1f] invisible opacity-0 translate-y-[-1rem] text-[16px] w-[311px]">
+                                                    <div class="avatar_popup2 mt-[20px] max-[767px]:right-0 absolute right-[39%] p-[35px_20px_12px_20px] top-[53px] overflow-hidden rounded-[10px] bg-[#14141F] duration-[0.2s] ease-in-out shadow-[0px_3px_16px_0px_#2f536d1f] invisible opacity-0 translate-y-[-1rem] text-[16px] w-[311px]">
                                                         <div class="show mb-[18px] flex items-center justify-between">
                                                             <h4 class="text-white">Notifications</h4>
                                                             <a href="#" class="text-[14px] leading-[22px] text-[#7A798A] font-bold">Show All</a>
@@ -484,7 +484,7 @@
                                                                 <li class="rounded-[100px] hover:bg-[#343444] bg-transparent duration-[0.3s] ease-in-out mr-[18px] p-[6px_12px_4px_12px] "><span class="text-[16px] leading-[26px] font-bold text-white">Unread</span></li>
                                                             </ul>
                                                             <div class="content-tab">
-                                                                <div class="content-inner">
+                                                                <div class="content-inner mb-[19px]">
                                                                     <div class="wrap-box">
                                                                         <div class="heading text-[15px] leading-[22px] font-bold mb-[17px] text-white">Today</div>
                                                                         <div class="sc-box mb-[16px]">
@@ -493,16 +493,143 @@
                                                                                     <img src="assets/images/avatar/avt-6.jpg" alt="">                                                                           
                                                                                 </div>
                                                                                 <div class="infor">
-                                                                                    <span class="fw-7 text-[16px] leading-[26px] text-white font-bold">Tyler Covington</span>      
+                                                                                    <span class="text-[16px] leading-[26px] text-white font-bold">Tyler Covington</span>      
                                                                                     <span class="text-[16px] leading-[26px] text-white font-normal">started following you.</span> 
-                                                                                    <p>1 hour ago
-                                                                                    </p>                                                                       
+                                                                                    <p class="text-[14px] leading-[20px] text-[#EBEBEB] mt-[6px]">1 hour ago</p>                                                                       
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="sc-box mb-[16px]">
+                                                                            <div class="content flex">
+                                                                                <div class="avatar rounded-[8px] overflow-hidden w-[32px] h-[32px] mr-[16px] min-w-[32px] min-h-[32px] object-cover">
+                                                                                    <img src="assets/images/avatar/avt-6.jpg" alt="">                                                                           
+                                                                                </div>
+                                                                                <div class="infor">
+                                                                                    <span class="text-[16px] leading-[26px] text-white font-bold">Tyler Covington</span>      
+                                                                                    <span class="text-[16px] leading-[26px] text-white font-normal">started following you.</span> 
+                                                                                    <p class="text-[14px] leading-[20px] text-[#EBEBEB] mt-[6px]">1 hour ago</p>                                                                       
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="sc-box mb-[16px]">
+                                                                            <div class="content flex">
+                                                                                <div class="avatar rounded-[8px] overflow-hidden w-[32px] h-[32px] mr-[16px] min-w-[32px] min-h-[32px] object-cover">
+                                                                                    <img src="assets/images/avatar/avt-6.jpg" alt="">                                                                           
+                                                                                </div>
+                                                                                <div class="infor">
+                                                                                    <span class="text-[16px] leading-[26px] text-white font-bold">Tyler Covington</span>      
+                                                                                    <span class="text-[16px] leading-[26px] text-white font-normal">started following you.</span> 
+                                                                                    <p class="text-[14px] leading-[20px] text-[#EBEBEB] mt-[6px]">1 hour ago</p>                                                                       
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="sc-box mb-[16px]">
+                                                                            <div class="content flex">
+                                                                                <div class="avatar rounded-[8px] overflow-hidden w-[32px] h-[32px] mr-[16px] min-w-[32px] min-h-[32px] object-cover">
+                                                                                    <img src="assets/images/avatar/avt-6.jpg" alt="">                                                                           
+                                                                                </div>
+                                                                                <div class="infor">
+                                                                                    <span class="text-[16px] leading-[26px] text-white font-bold">Tyler Covington</span>      
+                                                                                    <span class="text-[16px] leading-[26px] text-white font-normal">started following you.</span> 
+                                                                                    <p class="text-[14px] leading-[20px] text-[#EBEBEB] mt-[6px]">1 hour ago</p>                                                                       
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="sc-box mb-[16px]">
+                                                                            <div class="content flex">
+                                                                                <div class="avatar rounded-[8px] overflow-hidden w-[32px] h-[32px] mr-[16px] min-w-[32px] min-h-[32px] object-cover">
+                                                                                    <img src="assets/images/avatar/avt-6.jpg" alt="">                                                                           
+                                                                                </div>
+                                                                                <div class="infor">
+                                                                                    <span class="text-[16px] leading-[26px] text-white font-bold">Tyler Covington</span>      
+                                                                                    <span class="text-[16px] leading-[26px] text-white font-normal">started following you.</span> 
+                                                                                    <p class="text-[14px] leading-[20px] text-[#EBEBEB] mt-[6px]">1 hour ago</p>                                                                       
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="wrap-box">
                                                                         <div class="heading text-[15px] leading-[22px] font-bold mb-[17px] text-white">Yesterday</div>
+                                                                        <div class="sc-box mb-[16px]">
+                                                                            <div class="content flex">
+                                                                                <div class="avatar rounded-[8px] overflow-hidden w-[32px] h-[32px] mr-[16px] min-w-[32px] min-h-[32px] object-cover">
+                                                                                    <img src="assets/images/avatar/avt-6.jpg" alt="">                                                                           
+                                                                                </div>
+                                                                                <div class="infor">
+                                                                                    <span class="text-[16px] leading-[26px] text-white font-bold">Tyler Covington</span>      
+                                                                                    <span class="text-[16px] leading-[26px] text-white font-normal">started following you.</span> 
+                                                                                    <p class="text-[14px] leading-[20px] text-[#EBEBEB] mt-[6px]">1 hour ago</p>                                                                       
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="sc-box mb-[16px]">
+                                                                            <div class="content flex">
+                                                                                <div class="avatar rounded-[8px] overflow-hidden w-[32px] h-[32px] mr-[16px] min-w-[32px] min-h-[32px] object-cover">
+                                                                                    <img src="assets/images/avatar/avt-6.jpg" alt="">                                                                           
+                                                                                </div>
+                                                                                <div class="infor">
+                                                                                    <span class="text-[16px] leading-[26px] text-white font-bold">Tyler Covington</span>      
+                                                                                    <span class="text-[16px] leading-[26px] text-white font-normal">started following you.</span> 
+                                                                                    <p class="text-[14px] leading-[20px] text-[#EBEBEB] mt-[6px]">1 hour ago</p>                                                                       
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>                                                              
+                                                                </div>
+                                                                <div class="content-inner mb-[19px]">
+                                                                    <div class="wrap-box">
+                                                                        <div class="heading text-[15px] leading-[22px] font-bold mb-[17px] text-white">Today</div>
+                                                                        <div class="sc-box mb-[16px]">
+                                                                            <div class="content flex">
+                                                                                <div class="avatar rounded-[8px] overflow-hidden w-[32px] h-[32px] mr-[16px] min-w-[32px] min-h-[32px] object-cover">
+                                                                                    <img src="assets/images/avatar/avt-6.jpg" alt="">                                                                           
+                                                                                </div>
+                                                                                <div class="infor">
+                                                                                    <span class="text-[16px] leading-[26px] text-white font-bold">Tyler Covington</span>      
+                                                                                    <span class="text-[16px] leading-[26px] text-white font-normal">started following you.</span> 
+                                                                                    <p class="text-[14px] leading-[20px] text-[#EBEBEB] mt-[6px]">1 hour ago</p>                                                                       
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="sc-box mb-[16px]">
+                                                                            <div class="content flex">
+                                                                                <div class="avatar rounded-[8px] overflow-hidden w-[32px] h-[32px] mr-[16px] min-w-[32px] min-h-[32px] object-cover">
+                                                                                    <img src="assets/images/avatar/avt-6.jpg" alt="">                                                                           
+                                                                                </div>
+                                                                                <div class="infor">
+                                                                                    <span class="text-[16px] leading-[26px] text-white font-bold">Tyler Covington</span>      
+                                                                                    <span class="text-[16px] leading-[26px] text-white font-normal">started following you.</span> 
+                                                                                    <p class="text-[14px] leading-[20px] text-[#EBEBEB] mt-[6px]">1 hour ago</p>                                                                       
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="sc-box mb-[16px]">
+                                                                            <div class="content flex">
+                                                                                <div class="avatar rounded-[8px] overflow-hidden w-[32px] h-[32px] mr-[16px] min-w-[32px] min-h-[32px] object-cover">
+                                                                                    <img src="assets/images/avatar/avt-6.jpg" alt="">                                                                           
+                                                                                </div>
+                                                                                <div class="infor">
+                                                                                    <span class="text-[16px] leading-[26px] text-white font-bold">Tyler Covington</span>      
+                                                                                    <span class="text-[16px] leading-[26px] text-white font-normal">started following you.</span> 
+                                                                                    <p class="text-[14px] leading-[20px] text-[#EBEBEB] mt-[6px]">1 hour ago</p>                                                                       
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="wrap-box">
+                                                                        <div class="heading text-[15px] leading-[22px] font-bold mb-[17px] text-white">Yesterday</div>
+                                                                        <div class="sc-box mb-[16px]">
+                                                                            <div class="content flex">
+                                                                                <div class="avatar rounded-[8px] overflow-hidden w-[32px] h-[32px] mr-[16px] min-w-[32px] min-h-[32px] object-cover">
+                                                                                    <img src="assets/images/avatar/avt-6.jpg" alt="">                                                                           
+                                                                                </div>
+                                                                                <div class="infor">
+                                                                                    <span class="text-[16px] leading-[26px] text-white font-bold">Tyler Covington</span>      
+                                                                                    <span class="text-[16px] leading-[26px] text-white font-normal">started following you.</span> 
+                                                                                    <p class="text-[14px] leading-[20px] text-[#EBEBEB] mt-[6px]">1 hour ago</p>                                                                       
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>                                                              
                                                                 </div>
                                                             </div>
@@ -571,9 +698,110 @@
                         </a>
                     </div>
                 </div>
-            </header>
+            </header> -->
 
-
+            <!-- Footer -->
+           <footer id="footer" class="max-[991px]:py-[70px] py-[80px] bg-white dark:bg-[#0D0D11]">
+            <div class="themesflat-container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12 col-12">
+                        <div class="max-[991px]:mb-[30px] widget widget-logo">
+                            <div class="logo-footer mb-[13px] max-[991px]:mb-[15px]" id="logo-footer">
+                                <a href="index.html">
+                                    <img id="logo_footer" src="assets/images/logo/logo2.png" alt="nft-gaming" width="135" height="56"
+                                    data-retina="assets/images/logo/logo_dark@2x.png" data-width="135" class="block dark:hidden"
+                                    data-height="56">
+                                    <img id="logo_footer" src="assets/images/logo/logo_dark.png" alt="nft-gaming" width="135" height="56"
+                                    data-retina="assets/images/logo/logo_dark@2x.png" data-width="133" class="hidden dark:block"
+                                    data-height="56">
+                                </a>
+                            </div>
+                            <p class="sub-widget-logo max-[1199px]:pr-0 text-[14px] leading-[22px] pr-[35px] mb-[26px] text-[var(--primary-color2)]">Lorem ipsum dolor sit amet,consectetur adipisicing elit. Quis non, fugit totam vel laboriosam vitae.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-5 col-5">
+                        <div class="max-[991px]:p-0 max-[991px]:mb-[30px] pt-[18px] pl-[30px]">
+                            <h5 class="max-[991px]:mb-[15px] leading-[26px] mb-[24px] text-[var(--primary-color2)]">My Account</h5>
+                            <ul>
+                                <li class="mb-[14px]">
+                                    <a class="text-[14px] leading-[22px] relative after:content-[''] after:w-0 after:h-[1px] after:absolute after:bg-[var(--primary-color3)] after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:invisible after:opacity-0 after:transition-all after:duration-[0.3s] after:ease-in-out hover:after:w-full hover:after:visible hover:after:opacity-100 " href="author01.html">Authors</a>
+                                </li>
+                                <li class="mb-[14px]">
+                                    <a class="text-[14px] leading-[22px] relative after:content-[''] after:w-0 after:h-[1px] after:absolute after:bg-[var(--primary-color3)] after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:invisible after:opacity-0 after:transition-all after:duration-[0.3s] after:ease-in-out hover:after:w-full hover:after:visible hover:after:opacity-100 " href="connect-wallet.html">Collection</a>
+                                </li>
+                                <li class="mb-[14px]">
+                                    <a class="text-[14px] leading-[22px] relative after:content-[''] after:w-0 after:h-[1px] after:absolute after:bg-[var(--primary-color3)] after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:invisible after:opacity-0 after:transition-all after:duration-[0.3s] after:ease-in-out hover:after:w-full hover:after:visible hover:after:opacity-100 " href="profile.html">Author Profile</a>
+                                </li>
+                                <li class="mb-0">
+                                    <a class="text-[14px] leading-[22px] relative after:content-[''] after:w-0 after:h-[1px] after:absolute after:bg-[var(--primary-color3)] after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:invisible after:opacity-0 after:transition-all after:duration-[0.3s] after:ease-in-out hover:after:w-full hover:after:visible hover:after:opacity-100 " href="create-item.html">Create Item</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-7 col-7">
+                        <div class="max-[991px]:p-0 max-[991px]:mb-[30px] pt-[18px] pl-[38px]">
+                            <h5 class="max-[991px]:mb-[15px] leading-[26px] mb-[24px] text-[var(--primary-color2)]">Resources</h5>
+                            <ul>
+                                <li class="mb-[14px]">
+                                    <a class="text-[14px] leading-[22px] relative after:content-[''] after:w-0 after:h-[1px] after:absolute after:bg-[var(--primary-color3)] after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:invisible after:opacity-0 after:transition-all after:duration-[0.3s] after:ease-in-out hover:after:w-full hover:after:visible hover:after:opacity-100 " href="help-center.html">Help & Support</a>
+                                </li>
+                                <li class="mb-[14px]">
+                                    <a class="text-[14px] leading-[22px] relative after:content-[''] after:w-0 after:h-[1px] after:absolute after:bg-[var(--primary-color3)] after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:invisible after:opacity-0 after:transition-all after:duration-[0.3s] after:ease-in-out hover:after:w-full hover:after:visible hover:after:opacity-100 " href="auctions.html">Live Auctions</a>
+                                </li>
+                                <li class="mb-[14px]">
+                                    <a class="text-[14px] leading-[22px] relative after:content-[''] after:w-0 after:h-[1px] after:absolute after:bg-[var(--primary-color3)] after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:invisible after:opacity-0 after:transition-all after:duration-[0.3s] after:ease-in-out hover:after:w-full hover:after:visible hover:after:opacity-100 " href="item-details.html">Item Details</a>
+                                </li>
+                                <li class="mb-0">
+                                    <a class="text-[14px] leading-[22px] relative after:content-[''] after:w-0 after:h-[1px] after:absolute after:bg-[var(--primary-color3)] after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:invisible after:opacity-0 after:transition-all after:duration-[0.3s] after:ease-in-out hover:after:w-full hover:after:visible hover:after:opacity-100 " href="activity1.html">Activity</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-5 col-5">
+                        <div class="max-[991px]:p-0 max-[991px]:mb-[30px] pt-[18px] pl-[33px]">
+                            <h5 class="max-[991px]:mb-[15px] leading-[26px] mb-[24px] text-[var(--primary-color2)]">Company</h5>
+                            <ul>
+                                <li class="mb-[14px]">
+                                    <a class="text-[14px] leading-[22px] relative after:content-[''] after:w-0 after:h-[1px] after:absolute after:bg-[var(--primary-color3)] after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:invisible after:opacity-0 after:transition-all after:duration-[0.3s] after:ease-in-out hover:after:w-full hover:after:visible hover:after:opacity-100 " href="explore-1.html">Explore</a>
+                                </li>
+                                <li class="mb-[14px]">
+                                    <a class="text-[14px] leading-[22px] relative after:content-[''] after:w-0 after:h-[1px] after:absolute after:bg-[var(--primary-color3)] after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:invisible after:opacity-0 after:transition-all after:duration-[0.3s] after:ease-in-out hover:after:w-full hover:after:visible hover:after:opacity-100 " href="contact1.html">Contact Us</a>
+                                </li>
+                                <li class="mb-[14px]">
+                                    <a class="text-[14px] leading-[22px] relative after:content-[''] after:w-0 after:h-[1px] after:absolute after:bg-[var(--primary-color3)] after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:invisible after:opacity-0 after:transition-all after:duration-[0.3s] after:ease-in-out hover:after:w-full hover:after:visible hover:after:opacity-100 " href="blog.html">Our Blog</a>
+                                </li>
+                                <li class="mb-0">
+                                    <a class="text-[14px] leading-[22px] relative after:content-[''] after:w-0 after:h-[1px] after:absolute after:bg-[var(--primary-color3)] after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:invisible after:opacity-0 after:transition-all after:duration-[0.3s] after:ease-in-out hover:after:w-full hover:after:visible hover:after:opacity-100 " href="faq.html">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-7 col-12">
+                        <div class="max-[991px]:p-0 max-[991px]:mb-0 pt-[17px] pl-[20px]">
+                            <h5 class="leading-[26px] mb-[25px] text-[var(--primary-color2)] max-[991px]:mb-[15px]">Subscribe Us</h5>
+                            <div class="form-subcribe">
+                                <form id="subscribe-form" action="#" method="GET" accept-charset="utf-8" class="form-submit relative">
+                                    <input name="email" value="" type="email" placeholder="info@yourgmail.com" required 
+                                    class="dark:!bg-transparent !border-[1px] !border-[#8a8aa04d] !rounded-[10px] !bg-[#F8F8F8] !w-full !p-[13px_50px_12px_22px] !text-[14px] focus:!border-[#5142FC]" >
+                                    <button id="submit" name="submit" type="submit"
+                                    class="!absolute !top-0 !right-0 !bg-[var(--primary-color3)] !text-[21px] !p-[15px_18px_14px_19px] !text-[var(--primary-color)] rounded-tr-[10px] rounded-br-[10px] rounded-tl-none rounded-bl-none hover:opacity-90"><i class="icon-fl-send dark:text-white"></i></button>
+                                </form>
+                            </div>
+                            <div class="widget-social style-1 mt-[32px]">
+                                <ul class="flex max-[1450px]:flex-wrap">
+                                    <li class="max-[1450px]:mb-[10px] mr-[12px]"><a href="#" class="dark:bg-[#343444] dark:hover:bg-[var(--primary-color3)] dark:text-white w-[40px] h-[40px] rounded-[5px] text-center justify-center items-center flex text-[21px] bg-[#EBEBEB] text-[#7A798A] hover:text-[var(--primary-color)] hover:bg-[var(--primary-color3)]"><i class="fab fa-twitter"></i></a></li>
+                                    <li class="max-[1450px]:mb-[10px] mr-[12px]"><a href="#" class="dark:bg-[#343444] dark:hover:bg-[var(--primary-color3)] dark:text-white w-[40px] h-[40px] rounded-[5px] text-center justify-center items-center flex text-[21px] bg-[#EBEBEB] text-[#7A798A] hover:text-[var(--primary-color)] hover:bg-[var(--primary-color3)]"><i class="fab fa-facebook"></i></a></li>
+                                    <li class="max-[1450px]:mb-[10px] mr-[12px]"><a href="#" class="dark:bg-[#343444] dark:hover:bg-[var(--primary-color3)] dark:text-white w-[40px] h-[40px] rounded-[5px] text-center justify-center items-center flex text-[22px] bg-[#EBEBEB] text-[#7A798A] hover:text-[var(--primary-color)] hover:bg-[var(--primary-color3)]"><i class="fab fa-telegram-plane"></i></a></li>
+                                    <li class="max-[1450px]:mb-[10px] mr-[12px]"><a href="#" class="dark:bg-[#343444] dark:hover:bg-[var(--primary-color3)] dark:text-white w-[40px] h-[40px] rounded-[5px] text-center justify-center items-center flex text-[21px] bg-[#EBEBEB] text-[#7A798A] hover:text-[var(--primary-color)] hover:bg-[var(--primary-color3)]"><i class="fab fa-youtube"></i></a></li>
+                                    <li class="max-[1450px]:mb-[10px] mr-[12px]"><a href="#" class="dark:bg-[#343444] dark:hover:bg-[var(--primary-color3)] dark:text-white w-[40px] h-[40px] rounded-[5px] text-center justify-center items-center flex text-[21px] bg-[#EBEBEB] text-[#7A798A] hover:text-[var(--primary-color)] hover:bg-[var(--primary-color3)]"><i class="icon-fl-tik-tok-2"></i></a></li>
+                                    <li class="max-[1450px]:mb-[10px] "><a href="#" class="dark:bg-[#343444] dark:hover:bg-[var(--primary-color3)] dark:text-white w-[40px] h-[40px] rounded-[5px] text-center justify-center items-center flex text-[21px] bg-[#EBEBEB] text-[#7A798A] hover:text-[var(--primary-color)] hover:bg-[var(--primary-color3)]"><i class="icon-fl-vt"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </footer>
             
 
             <!-- pagetitle -->
@@ -1268,7 +1496,7 @@
                                                                 before:content-['\f004'] before:font-['Font_Awesome_5_Pro'] before:font-[300] before:mr-[2px]">
                                                     <span class="w-[22px] inline-block number-like"> 100</span>
                                                 </button>
-                                                <div class="coming-soon z-[99] absolute top-[15px] left-[14px] font-bold text-[14px] leading-[22px] capitalize text-[#343444] p-[3px_19px] rounded-[13px] bg-[#FFBD0C]">coming soon</div>
+                                                <div class="coming-soon absolute top-[15px] left-[14px] font-bold text-[14px] leading-[22px] capitalize text-[#343444] p-[3px_19px] rounded-[13px] bg-[#FFBD0C]">coming soon</div>
                                             </div>
                                             <div class="card-title flex items-center justify-between mb-[16px]">
                                                 <h5 class="whitespace-nowrap overflow-hidden text-ellipsis max-w-[90%] capitalize leading-[26px]"><a href="item-details.html">"Hamlet Contemplates Contemplates "</a></h5>
@@ -1574,7 +1802,7 @@
                                                                 before:content-['\f004'] before:font-['Font_Awesome_5_Pro'] before:font-[300] before:mr-[2px]">
                                                     <span class="w-[22px] inline-block number-like"> 100</span>
                                                 </button>
-                                                <div class="coming-soon z-[99] absolute top-[15px] left-[14px] font-bold text-[14px] leading-[22px] capitalize text-[#343444] p-[3px_19px] rounded-[13px] bg-[#FFBD0C]">coming soon</div>
+                                                <div class="coming-soon absolute top-[15px] left-[14px] font-bold text-[14px] leading-[22px] capitalize text-[#343444] p-[3px_19px] rounded-[13px] bg-[#FFBD0C]">coming soon</div>
                                             </div>
                                             <div class="card-title flex items-center justify-between mb-[16px]">
                                                 <h5 class="whitespace-nowrap overflow-hidden text-ellipsis max-w-[90%] capitalize leading-[26px]"><a href="item-details.html">"Hamlet Contemplates Contemplates "</a></h5>
@@ -1804,7 +2032,7 @@
                                                                 before:content-['\f004'] before:font-['Font_Awesome_5_Pro'] before:font-[300] before:mr-[2px]">
                                                     <span class="w-[22px] inline-block number-like"> 100</span>
                                                 </button>
-                                                <div class="coming-soon z-[99] absolute top-[15px] left-[14px] font-bold text-[14px] leading-[22px] capitalize text-[#343444] p-[3px_19px] rounded-[13px] bg-[#FFBD0C]">coming soon</div>
+                                                <div class="coming-soon absolute top-[15px] left-[14px] font-bold text-[14px] leading-[22px] capitalize text-[#343444] p-[3px_19px] rounded-[13px] bg-[#FFBD0C]">coming soon</div>
                                             </div>
                                             <div class="card-title flex items-center justify-between mb-[16px]">
                                                 <h5 class="whitespace-nowrap overflow-hidden text-ellipsis max-w-[90%] capitalize leading-[26px]"><a href="item-details.html">"Hamlet Contemplates Contemplates "</a></h5>
@@ -2034,7 +2262,7 @@
                                                                 before:content-['\f004'] before:font-['Font_Awesome_5_Pro'] before:font-[300] before:mr-[2px]">
                                                     <span class="w-[22px] inline-block number-like"> 100</span>
                                                 </button>
-                                                <div class="coming-soon z-[99] absolute top-[15px] left-[14px] font-bold text-[14px] leading-[22px] capitalize text-[#343444] p-[3px_19px] rounded-[13px] bg-[#FFBD0C]">coming soon</div>
+                                                <div class="coming-soon absolute top-[15px] left-[14px] font-bold text-[14px] leading-[22px] capitalize text-[#343444] p-[3px_19px] rounded-[13px] bg-[#FFBD0C]">coming soon</div>
                                             </div>
                                             <div class="card-title flex items-center justify-between mb-[16px]">
                                                 <h5 class="whitespace-nowrap overflow-hidden text-ellipsis max-w-[90%] capitalize leading-[26px]"><a href="item-details.html">"Hamlet Contemplates Contemplates "</a></h5>
@@ -2188,7 +2416,7 @@
                                                                 before:content-['\f004'] before:font-['Font_Awesome_5_Pro'] before:font-[300] before:mr-[2px]">
                                                     <span class="w-[22px] inline-block number-like"> 100</span>
                                                 </button>
-                                                <div class="coming-soon z-[99] absolute top-[15px] left-[14px] font-bold text-[14px] leading-[22px] capitalize text-[#343444] p-[3px_19px] rounded-[13px] bg-[#FFBD0C]">coming soon</div>
+                                                <div class="coming-soon absolute top-[15px] left-[14px] font-bold text-[14px] leading-[22px] capitalize text-[#343444] p-[3px_19px] rounded-[13px] bg-[#FFBD0C]">coming soon</div>
                                             </div>
                                             <div class="card-title flex items-center justify-between mb-[16px]">
                                                 <h5 class="whitespace-nowrap overflow-hidden text-ellipsis max-w-[90%] capitalize leading-[26px]"><a href="item-details.html">"Hamlet Contemplates Contemplates "</a></h5>
@@ -3382,7 +3610,7 @@
                 </div>
             </section>
 
-
+            
             
 
 

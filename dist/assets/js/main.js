@@ -17,36 +17,32 @@
     // Dark to light
     if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
         document.documentElement.classList.add("dark");
-        document.getElementById("dark-mode")?.classList.add("dark--version");
-      } 
-      if (localStorage.getItem("theme-color") === "light") {
+    } 
+    if (localStorage.getItem("theme-color") === "light") {
         document.documentElement.classList.remove("dark");
-        document.getElementById("dark-mode")?.classList.remove("dark--version");
-      } 
-      const lightToDarkButton = document.getElementById("dark-mode");
-      lightToDarkButton?.addEventListener("click", function () {
+    } 
+ 
+
+    const lightToDarkButton = document.getElementById("dark-mode");
+    lightToDarkButton.addEventListener("click", function () {
           if (localStorage.getItem("theme-color")) {
             if (localStorage.getItem("theme-color") === "light") {
               document.documentElement.classList.add("dark");
               localStorage.setItem("theme-color", "dark");
-              lightToDarkButton?.classList.add("dark--version");
             } else {
               document.documentElement.classList.remove("dark");
               localStorage.setItem("theme-color", "light");
-              lightToDarkButton?.classList?.remove("dark--version");
             }
           } else {
             if (document.documentElement.classList.contains("dark")) {
               document.documentElement.classList.remove("dark");
-              lightToDarkButton?.classList?.remove("dark--version");
               localStorage.setItem("theme-color", "light");
             } else {
               document.documentElement.classList.add("dark");
               localStorage.setItem("theme-color", "dark");
-              lightToDarkButton?.classList.add("dark--version");
             }
           }
-      });
+    });
 
     var themesflatTheme = {
 
@@ -71,10 +67,8 @@
             // Run on document ready
             self.config.$document.on('ready', function () {
 
-
                 // Retina Logos
                 self.retinaLogo();
-
 
             });
 
@@ -83,7 +77,6 @@
 
             });
         },
-
 
         // Retina Logos
         retinaLogo: function () {
@@ -197,39 +190,6 @@
         })
     };
     
-    // var loadmore = function () {
-    //     $(".fl-item").slice(0, 8).show();
-    //     $(".fl-blog.fl-item2").slice(0, 6).show();
-    //     $(".fl-collection.fl-item3").slice(0, 3).show();
-    //     $(".fl-item.fl-item4").slice(0, 15).show();
-    //     $(".fl-item.fl-item5").slice(0, 7).show();
-
-    //     $("#loadmore").on("click", function(e){
-    //       e.preventDefault();
-
-    //       $(".fl-item:hidden").slice(0, 4).slideDown();
-    //       $(".fl-item2:hidden").slice(0, 3).slideDown();
-    //       $(".fl-item3:hidden").slice(0, 3).slideDown();
-    //       $(".fl-item4:hidden").slice(0, 5).slideDown();
-    //       $(".fl-item5:hidden").slice(0, 13).slideDown();
-    //       if($(".fl-item:hidden").length == 0) {
-    //         $("#loadmore").hide();
-    //       }
-    //       if($(".fl-item2:hidden").length == 0) {
-    //         $("#loadmore").hide();
-    //       }
-    //       if($(".fl-item3:hidden").length == 0) {
-    //         $("#loadmore").hide();
-    //       }
-    //       if($(".fl-item4:hidden").length == 0) {
-    //         $("#loadmore").hide();
-    //       }
-    //       if($(".fl-item5:hidden").length == 0) {
-    //         $("#loadmore").hide();
-    //       }
-    //     });
-    // };
-
     // Header Fixed
     var headerFixed = function () {
         if ($('body').hasClass('header-fixed')) {
@@ -431,11 +391,12 @@
         headerFixed();
         mobileNav();
         ajaxSubscribe.eventLoad();
-        // ajaxContactForm();
+        ajaxContactForm();
         alertBox();
         avatar_popup1();
         avatar_popup2();
         sortBy();
+        
     });
 
 })(jQuery);

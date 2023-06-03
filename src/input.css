@@ -612,6 +612,9 @@ img {
 .dropdown-toggle::after {
     @apply hidden ;
 }
+.live-auctions .dropdown-menu.show {
+    @apply !inset-[unset] !translate-y-0 ;
+}
 
 .seller-tab .menu-tab li.item-title.active {
     @apply bg-[#5142FC] dark:bg-[#343444];
