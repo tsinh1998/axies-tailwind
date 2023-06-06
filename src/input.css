@@ -214,7 +214,9 @@ h6 {
 .fs-16 {
     @apply text-[16px];
 }
-
+i {
+    @apply italic ;
+}
 label.error { 
     @apply text-[#ff0000];
 }
@@ -520,7 +522,14 @@ img {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+.home7 .swiper-button-next,
+.home7 .swiper-button-prev {
+    @apply !opacity-0 ;
+}
+.home7.flat-title-page:hover .swiper-button-next,
+.home7.flat-title-page:hover .swiper-button-prev {
+    @apply !opacity-100 ;
+}
 @keyframes rainbow {
     0% {
         background-position: left ;
