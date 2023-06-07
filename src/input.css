@@ -1026,3 +1026,44 @@ img {
 .avatar_popup2 .flat-tabs .menu-tab li.active{
     @apply bg-[#343444] ;
 }
+
+.preload {
+    @apply overflow-hidden ;
+} 
+.preload-container {
+    @apply w-full h-full bg-white fixed top-0 right-0 bottom-0 left-0 z-[9999999999999999999999] block overflow-hidden ;
+}
+.preload-logo {
+    @apply absolute top-1/2 left-1/2 bottom-1/2 right-1/2 z-10 m-[-30px_0_0_-30px] bg-white rounded-[50%] animate-[bounceIn_1s_linear_infinite_alternate] ;
+}
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+} 
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    transform: scale3d(.9, .9, .9);
+  }
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    transform: scale3d(.97, .97, .97);
+  }
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}

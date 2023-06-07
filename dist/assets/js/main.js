@@ -15,13 +15,13 @@
     "use strict";
 
     // Dark to light
-    // if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-    //     document.documentElement.classList.add("dark");
-    // } 
-    // if (localStorage.getItem("theme-color") === "light") {
-    //     document.documentElement.classList.remove("dark");
-    // } 
-    document.documentElement.classList.add("dark");
+    if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.documentElement.classList.add("dark");
+    } 
+    if (localStorage.getItem("theme-color") === "light") {
+        document.documentElement.classList.remove("dark");
+    } 
+    // document.documentElement.classList.add("dark");
 
     const lightToDarkButton = document.getElementById("dark-mode");
     lightToDarkButton.addEventListener("click", function () {
