@@ -309,9 +309,6 @@ img {
     dark:bg-transparent dark:bg-none dark:bg-repeat dark:bg-scroll dark:bg-[0_0] dark:text-white
     dark:hover:!bg-white dark:hover:bg-transparent dark:hover:outline-0 dark:hover:!border-white;
 }
-/* .is_dark .sc-button.loadmore:hover:after{
-    background-color: #fff;
-} */
 .sc-button.loadmore span {
     @apply text-[15px] ;
 }
@@ -342,12 +339,6 @@ img {
 .fl-button:hover span::before{
     @apply duration-[0.3s] ;
 }
-/* .is_dark .dark-style2 .sc-button.fl-button.pri-3 {
-    border-color: #fff;
-}
-.is_dark .dark-style2 .sc-button.fl-button.pri-3 span {
-    color: #fff;
-} */
 .sc-button.fl-button.pri-3:hover span{
     @apply text-white dark:text-[#14141F] ;
 }
@@ -355,14 +346,6 @@ img {
 .sc-button.style-place-bid.fl-button.pri-3:hover{
     @apply border-[#5142FC] bg-[#5142FC] ;
 }
-/* .is_dark .sc-button.style-place-bid.fl-button.pri-3:hover{
-    border-color: #5142FC;
-    background: #5142FC;
-} 
-.is_dark .sc-button.fl-button.pri-3:hover{
-    background-color: #fff;
-    border-color: #fff;
-}*/
 
 :root {
     --primary-color : #fff;
@@ -615,14 +598,11 @@ img {
 .dropdown-menu {
     @apply !text-white dark:!bg-[#343444] ;
 }
-.dropdown-menu.show {
+.icon.text-right .dropdown-menu.show {
     @apply block !translate-y-0 !inset-[36px_auto_auto_-140px] ;
 } 
 .dropdown-toggle::after {
     @apply hidden ;
-}
-.live-auctions .dropdown-menu.show {
-    @apply !inset-[unset] !translate-y-0 ;
 }
 .live-auctions .dropdown-menu-right.show {
     @apply !right-0 !border-none ;
@@ -643,7 +623,6 @@ img {
 .home6.page-title .swiper-pagination-bullet {
     @apply border-white ;
 }
-
 
 .side-bar.item .widget-category .btn-checkbox:after {
     @apply text-[15px] relative left-0 ;
@@ -668,12 +647,6 @@ img {
     @apply bg-[#8A8AA0] h-[30px] rounded-[100px] ;
 }
 
-
-
-
-
-
- /* price-range  */
 .noUi-target,.noUi-target * {
     @apply touch-none select-none ;
 }
@@ -692,13 +665,6 @@ img {
 .noUi-stacking .noUi-handle {
     @apply z-10
 }
-/* .noUi-state-tap .noUi-origin {
-    -webkit-transition: left 0.3s,top .3s;
-    transition: left 0.3s,top .3s;
-} 
-.noUi-state-drag * {
-    cursor: inherit !important;
-} */
 .noUi-base,.noUi-handle {
     @apply translate-x-0 translate-y-0 ;
 }
@@ -787,7 +753,6 @@ img {
     @apply dark:text-white ;
 }
 
-/* animationtext */
 .animationtext {
     @apply h-[70px] overflow-hidden ;
 }
@@ -819,7 +784,6 @@ img {
     -webkit-text-stroke: 3px transparent;
     -webkit-text-fill-color: #14141f;
 }
-/* animationtext.slide */
 .animationtext.slide span {
     @apply inline-block;
 }
@@ -835,7 +799,6 @@ img {
 .animationtext.slide .item-text.is-hidden {
     @apply animate-[slideout_0.6s] ;
 } 
-/* animationtext.rotate-3 */
 .animationtext.rotate-3 .cd-words-wrapper {
     -webkit-perspective: 300px;
     -moz-perspective: 300px;
@@ -936,7 +899,6 @@ img {
     @apply !border-none ;
 }
 
-/* Mobile Menu Button */
 .mobile-button {
     @apply max-[991px]:block hidden absolute w-[26px] h-[26px] float-right top-1/2 right-[15px] bg-transparent cursor-pointer duration-[0.3s] -translate-y-1/2 
     before:bg-white before:duration-[0.3s] before:content-[''] before:absolute before:h-[3px] before:w-full before:left-0 before:top-1/2 before:origin-[50%_50%] before:translate-y-[-7px]
@@ -962,7 +924,6 @@ img {
     @apply hover:opacity-90 hover:text-white dark:hover:text-white ;
 } 
 
-/* mobie-menu */
 #main-nav-mobi {
     @apply block m-[0_auto] w-full h-[293px] overflow-y-scroll absolute top-full left-0 z-[999999] bg-[var(--primary-color)] shadow-[0px_3px_16px_rgb(47_83_109/12%)] translate-y-0
         dark:bg-[#14141F] dark:shadow-[0px_3px_16px_rgb(47_83_109/20%)] ;
@@ -1026,6 +987,24 @@ img {
 .avatar_popup2 .flat-tabs .menu-tab li.active{
     @apply bg-[#343444] ;
 }
+
+a.btn-link {
+    @apply focus:bg-[#EBEBEB] focus:no-underline active:bg-[#EBEBEB] ;
+}
+.explore-tab .menu-tab li.active {
+    @apply bg-[var(--primary-color3)];
+}
+.explore-tab .menu-tab li.active span {
+    @apply text-white
+}
+.dropdown li.active{
+   @apply bg-[var(--primary-color3)] ;
+}
+.dropdown li.active span {
+    @apply text-white font-bold ;
+}
+
+.soft-left .dropdown
 
 .preload {
     @apply overflow-hidden ;
