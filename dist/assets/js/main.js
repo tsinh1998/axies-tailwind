@@ -14,34 +14,27 @@
 ; (function ($) {
     "use strict";
 
-    // Dark to light
-    // if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-    //     document.documentElement.classList.add("dark");
-    // } 
-    // if (localStorage.getItem("theme-color") === "light") {
-    //     document.documentElement.classList.remove("dark");
-    // } 
-    document.documentElement.classList.add("dark");
+    // Dark - light button
+    localStorage.theme = 'dark';
+    
+    if (localStorage.theme === 'dark' || (window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark');
+    }
 
-    const lightToDarkButton = document.getElementById("dark-mode");
-    lightToDarkButton.addEventListener("click", function () {
-          if (localStorage.getItem("theme-color")) {
-            if (localStorage.getItem("theme-color") === "light") {
-              document.documentElement.classList.add("dark");
-              localStorage.setItem("theme-color", "dark");
-            } else {
-              document.documentElement.classList.remove("dark");
-              localStorage.setItem("theme-color", "light");
-            }
-          } else {
-            if (document.documentElement.classList.contains("dark")) {
-              document.documentElement.classList.remove("dark");
-              localStorage.setItem("theme-color", "light");
-            } else {
-              document.documentElement.classList.add("dark");
-              localStorage.setItem("theme-color", "dark");
-            }
-          }
+    var themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', function() {
+        if (localStorage.theme === 'dark') {
+        localStorage.theme = 'light';
+        } else {
+        localStorage.theme = 'dark';
+        }
+        if (localStorage.theme === 'dark') {
+        document.documentElement.classList.add('dark');
+        } else {
+        document.documentElement.classList.remove('dark');
+        }
     });
 
     var themesflatTheme = {

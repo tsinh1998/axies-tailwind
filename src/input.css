@@ -449,7 +449,7 @@ img {
 }
 
 #scroll-top {
-    @apply fixed block w-[50px] h-[50px] leading-[50px] rounded-[50%] text-center z-[1] right-[14px] bottom-[23px] opacity-0 invisible cursor-pointer overflow-hidden
+    @apply fixed block w-[50px] h-[50px] leading-[50px] rounded-[50%] text-center z-[100] right-[14px] bottom-[23px] opacity-0 invisible cursor-pointer overflow-hidden
     after:absolute after:top-0 after:left-0 after:w-full after:h-full after:transition-all after:duration-[0.3s] after:ease-in
     after:content-['\f077'] after:font-['Font_Awesome_5_Pro'] after:text-[18px] after:text-white after:font-[600]
     before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:transition-all before:duration-[0.3s] before:ease-in 
@@ -799,6 +799,15 @@ img {
 .animationtext.slide .item-text.is-hidden {
     @apply animate-[slideout_0.6s] ;
 } 
+.animationtext.clip .cd-words-wrapper::after {
+    @apply content-[''] absolute top-0 right-0 w-[2px] h-full bg-[#aebcb9] ;
+}
+.animationtext.clip .item-text {
+    @apply opacity-0 ;
+}
+.animationtext.clip .item-text.is-visible {
+    @apply opacity-100 ;
+}
 .animationtext.rotate-3 .cd-words-wrapper {
     -webkit-perspective: 300px;
     -moz-perspective: 300px;
@@ -808,7 +817,8 @@ img {
     @apply opacity-0 ;
 }
 .animationtext.rotate-3 i {
-    @apply inline-block rotate-[0_180deg] ;
+    @apply inline-block ;
+    transform: rotateY(180deg);
     backface-visibility: hidden;
 }
 .is-visible .animationtext.rotate-3 i {
@@ -1003,8 +1013,12 @@ a.btn-link {
 .dropdown li.active span {
     @apply text-white font-bold ;
 }
-
-.soft-left .dropdown
+.group:hover .rotate-360 {
+    transform: rotateY(360deg);
+}
+.wishlist-button.heart {
+    @apply flex-shrink-0 ;
+}
 
 .preload {
     @apply overflow-hidden ;
@@ -1015,11 +1029,6 @@ a.btn-link {
 .preload-logo {
     @apply absolute top-1/2 left-1/2 bottom-1/2 right-1/2 z-10 m-[-30px_0_0_-30px] bg-white rounded-[50%] animate-[bounceIn_1s_linear_infinite_alternate] ;
 }
-@keyframes spin {
-    100% {
-        transform: rotate(360deg);
-    }
-} 
 @keyframes bounceIn {
   from, 20%, 40%, 60%, 80%, to {
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
