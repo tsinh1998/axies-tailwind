@@ -388,7 +388,7 @@ img {
     @apply content-['\f107'] font-['Font_Awesome_5_Pro'] font-[300] absolute right-0 top-1/2 -translate-y-1/2 ;
 }
 #main-nav .sub-menu {
-    @apply absolute top-full left-0 w-[250px] bg-white rounded-[2px] z-[9999] opacity-0 invisible duration-[0.3s] translate-y-[15px]
+    @apply absolute top-full left-0 w-[250px] bg-white rounded-[2px] z-[9999] opacity-0 invisible duration-[0.3s] translate-y-[15px] pointer-events-none
     before:content-[''] before:absolute before:top-[-5px] before:left-[25px] before:h-[15px] before:w-[15px] before:rotate-[45deg] before:bg-white ;
 }
 #main-nav .right-sub-menu {
@@ -401,7 +401,7 @@ img {
     @apply border-b-[1px] border-solid border-b-[#e1e1e18e] ;
 }
 #main-nav li:hover .sub-menu {
-    @apply opacity-100 visible translate-y-0 ;
+    @apply opacity-100 visible translate-y-0 pointer-events-auto;
 }
 #main-nav .sub-menu li.current-item a,
 #main-nav .sub-menu li a:hover {
@@ -935,7 +935,7 @@ img {
 } 
 
 #main-nav-mobi {
-    @apply block m-[0_auto] w-full h-[293px] overflow-y-scroll absolute top-full left-0 z-[999999] bg-[var(--primary-color)] shadow-[0px_3px_16px_rgb(47_83_109/12%)] translate-y-0
+    @apply block m-[0_auto] w-full absolute top-full left-0 z-[999999] bg-[var(--primary-color)] shadow-[0px_3px_16px_rgb(47_83_109/12%)] translate-y-0 duration-[0.3s] ease-linear
         dark:bg-[#14141F] dark:shadow-[0px_3px_16px_rgb(47_83_109/20%)] ;
 }
 #main-nav-mobi ul {
@@ -975,7 +975,7 @@ img {
     @apply ml-[15px] ;
 }
 #main-nav-mobi .menu-item-has-children .arrow {
-    @apply cursor-pointer inline-block text-[20px] font-['FontAwesome'] leading-[48px] absolute right-[15px] text-center top-0 w-[48px]
+    @apply cursor-pointer inline-block text-[20px] font-['FontAwesome'] leading-[48px] absolute right-[15px] text-center top-0 w-[48px] duration-[0.3s] z-10 dark:bg-[#14141F] bg-[var(--primary-color)] rounded-[50%]
             before:font-['Font_Awesome_5_Pro'] before:content-['\f107'] before:text-[var(--primary-color2)] ;
 }
 #main-nav-mobi .menu-item-has-children.current-menu-item .arrow:before {
@@ -984,7 +984,7 @@ img {
     -webkit-text-fill-color: transparent;
 }
 #main-nav-mobi .menu-item-has-children .arrow.active {
-    @apply rotate-180 duration-[0.3s] before:content-['\f107'] ;
+    @apply rotate-180 z-20 ;
 }
 #main-nav-mobi ul ul li {
     @apply text-[var(--primary-color)] border-t-[1px] border-t-[rgba(138,138,160,0.3)] dark:bg-[#14141F];

@@ -15,7 +15,11 @@
     "use strict";
 
     // Dark - light button
-    localStorage.theme = 'dark';
+    if (localStorage.theme === 'dark' || localStorage.theme === 'light' ) {
+      
+    } else {
+        localStorage.theme = 'dark';
+    }
     
     if (localStorage.theme === 'dark' || (window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark');
@@ -36,6 +40,7 @@
         document.documentElement.classList.remove('dark');
         }
     });
+    
 
     var themesflatTheme = {
 

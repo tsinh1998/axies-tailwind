@@ -392,14 +392,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="mode_switcher absolute top-[21px] right-[11px] flex items-center justify-center max-[1818px]:!right-[15px] max-[991px]:!top-[105px] ">
-                    <h6 class="max-[1565px]:hidden leading-[1.2] w-[85px] text-center text-white">Dark mode <strong class="text-[18px]">Available</strong></h6>
-                    <div class="flex cursor-pointer max-[991px]:block" id="dark-mode">
-                        <a class="dark--mode__icon ionicon bg-[linear-gradient(216.56deg,#E250E5_5.32%,#4B50E6_94.32%)] dark:bg-none dark:bg-[#343444] max-[991px]:mb-[5px] rounded-[10px] w-[40px] h-[40px] min-w-[40px] text-[16px] ml-[10px] flex justify-center items-center">
-                            <img src="assets/images/icon/sun.png" alt="" >
-                        </a>
-                        <a class="light--mode__icon ionicon bg-[#343444] rounded-[10px] w-[40px] h-[40px] min-w-[40px] text-[16px] ml-[10px] flex justify-center items-center">
-                            <img src="assets/images/icon/moon-2.png" alt="" class="hidden dark:block">
+                <div class="mode_switcher absolute top-[21px] right-[20px] flex items-center justify-center max-[1818px]:!right-[15px] max-[991px]:!left-[160px] max-[991px]:!right-[unset] max-[991px]:block">
+                    <div class="flex cursor-pointer max-[991px]:block" id="theme-toggle">
+                        <a class="bg-[linear-gradient(216.56deg,#E250E5_5.32%,#4B50E6_94.32%)] dark:bg-none dark:bg-[#343444] max-[991px]:mb-[5px] rounded-[10px] w-[40px] h-[40px] min-w-[40px] text-[16px] flex justify-center items-center">
+                            <img src="assets/images/icon/sun.png" alt="" class="hidden dark:block">
                             <img src="assets/images/icon/moon.png" alt="" class="block dark:hidden">
                         </a>
                     </div>
@@ -439,7 +435,7 @@
 
             <div class="tf-create-item tf-section">
                 <div class="themesflat-container">
-                    <div class="row">
+                    <div class="row max-[991px]:justify-center">
                          <div class="col-xl-3 col-lg-4 col-md-6 col-12">
                             <div class="sc-card-profile max-[991px]:mb-[30px] text-center p-[20px] bg-[var(--primary-color)] shadow-[0px_3px_16px_rgb(47_83_109/12%)] rounded-[20px] overflow-hidden relative">
                                 <div class="card-media rounded-[20px] overflow-hidden w-full h-full">
@@ -458,7 +454,7 @@
                             <div class="form-upload-profile pl-[50px] max-[1199px]:pl-0">
                                 <h4 class="title-create-item mb-[17px] leading-[26px]">Choice your Cover image</h4>
                                 <div class="option-profile max-[767px]:block flex items-center mb-[37px]">
-                                    <form action="#" class="w-[32%] mr-[17px] h-full max-[767px]:w-full max-[767px]:mb-[30px]">
+                                    <form action="#" class="w-[32%] mr-[17px] h-full max-[767px]:w-full max-[767px]:mb-[30px] max-[1024px]:w-[40%]">
                                         <label class="uploadFile p-[8%_5%] flex items-center justify-center h-full w-full bg-transparent border-[1px] border-[#8a8aa04d] rounded-[8px] text-[var(--primary-color4)] text-[14px] leading-[100px] overflow-hidden relative cursor-pointer resize-none">
                                             <input type="file" name="file" class="inputfile form-control !bg-transparent !text-white rounded-[30px] !border-none p-0 right-[98px] overflow-hidden h-[48px] w-[152px] cursor-pointer top-0 left-0 relative translate-y-0
                                             before:w-[152px] before:h-[48px] before:font-bold before:text-[14px] before:leading-[48px] before:content-['Upload_file'] before:inline-block before:bg-[#5142fc1a] before:border-[2px] before:border-transparent before:text-[var(--primary-color3)] before:text-center before:rounded-[30px] before:duration-[0.3s] before:ease-in-out hover:before:bg-[#5142FC] hover:before:text-white
